@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class CameraResolution : MonoBehaviour
 {
-    private void awake()
+    private void Awake()
     {
-        Camera cam = GetCoponent<Camera>();
+        Camera cam = GetComponent<Camera>();
 
         Rect rt = cam.rect;
 
-        float scale_height=((float)screen.width/screen.height)/ ((float)9 / 16);
-        float scale_width=lf/scale_height;
+        float scale_height=((float)Screen.width/Screen.height)/ ((float)9 / 16);
+        float scale_width=1f/scale_height;
 
         if (scale_height<1)
         {
