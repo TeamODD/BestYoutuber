@@ -4,12 +4,12 @@ public class CameraResolution : MonoBehaviour
 {
     private void Awake()
     {
-        Camera cam = GetComponent<Camera>();
+        Camera camera = GetComponent<Camera>();
 
-        Rect rt = cam.rect;
+        Rect rt = camera.rect;
 
-        float scale_height=((float)Screen.width/Screen.height)/ ((float)9 / 16);
-        float scale_width=1f/scale_height;
+        float scale_height = ((float)Screen.width / Screen.height) / ((float)9 / 16);
+        float scale_width = 1f / scale_height;
 
         if (scale_height<1)
         {
@@ -18,10 +18,9 @@ public class CameraResolution : MonoBehaviour
         }
         else
         {
-            rt.width=scale_width;
-            rt.x = (1f - scale_width)/2f;
+            rt.width = scale_width;
+            rt.x = (1f - scale_width) / 2f;
         }
-
-        cam.rect = rt;
+        camera.rect = rt;
     }
 }
