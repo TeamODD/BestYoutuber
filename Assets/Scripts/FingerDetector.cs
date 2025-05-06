@@ -5,6 +5,12 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 {
     [SerializeField] private GameObject leftSelectChanceGroup;
     [SerializeField] private GameObject rightSelectChanceGroup;
+
+    [SerializeField] private GameObject leftChoiceResultGroup;
+    [SerializeField] private GameObject rightChoiceResultGroup;
+
+    [SerializeField] private GameObject choiceChildGroup;
+
     RectTransform rectTransform;
     bool isDragging = false;
     float targetZRotation = 0f;
@@ -26,9 +32,22 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     public void OnPointerUp(PointerEventData eventData)
     {
         isDragging = false;
+
+        if (targetZRotation > 20f)
+        {
+            leftChoiceResultGroup.SetActive(true);
+            choiceChildGroup.SetActive(false);
+            canMove = false;
+        }
+        else if(targetZRotation < -20f)
+        {
+            rightChoiceResultGroup.SetActive(true);
+            choiceChildGroup.SetActive(false);
+            canMove = false;
+        }
+
         targetZRotation = 0f;
 
-        //각도 감지
         leftSelectChanceGroup.SetActive(false);
         rightSelectChanceGroup.SetActive(false);
     }

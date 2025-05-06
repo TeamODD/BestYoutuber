@@ -28,7 +28,8 @@ public class StageManager : MonoBehaviour
     }
     public void SetNewStory()
     {
-        _storyPresenter.SetNewStory(_storyModels[_curStoryData.Index + 1]);
+        _curStoryData = _storyModels[_curStoryData.Index + 1];
+        _storyPresenter.SetNewStory(_curStoryData);
     }
     //public void 
 }

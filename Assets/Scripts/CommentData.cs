@@ -3,7 +3,7 @@
 [System.Serializable]
 public class CommentData
 {
-    [SerializeField] private float _successChance;
+    [SerializeField] private int _successChance;
 
     [SerializeField] private string _choiceComment;
 
@@ -21,7 +21,7 @@ public class CommentData
     [SerializeField] private int _failStressDecrease;
     [SerializeField] private int _failSubscriberIncrease;
 
-    public float SuccessChance => _successChance;
+    public int SuccessChance => _successChance;
     public string ChoiceComment => _choiceComment;
 
     public string SuccessComment => _successComment;
