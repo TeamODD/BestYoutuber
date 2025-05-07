@@ -20,6 +20,4 @@ public class PlayerView : ViewBase
         Bind<TextMeshProUGUI>(typeof(Tmps));
         Bind<Image>(typeof(Images));
     }
-
-
 }

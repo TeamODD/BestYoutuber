@@ -3,13 +3,15 @@ using UnityEngine.EventSystems;
 
 public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    [SerializeField] private GameObject leftSelectChanceGroup;
-    [SerializeField] private GameObject rightSelectChanceGroup;
+    [SerializeField] private GameObject _leftSelectChanceGroup;
+    [SerializeField] private GameObject _rightSelectChanceGroup;
 
-    [SerializeField] private GameObject leftChoiceResultGroup;
-    [SerializeField] private GameObject rightChoiceResultGroup;
+    [SerializeField] private GameObject _leftChoiceResultGroup;
+    [SerializeField] private GameObject _rightChoiceResultGroup;
 
-    [SerializeField] private GameObject choiceChildGroup;
+    [SerializeField] private GameObject _choiceChildGroup;
+
+    [SerializeField] private StoryModel _storyModel;
 
     RectTransform rectTransform;
     bool isDragging = false;
@@ -24,6 +26,17 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         rectTransform = GetComponent<RectTransform>();
     }
 
+    //아직 안 씀
+    public void Initialize(GameObject leftSelectChanceGroup, GameObject rightSelectChanceGroup, GameObject leftChoiceResultGroup, GameObject rightChoiceResultGroup, GameObject choiceChildGroup
+        , StoryModel storyModel)
+    {
+        _leftChoiceResultGroup = leftChoiceResultGroup;
+        _rightChoiceResultGroup = rightChoiceResultGroup;
+        _leftSelectChanceGroup = leftSelectChanceGroup;
+        _rightSelectChanceGroup = rightSelectChanceGroup;   
+        _storyModel = storyModel;
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         isDragging = true;
@@ -35,21 +48,23 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
         if (targetZRotation > 20f)
         {
-            leftChoiceResultGroup.SetActive(true);
-            choiceChildGroup.SetActive(false);
+            _storyModel.UpdatePlayerUI(true);
+            _leftChoiceResultGroup.SetActive(true);
+            _choiceChildGroup.SetActive(false);
             canMove = false;
         }
         else if(targetZRotation < -20f)
         {
-            rightChoiceResultGroup.SetActive(true);
-            choiceChildGroup.SetActive(false);
+            _storyModel.UpdatePlayerUI(false);
+            _rightChoiceResultGroup.SetActive(true);
+            _choiceChildGroup.SetActive(false);
             canMove = false;
         }
 
         targetZRotation = 0f;
 
-        leftSelectChanceGroup.SetActive(false);
-        rightSelectChanceGroup.SetActive(false);
+        _leftSelectChanceGroup.SetActive(false);
+        _rightSelectChanceGroup.SetActive(false);
     }
 
     void Update()
@@ -63,13 +78,13 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
                 if (localMousePos.x < 0)
                 {
-                    leftSelectChanceGroup.SetActive(true);
-                    rightSelectChanceGroup.SetActive(false);
+                    _leftSelectChanceGroup.SetActive(true);
+                    _rightSelectChanceGroup.SetActive(false);
                 }
                 else if (localMousePos.x > 0)
                 {
-                    leftSelectChanceGroup.SetActive(false);
-                    rightSelectChanceGroup.SetActive(true);
+                    _leftSelectChanceGroup.SetActive(false);
+                    _rightSelectChanceGroup.SetActive(true);
                 }
 
                 float delta = Input.GetAxis("Mouse X");

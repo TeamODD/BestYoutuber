@@ -167,7 +167,7 @@ MonoBehaviour:
   _choiceView: {fileID: 923408304}
   _choiceSelectView: {fileID: 1136510872}
   _choiceResultView: {fileID: 1892324572}
-  _model: {fileID: 110028769}
+  _storyModel: {fileID: 110028769}
   _fingerDetector: {fileID: 1895494936}
 --- !u!114 &110028769
 MonoBehaviour:
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _presenter: {fileID: 110028768}
+  _playerModel: {fileID: 387522990}
 --- !u!1 &187758073
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69527a4d38eb7d4a82b4ad0cf5809d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _presenter: {fileID: 0}
   _stress: 100
   _famous: 100
   _subscriber: 100
@@ -1847,99 +1849,99 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _storyModels:
   - _index: 0
-    _choiceText: 0
+    _choiceText: adaghfdh
     _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    _failCommentModel:
+    _rightCommentData:
       _successChance: 76
-      _choiceComment: sc
-      _successComment: ss
-      _successDescription: ss
-      _failComment: sf
-      _failDescription: sf
-      _successFamousIncrease: 5
-      _successStressDecrease: 5
-      _successSubscriberIncrease: 5
-      _failFamousIncrease: 5
-      _failStressDecrease: 5
-      _failSubscriberIncrease: 5
-    _successCommentModel:
-      _successChance: 34
-      _choiceComment: fc
-      _successComment: fs
-      _successDescription: fs
-      _failComment: ff
-      _failDescription: ff
-      _successFamousIncrease: 5
-      _successStressDecrease: 5
-      _successSubscriberIncrease: 5
-      _failFamousIncrease: 5
-      _failStressDecrease: 5
-      _failSubscriberIncrease: 5
-  - _index: 1
-    _choiceText: 1
-    _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    _failCommentModel:
+      _choiceComment: 
+      _successComment: 
+      _successDescription: 
+      _failComment: 
+      _failDescription: 
+      _successFamousIncrease: 10
+      _successStressDecrease: -10
+      _successSubscriberIncrease: 10
+      _failFamousIncrease: -10
+      _failStressDecrease: 10
+      _failSubscriberIncrease: -10
+    _leftCommentData:
       _successChance: 35
-      _choiceComment: sc
-      _successComment: ss
-      _successDescription: ss
-      _failComment: sf
-      _failDescription: sf
-      _successFamousIncrease: 5
-      _successStressDecrease: 5
-      _successSubscriberIncrease: 5
-      _failFamousIncrease: 5
-      _failStressDecrease: 5
-      _failSubscriberIncrease: 5
-    _successCommentModel:
-      _successChance: 66
-      _choiceComment: fc
-      _successComment: fs
-      _successDescription: fs
-      _failComment: ff
-      _failDescription: ff
-      _successFamousIncrease: 5
-      _successStressDecrease: 5
-      _successSubscriberIncrease: 5
-      _failFamousIncrease: 5
-      _failStressDecrease: 5
-      _failSubscriberIncrease: 5
-  - _index: 2
-    _choiceText: 2
+      _choiceComment: 
+      _successComment: 
+      _successDescription: 
+      _failComment: 
+      _failDescription: 
+      _successFamousIncrease: 10
+      _successStressDecrease: -30
+      _successSubscriberIncrease: 10
+      _failFamousIncrease: -10
+      _failStressDecrease: 10
+      _failSubscriberIncrease: -10
+  - _index: 1
+    _choiceText: dgjdgkhdfkhdfk
     _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    _failCommentModel:
-      _successChance: 95
-      _choiceComment: sc
-      _successComment: ss
-      _successDescription: ss
-      _failComment: sf
-      _failDescription: sf
-      _successFamousIncrease: 5
-      _successStressDecrease: 5
-      _successSubscriberIncrease: 5
-      _failFamousIncrease: 5
-      _failStressDecrease: 5
-      _failSubscriberIncrease: 5
-    _successCommentModel:
+    _rightCommentData:
+      _successChance: 86
+      _choiceComment: 
+      _successComment: 
+      _successDescription: 
+      _failComment: 
+      _failDescription: 
+      _successFamousIncrease: 20
+      _successStressDecrease: -20
+      _successSubscriberIncrease: 20
+      _failFamousIncrease: -20
+      _failStressDecrease: 20
+      _failSubscriberIncrease: -20
+    _leftCommentData:
       _successChance: 45
-      _choiceComment: fc
-      _successComment: fs
-      _successDescription: fs
-      _failComment: ff
-      _failDescription: ff
-      _successFamousIncrease: 5
-      _successStressDecrease: 5
-      _successSubscriberIncrease: 5
-      _failFamousIncrease: 5
-      _failStressDecrease: 5
-      _failSubscriberIncrease: 5
+      _choiceComment: 
+      _successComment: 
+      _successDescription: 
+      _failComment: 
+      _failDescription: 
+      _successFamousIncrease: 20
+      _successStressDecrease: -20
+      _successSubscriberIncrease: 20
+      _failFamousIncrease: -20
+      _failStressDecrease: 20
+      _failSubscriberIncrease: -20
+  - _index: 2
+    _choiceText: fgljfglfgjl
+    _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    _rightCommentData:
+      _successChance: 23
+      _choiceComment: 
+      _successComment: 
+      _successDescription: 
+      _failComment: 
+      _failDescription: 
+      _successFamousIncrease: 20
+      _successStressDecrease: -20
+      _successSubscriberIncrease: 20
+      _failFamousIncrease: -20
+      _failStressDecrease: 20
+      _failSubscriberIncrease: -20
+    _leftCommentData:
+      _successChance: 66
+      _choiceComment: 
+      _successComment: 
+      _successDescription: 
+      _failComment: 
+      _failDescription: 
+      _successFamousIncrease: 20
+      _successStressDecrease: -20
+      _successSubscriberIncrease: 20
+      _failFamousIncrease: -20
+      _failStressDecrease: 20
+      _failSubscriberIncrease: -20
   _storyPresenter: {fileID: 110028768}
   _playerPresenter: {fileID: 387522991}
   _curStoryData:
     _index: 0
     _choiceText: 
     _choiceSprite: {fileID: 0}
-    _failCommentModel:
+    _rightCommentData:
       _successChance: 0
       _choiceComment: 
       _successComment: 
@@ -1952,7 +1954,7 @@ MonoBehaviour:
       _failFamousIncrease: 0
       _failStressDecrease: 0
       _failSubscriberIncrease: 0
-    _successCommentModel:
+    _leftCommentData:
       _successChance: 0
       _choiceComment: 
       _successComment: 
@@ -3426,11 +3428,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866e957cc7b4fd44c91755f181499a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftSelectChanceGroup: {fileID: 1148274015}
-  rightSelectChanceGroup: {fileID: 756960834}
-  leftChoiceResultGroup: {fileID: 1823520917}
-  rightChoiceResultGroup: {fileID: 1221231367}
-  choiceChildGroup: {fileID: 1151477157}
+  _leftSelectChanceGroup: {fileID: 1148274015}
+  _rightSelectChanceGroup: {fileID: 756960834}
+  _leftChoiceResultGroup: {fileID: 1823520917}
+  _rightChoiceResultGroup: {fileID: 1221231367}
+  _choiceChildGroup: {fileID: 1151477157}
+  _storyModel: {fileID: 110028769}
   canMove: 1
 --- !u!1 &1909667941
 GameObject:

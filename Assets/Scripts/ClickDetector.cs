@@ -15,8 +15,6 @@ public class ClickDetector : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             _choiceChildGroup.SetActive(true);
-            //_leftSelectChanceGroup.SetActive(true);
-            //_rightSelectChanceGroup.SetActive(true);
 
             _leftChoiceResultGroup.SetActive(false);
             _rightChoiceResultGroup.SetActive(false);
