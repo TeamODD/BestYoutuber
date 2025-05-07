@@ -11,6 +11,8 @@ public class StoryPresenter : MonoBehaviour
     [SerializeField] private ChoiceResultView _choiceResultView;
     [SerializeField] private StoryModel _storyModel;
 
+    [SerializeField] private PlayerModel _playerModel; //PlayerModel 연결
+
     [SerializeField] private FingerDetector _fingerDetector;
 
     public void SetNewStory(StoryData story)
@@ -37,22 +39,32 @@ public class StoryPresenter : MonoBehaviour
         {
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultCommentText, story.LeftCommentData.SuccessComment);
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultDescriptionText, story.LeftCommentData.SuccessDescription);
+
+            _playerModel.UpdatePlayerStress(story.LeftCommentData.SuccessStressDecrease);
         }
         else
         {
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultCommentText, story.LeftCommentData.FailComment);
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultDescriptionText, story.LeftCommentData.FailDescription);
+            _playerModel.UpdatePlayerStress(story.LeftCommentData.FailStressDecrease);
         }
 
         if (_storyModel.RightSuccess)
         {
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultCommentText, story.RightCommentData.SuccessComment);
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultDescriptionText, story.RightCommentData.SuccessDescription);
+            _playerModel.UpdatePlayerStress(story.RightCommentData.SuccessStressDecrease);
         }
         else
         {
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultCommentText, story.RightCommentData.FailComment);
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultDescriptionText, story.RightCommentData.FailDescription);
+            _playerModel.UpdatePlayerStress(story.RightCommentData.FailStressDecrease);
         }
+    }
+
+    public void SetPlayerModel(PlayerModel model)
+    {
+        _playerModel = model;
     }
 }

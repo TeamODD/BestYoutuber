@@ -9,6 +9,8 @@ public class StageManager : MonoBehaviour
     [SerializeField] private StoryPresenter _storyPresenter;
     [SerializeField] private PlayerPresenter _playerPresenter;
 
+    [SerializeField] private PlayerModel _playerModel;   //PlayerModel 연결 추가
+         
     [SerializeField] private StoryData _curStoryData;
     public StoryData CurStoryData=> _curStoryData;
 
@@ -19,6 +21,7 @@ public class StageManager : MonoBehaviour
 
     private void Start()
     {
+        _storyPresenter.SetPlayerModel(_playerModel);
         GameStart();
     }
 

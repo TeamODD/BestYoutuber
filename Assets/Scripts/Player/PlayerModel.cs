@@ -9,41 +9,36 @@ public class PlayerModel : MonoBehaviour
     [SerializeField] private int _famous;
     [SerializeField] private int _subscriber;
 
+    public int PreviousStress = 100;
     public event Action<int> OnStressChanged;
     public event Action<int> OnFamousChanged;
     public event Action<int> OnSubscriberChanged;
 
+    public void IncreaseStress(int value)
+    {
+        UpdatePlayerStress(value);
+    }
+
+    public void DecreaseStress(int value)
+    {
+        UpdatePlayerStress(-value);
+    }
+
     public void UpdatePlayerStress(int value)
     {
-        if (_stress + value < 0)
-            _stress = 0;
-        else if (_stress + value > 100)
-            _stress = 100;
-        else
-            _stress += value;
-
-        OnStressChanged.Invoke(_stress);
+        _stress = Mathf.Clamp(_stress + value, 0, 100);
+        OnStressChanged?.Invoke(_stress);
     }
+
     public void UpdatePlayerFamous(int value)
     {
-        if (_famous + value < 0)
-            _famous = 0;
-        else if (_famous + value > 100)
-            _famous = 100;
-        else
-            _famous += value;
-
-        OnFamousChanged.Invoke(_famous);
+        _famous = Mathf.Clamp(_famous + value, 0, 100);
+        OnFamousChanged?.Invoke(_famous);
     }
+
     public void UpdatePlayerSubscriber(int value)
     {
-        if (_subscriber + value < 0)
-            _subscriber = 0;
-        else if (_subscriber + value > 100)
-            _subscriber = 100;
-        else
-            _subscriber += value;
-
-        OnSubscriberChanged.Invoke(_subscriber);
-    }   
+        _subscriber = Mathf.Clamp(_subscriber + value, 0, 100);
+        OnSubscriberChanged?.Invoke(_subscriber);
+    }
 }
