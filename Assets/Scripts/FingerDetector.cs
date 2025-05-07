@@ -51,6 +51,7 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             _storyModel.UpdatePlayerUI(true);
             _leftChoiceResultGroup.SetActive(true);
             _choiceChildGroup.SetActive(false);
+            rectTransform.localEulerAngles = Vector3.zero;
             canMove = false;
         }
         else if(targetZRotation < -20f)
@@ -58,6 +59,7 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             _storyModel.UpdatePlayerUI(false);
             _rightChoiceResultGroup.SetActive(true);
             _choiceChildGroup.SetActive(false);
+            rectTransform.localEulerAngles = Vector3.zero;
             canMove = false;
         }
 
