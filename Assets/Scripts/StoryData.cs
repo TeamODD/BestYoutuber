@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-[System.Serializable]
-public class StoryData
+[CreateAssetMenu(fileName = "StoryData", menuName = "Story/StoryData")]
+public class StoryData : ScriptableObject
 {
     [SerializeField] private int _index;
     [SerializeField] private string _choiceText;

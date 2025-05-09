@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+//[CreateAssetMenu(fileName = "CommentData", menuName = "Story/CommentData")]
 [System.Serializable]
 public class CommentData
 {

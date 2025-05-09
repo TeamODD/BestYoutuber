@@ -5,13 +5,13 @@ public class StageManager : MonoBehaviour
 {
     public static StageManager instance;
 
-    [SerializeField] private StoryData[] _storyModels;
+    [SerializeField] private StoryData[] _storyDatas;
     [SerializeField] private StoryPresenter _storyPresenter;
     [SerializeField] private PlayerPresenter _playerPresenter;
 
     [SerializeField] private PlayerModel _playerModel;   //PlayerModel 연결 추가
          
-    [SerializeField] private StoryData _curStoryData;
+    private StoryData _curStoryData;
     public StoryData CurStoryData=> _curStoryData;
 
     private void Awake()
@@ -21,17 +21,17 @@ public class StageManager : MonoBehaviour
 
     private void Start()
     {
-        _storyPresenter.SetPlayerModel(_playerModel);
         GameStart();
     }
 
     public void GameStart()
     {
-        _storyPresenter.SetNewStory(_storyModels[0]);
+        _curStoryData = _storyDatas[0];
+        _storyPresenter.SetNewStory(_curStoryData);
     }
     public void SetNewStory()
     {
-        _curStoryData = _storyModels[_curStoryData.Index + 1];
+        _curStoryData = _storyDatas[_curStoryData.Index + 1];
         _storyPresenter.SetNewStory(_curStoryData);
     }
 }

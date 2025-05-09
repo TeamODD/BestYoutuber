@@ -168,7 +168,6 @@ MonoBehaviour:
   _choiceSelectView: {fileID: 1136510872}
   _choiceResultView: {fileID: 1892324572}
   _storyModel: {fileID: 110028769}
-  _playerModel: {fileID: 1783508168}
   _fingerDetector: {fileID: 1895494936}
 --- !u!114 &110028769
 MonoBehaviour:
@@ -1984,127 +1983,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e617823bf6ce5084092d8081e4d587a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _storyModels:
-  - _index: 0
-    _choiceText: adaghfdh
-    _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    _rightCommentData:
-      _successChance: 76
-      _choiceComment: 
-      _successComment: 
-      _successDescription: 
-      _failComment: 
-      _failDescription: 
-      _successFamousIncrease: 10
-      _successStressDecrease: -10
-      _successSubscriberIncrease: 10
-      _failFamousDecrease: -10
-      _failStressIncrease: 10
-      _failSubscriberDecrease: -10
-    _leftCommentData:
-      _successChance: 35
-      _choiceComment: 
-      _successComment: 
-      _successDescription: 
-      _failComment: 
-      _failDescription: 
-      _successFamousIncrease: 10
-      _successStressDecrease: -30
-      _successSubscriberIncrease: 10
-      _failFamousDecrease: -10
-      _failStressIncrease: 30
-      _failSubscriberDecrease: -10
-  - _index: 1
-    _choiceText: dgjdgkhdfkhdfk
-    _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    _rightCommentData:
-      _successChance: 86
-      _choiceComment: 
-      _successComment: 
-      _successDescription: 
-      _failComment: 
-      _failDescription: 
-      _successFamousIncrease: 20
-      _successStressDecrease: -20
-      _successSubscriberIncrease: 20
-      _failFamousDecrease: -20
-      _failStressIncrease: 20
-      _failSubscriberDecrease: -20
-    _leftCommentData:
-      _successChance: 45
-      _choiceComment: 
-      _successComment: 
-      _successDescription: 
-      _failComment: 
-      _failDescription: 
-      _successFamousIncrease: 20
-      _successStressDecrease: -20
-      _successSubscriberIncrease: 20
-      _failFamousDecrease: -20
-      _failStressIncrease: 20
-      _failSubscriberDecrease: -20
-  - _index: 2
-    _choiceText: fgljfglfgjl
-    _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    _rightCommentData:
-      _successChance: 23
-      _choiceComment: 
-      _successComment: 
-      _successDescription: 
-      _failComment: 
-      _failDescription: 
-      _successFamousIncrease: 20
-      _successStressDecrease: -20
-      _successSubscriberIncrease: 20
-      _failFamousDecrease: -20
-      _failStressIncrease: 20
-      _failSubscriberDecrease: -20
-    _leftCommentData:
-      _successChance: 66
-      _choiceComment: 
-      _successComment: 
-      _successDescription: 
-      _failComment: 
-      _failDescription: 
-      _successFamousIncrease: 20
-      _successStressDecrease: -20
-      _successSubscriberIncrease: 20
-      _failFamousDecrease: -20
-      _failStressIncrease: 20
-      _failSubscriberDecrease: -20
+  _storyDatas:
+  - {fileID: 11400000, guid: 38fd45e224ec99044a5ac60f470262a6, type: 2}
+  - {fileID: 11400000, guid: 356b3555cf8991f4e97e816bc85f0e44, type: 2}
+  - {fileID: 11400000, guid: ecd14c2543c939143855c5f55a64590c, type: 2}
+  - {fileID: 11400000, guid: 9d01e23f9051e0c45ae69a7474c7f69d, type: 2}
+  - {fileID: 11400000, guid: 26273a151a465cd4b854b82da0ee123f, type: 2}
   _storyPresenter: {fileID: 110028768}
   _playerPresenter: {fileID: 387522991}
   _playerModel: {fileID: 1783508168}
-  _curStoryData:
-    _index: 0
-    _choiceText: 
-    _choiceSprite: {fileID: 0}
-    _rightCommentData:
-      _successChance: 0
-      _choiceComment: 
-      _successComment: 
-      _successDescription: 
-      _failComment: 
-      _failDescription: 
-      _successFamousIncrease: 0
-      _successStressDecrease: 0
-      _successSubscriberIncrease: 0
-      _failFamousDecrease: 0
-      _failStressIncrease: 0
-      _failSubscriberDecrease: 0
-    _leftCommentData:
-      _successChance: 0
-      _choiceComment: 
-      _successComment: 
-      _successDescription: 
-      _failComment: 
-      _failDescription: 
-      _successFamousIncrease: 0
-      _successStressDecrease: 0
-      _successSubscriberIncrease: 0
-      _failFamousDecrease: 0
-      _failStressIncrease: 0
-      _failSubscriberDecrease: 0
 --- !u!1 &1381655176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,7 +3094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _presenter: {fileID: 387522991}
-  _stress: 0
+  _stress: 100
   _famous: 0
   _subscriber: 0
 --- !u!4 &1783508169
