@@ -8,8 +8,6 @@ public class StageManager : MonoBehaviour
     [SerializeField] private StoryData[] _storyDatas;
     [SerializeField] private StoryPresenter _storyPresenter;
     [SerializeField] private PlayerPresenter _playerPresenter;
-
-    [SerializeField] private PlayerModel _playerModel;   //PlayerModel 연결 추가
          
     private StoryData _curStoryData;
     public StoryData CurStoryData=> _curStoryData;
