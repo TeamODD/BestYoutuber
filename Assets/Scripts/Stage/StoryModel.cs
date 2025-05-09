@@ -38,9 +38,9 @@ public class StoryModel : MonoBehaviour
             }
             else
             {
-                _playerModel.UpdatePlayerFamous(storyData.LeftCommentData.FailFamousIncrease);
-                _playerModel.UpdatePlayerStress(storyData.LeftCommentData.FailStressDecrease);
-                _playerModel.UpdatePlayerSubscriber(storyData.LeftCommentData.FailSubscriberIncrease);
+                _playerModel.UpdatePlayerFamous(storyData.LeftCommentData.FailFamousDecrease);
+                _playerModel.UpdatePlayerStress(storyData.LeftCommentData.FailStressIncrease);
+                _playerModel.UpdatePlayerSubscriber(storyData.LeftCommentData.FailSubscriberDecrease);
             }
         }
         else
@@ -53,9 +53,9 @@ public class StoryModel : MonoBehaviour
             }
             else
             {
-                _playerModel.UpdatePlayerFamous(storyData.RightCommentData.FailFamousIncrease);
-                _playerModel.UpdatePlayerStress(storyData.RightCommentData.FailStressDecrease);
-                _playerModel.UpdatePlayerSubscriber(storyData.RightCommentData.FailSubscriberIncrease);
+                _playerModel.UpdatePlayerFamous(storyData.RightCommentData.FailFamousDecrease);
+                _playerModel.UpdatePlayerStress(storyData.RightCommentData.FailStressIncrease);
+                _playerModel.UpdatePlayerSubscriber(storyData.RightCommentData.FailSubscriberDecrease);
             }
         }
     }

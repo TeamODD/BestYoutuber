@@ -39,14 +39,13 @@ public class StoryPresenter : MonoBehaviour
         {
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultCommentText, story.LeftCommentData.SuccessComment);
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultDescriptionText, story.LeftCommentData.SuccessDescription);
-
             _playerModel.UpdatePlayerStress(story.LeftCommentData.SuccessStressDecrease);
         }
         else
         {
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultCommentText, story.LeftCommentData.FailComment);
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultDescriptionText, story.LeftCommentData.FailDescription);
-            _playerModel.UpdatePlayerStress(story.LeftCommentData.FailStressDecrease);
+            _playerModel.UpdatePlayerStress(story.LeftCommentData.FailStressIncrease);
         }
 
         if (_storyModel.RightSuccess)
@@ -59,7 +58,7 @@ public class StoryPresenter : MonoBehaviour
         {
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultCommentText, story.RightCommentData.FailComment);
             _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultDescriptionText, story.RightCommentData.FailDescription);
-            _playerModel.UpdatePlayerStress(story.RightCommentData.FailStressDecrease);
+            _playerModel.UpdatePlayerStress(story.RightCommentData.FailStressIncrease);
         }
     }
 

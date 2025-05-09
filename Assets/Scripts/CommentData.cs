@@ -17,9 +17,9 @@ public class CommentData
     [SerializeField] private int _successStressDecrease;
     [SerializeField] private int _successSubscriberIncrease;
 
-    [SerializeField] private int _failFamousIncrease;
-    [SerializeField] private int _failStressDecrease;
-    [SerializeField] private int _failSubscriberIncrease;
+    [SerializeField] private int _failFamousDecrease;
+    [SerializeField] private int _failStressIncrease;
+    [SerializeField] private int _failSubscriberDecrease;
 
     public int SuccessChance => _successChance;
     public string ChoiceComment => _choiceComment;
@@ -34,8 +34,8 @@ public class CommentData
     public int SuccessStressDecrease => _successStressDecrease;
     public int SuccessSubscriberIncrease => _successSubscriberIncrease;
 
-    public int FailFamousIncrease => _failFamousIncrease;
-    public int FailStressDecrease => _failStressDecrease;
-    public int FailSubscriberIncrease => _failSubscriberIncrease;
+    public int FailFamousDecrease => _failFamousDecrease;
+    public int FailStressIncrease => _failStressIncrease;
+    public int FailSubscriberDecrease => _failSubscriberDecrease;
 
 }

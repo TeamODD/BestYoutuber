@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1998,9 +1998,9 @@ MonoBehaviour:
       _successFamousIncrease: 10
       _successStressDecrease: -10
       _successSubscriberIncrease: 10
-      _failFamousIncrease: -10
-      _failStressDecrease: 10
-      _failSubscriberIncrease: -10
+      _failFamousDecrease: -10
+      _failStressIncrease: 10
+      _failSubscriberDecrease: -10
     _leftCommentData:
       _successChance: 35
       _choiceComment: 
@@ -2011,9 +2011,9 @@ MonoBehaviour:
       _successFamousIncrease: 10
       _successStressDecrease: -30
       _successSubscriberIncrease: 10
-      _failFamousIncrease: -10
-      _failStressDecrease: 10
-      _failSubscriberIncrease: -10
+      _failFamousDecrease: -10
+      _failStressIncrease: 30
+      _failSubscriberDecrease: -10
   - _index: 1
     _choiceText: dgjdgkhdfkhdfk
     _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
@@ -2027,9 +2027,9 @@ MonoBehaviour:
       _successFamousIncrease: 20
       _successStressDecrease: -20
       _successSubscriberIncrease: 20
-      _failFamousIncrease: -20
-      _failStressDecrease: 20
-      _failSubscriberIncrease: -20
+      _failFamousDecrease: -20
+      _failStressIncrease: 20
+      _failSubscriberDecrease: -20
     _leftCommentData:
       _successChance: 45
       _choiceComment: 
@@ -2040,9 +2040,9 @@ MonoBehaviour:
       _successFamousIncrease: 20
       _successStressDecrease: -20
       _successSubscriberIncrease: 20
-      _failFamousIncrease: -20
-      _failStressDecrease: 20
-      _failSubscriberIncrease: -20
+      _failFamousDecrease: -20
+      _failStressIncrease: 20
+      _failSubscriberDecrease: -20
   - _index: 2
     _choiceText: fgljfglfgjl
     _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
@@ -2056,9 +2056,9 @@ MonoBehaviour:
       _successFamousIncrease: 20
       _successStressDecrease: -20
       _successSubscriberIncrease: 20
-      _failFamousIncrease: -20
-      _failStressDecrease: 20
-      _failSubscriberIncrease: -20
+      _failFamousDecrease: -20
+      _failStressIncrease: 20
+      _failSubscriberDecrease: -20
     _leftCommentData:
       _successChance: 66
       _choiceComment: 
@@ -2069,9 +2069,9 @@ MonoBehaviour:
       _successFamousIncrease: 20
       _successStressDecrease: -20
       _successSubscriberIncrease: 20
-      _failFamousIncrease: -20
-      _failStressDecrease: 20
-      _failSubscriberIncrease: -20
+      _failFamousDecrease: -20
+      _failStressIncrease: 20
+      _failSubscriberDecrease: -20
   _storyPresenter: {fileID: 110028768}
   _playerPresenter: {fileID: 387522991}
   _playerModel: {fileID: 1783508168}
@@ -2089,9 +2089,9 @@ MonoBehaviour:
       _successFamousIncrease: 0
       _successStressDecrease: 0
       _successSubscriberIncrease: 0
-      _failFamousIncrease: 0
-      _failStressDecrease: 0
-      _failSubscriberIncrease: 0
+      _failFamousDecrease: 0
+      _failStressIncrease: 0
+      _failSubscriberDecrease: 0
     _leftCommentData:
       _successChance: 0
       _choiceComment: 
@@ -2102,9 +2102,9 @@ MonoBehaviour:
       _successFamousIncrease: 0
       _successStressDecrease: 0
       _successSubscriberIncrease: 0
-      _failFamousIncrease: 0
-      _failStressDecrease: 0
-      _failSubscriberIncrease: 0
+      _failFamousDecrease: 0
+      _failStressIncrease: 0
+      _failSubscriberDecrease: 0
 --- !u!1 &1381655176
 GameObject:
   m_ObjectHideFlags: 0
