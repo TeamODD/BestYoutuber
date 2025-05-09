@@ -8,10 +8,6 @@ public class PlayerPresenter : MonoBehaviour
     [SerializeField] private PlayerView _view;
     [SerializeField] private PlayerModel _model;
 
-    // private Color originalColor;
-    // private Color stressIncreaseColor = new Color(0.18f, 0.55f, 0.25f); // 초록색
-    // private Color stressDecreaseColor = new Color(0.10f, 0.23f, 0.34f); // 파란색
-
     private void Awake()
     {
         _model.OnStressChanged += UpdatePlayerStress;
@@ -19,12 +15,12 @@ public class PlayerPresenter : MonoBehaviour
         _model.OnSubscriberChanged += UpdatePlayerSubscriber;
     }
 
-    // public IEnumerator ChangeColorCoroutine(Image image, Color targetColor)
-    // {
-    //     image.color = targetColor;
-    //     yield return new WaitForSeconds(0.3f);
-    //     image.color = originalColor;
-    // }
+    public IEnumerator ChangeColorCoroutine(Image image, Color targetColor)
+    {
+        image.color = targetColor;
+        yield return new WaitForSeconds(0.3f);
+        image.color = originalColor;
+    }
 
     public void UpdatePlayerFamous(int value)
     {
@@ -35,15 +31,6 @@ public class PlayerPresenter : MonoBehaviour
     public void UpdatePlayerSubscriber(int value)
     {
         TextMeshProUGUI tmp = _view.GetTmp((int)PlayerView.Tmps.SubscriberText);
-        tmp.text = value.ToString();
-    }
-
-    public void UpdatePlayerStress(int value) // 이미지 stress 불러오고 fiillamount 값 100f로 지정 TMP StressText 가져와서 값지정 색상변경
-    {
-        Image image = _view.GetImage((int)PlayerView.Images.StressImage);
-        image.fillAmount = value / 100.0f;
-
-        TextMeshProUGUI tmp = _view.GetTmp((int)PlayerView.Tmps.StressText);
         tmp.text = value.ToString();
     }
 }

@@ -479,7 +479,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _presenter: {fileID: 387522991}
-  _view: {fileID: 1909667946}
   _stress: 100
   _famous: 100
   _subscriber: 100
@@ -3208,7 +3207,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _presenter: {fileID: 387522991}
-  _view: {fileID: 1909667946}
   _stress: 0
   _famous: 0
   _subscriber: 0
