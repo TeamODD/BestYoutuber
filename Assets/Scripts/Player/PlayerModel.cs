@@ -28,21 +28,37 @@ public class PlayerModel : MonoBehaviour
         image.color = originalColor;
     }
 
+    private void Update()
+    {
+        // Debug.Log("Stress: " + _stress);
+        // Debug.Log("Famous: " + _famous);
+        // Debug.Log("Subscriber: " + _subscriber);
+    }
+
+
     public void UpdatePlayerStress(int value)
     {
+        //문제점 : 텍스트 넘길때마다 색상이 무조건 변화함. 
+        //하지만 value 값이 0일때는 색상이 변하지 않음
+        var oldStress = _stress;
         _stress = Mathf.Clamp(_stress + value, 0, 100);
-        OnStressChanged?.Invoke(_stress);
         var image = _view.GetImage((int)PlayerView.Images.StressImage);
 
         if (originalColor == default)
             originalColor = image.color;
-        StopAllCoroutines();
-        if (value < 0)
-            StartCoroutine(ChangeColorCoroutine(image, stressDecreaseColor));
-        else if (value > 0)
-            StartCoroutine(ChangeColorCoroutine(image, stressIncreaseColor));
+
+        if (_stress != oldStress)
+        {
+            StopAllCoroutines();
+            if (value < 0)
+                StartCoroutine(ChangeColorCoroutine(image, stressDecreaseColor));
+            else if (value > 0)
+                StartCoroutine(ChangeColorCoroutine(image, stressIncreaseColor));
+        }
+        OnStressChanged?.Invoke(_stress);
         Debug.Log("Stress Update");
-        
+        Debug.Log("Stress: " + _stress);
+        Debug.Log("Value: " + value);
         Debug.Log("Invoke StressChanged");
     }
 
