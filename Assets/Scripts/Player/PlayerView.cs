@@ -50,7 +50,6 @@ public class PlayerView : ViewBase
             StartCoroutine(ChangeColorCoroutine(image, stressDecreaseColor));
         else if (value > _previousStress)
             StartCoroutine(ChangeColorCoroutine(image, stressIncreaseColor));
-        //Debug.Log($"이전:{_previousStress} 변경:{value}");
 
         _previousStress = value;
     }

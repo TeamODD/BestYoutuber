@@ -9,9 +9,16 @@ public class PlayerModel : MonoBehaviour
     [SerializeField] private int _famous;
     [SerializeField] private int _subscriber;
 
+    private int _previousSubscriber;
+
     public event Action<int> OnStressChanged;
     public event Action<int> OnFamousChanged;
     public event Action<int> OnSubscriberChanged;
+
+    private void Start()
+    {
+        _previousSubscriber = _subscriber; 
+    }
 
     public void UpdatePlayerStress(int value)
     {
@@ -29,5 +36,18 @@ public class PlayerModel : MonoBehaviour
     {
         _subscriber = Mathf.Clamp(_subscriber + value, 0, 100);
         OnSubscriberChanged?.Invoke(_subscriber);
+    }
+    
+    public int GetPlayerStress()
+    {
+        return _stress;
+    }
+    public int GetPlayerFamous()
+    {
+        return _famous;
+    }
+    public int GetPlayerSubscriber()
+    {
+        return _subscriber;
     }
 }
