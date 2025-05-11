@@ -26,17 +26,14 @@ public class StorySelector : MonoBehaviour
         _queueDictionary.Add(StoryTierType.Five, new Queue<StoryData>());
         _queueDictionary.Add(StoryTierType.Six, new Queue<StoryData>());
         _queueDictionary.Add(StoryTierType.Seven, new Queue<StoryData>());
-    }
 
-    private void Start()
-    {
-        foreach (var story in _storyDatas1)  _queueDictionary[StoryTierType.One].Enqueue(story);
-        foreach (var story in _storyDatas2)  _queueDictionary[StoryTierType.Two].Enqueue(story);
-        foreach (var story in _storyDatas3)  _queueDictionary[StoryTierType.Three].Enqueue(story);
-        foreach (var story in _storyDatas4)  _queueDictionary[StoryTierType.Four].Enqueue(story);
-        foreach (var story in _storyDatas5)  _queueDictionary[StoryTierType.Five].Enqueue(story);
-        foreach (var story in _storyDatas6)  _queueDictionary[StoryTierType.Six].Enqueue(story);
-        foreach (var story in _storyDatas7)  _queueDictionary[StoryTierType.Seven].Enqueue(story);
+        foreach (var story in _storyDatas1) _queueDictionary[StoryTierType.One].Enqueue(story);
+        foreach (var story in _storyDatas2) _queueDictionary[StoryTierType.Two].Enqueue(story);
+        foreach (var story in _storyDatas3) _queueDictionary[StoryTierType.Three].Enqueue(story);
+        foreach (var story in _storyDatas4) _queueDictionary[StoryTierType.Four].Enqueue(story);
+        foreach (var story in _storyDatas5) _queueDictionary[StoryTierType.Five].Enqueue(story);
+        foreach (var story in _storyDatas6) _queueDictionary[StoryTierType.Six].Enqueue(story);
+        foreach (var story in _storyDatas7) _queueDictionary[StoryTierType.Seven].Enqueue(story);
     }
 
     public StoryData GetStory(int subscriber)
