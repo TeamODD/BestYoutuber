@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System;
-using static UnityEngine.Rendering.DebugUI;
 
 public class PlayerModel : MonoBehaviour
 {
@@ -31,7 +30,7 @@ public class PlayerModel : MonoBehaviour
 
     public void UpdatePlayerSubscriber(int value)
     {
-        _subscriber = Mathf.Clamp(_subscriber + value, 0, 100);
+        _subscriber = Mathf.Clamp(_subscriber + value, 0, 10000000);
         OnSubscriberChanged?.Invoke(_subscriber);
     }
 }

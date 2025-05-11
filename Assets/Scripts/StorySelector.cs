@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class StorySelector : MonoBehaviour
 {
     private enum StoryTierType
     {
@@ -15,7 +15,7 @@ public class Test : MonoBehaviour
     [SerializeField] private StoryData[] _storyDatas6;
     [SerializeField] private StoryData[] _storyDatas7;
 
-    private Dictionary<StoryTierType, Queue<StoryData>> _queueDictionary;
+    private Dictionary<StoryTierType, Queue<StoryData>> _queueDictionary = new Dictionary<StoryTierType, Queue<StoryData>>();
 
     private void Awake()
     {
@@ -42,7 +42,7 @@ public class Test : MonoBehaviour
     public StoryData GetStory(int subscriber)
     {
         StoryTierType curTier = GetStoryTierType(subscriber);
-
+        
         if(_queueDictionary.TryGetValue(curTier, out var storys))
         {
             return storys.Dequeue();

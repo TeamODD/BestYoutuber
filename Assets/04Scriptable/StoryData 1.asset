@@ -16,7 +16,7 @@ MonoBehaviour:
   _choiceText: aaaaaaaaaaaaaaaaaaaaa
   _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   _rightCommentData:
-    _successChance: 50
+    _successChance: 100
     _choiceComment: ChoiceComment
     _successComment: SuccessCommentSuccessComment
     _successDescription: SuccessDescriptionSuccessDescriptionSuccessDescriptionSuccessDescription
@@ -24,7 +24,7 @@ MonoBehaviour:
     _failDescription: FailDescriptionFailDescriptionFailDescriptionFailDescription
     _successFamousIncrease: 20
     _successStressDecrease: -20
-    _successSubscriberIncrease: 20
+    _successSubscriberIncrease: 15000
     _failFamousDecrease: -20
     _failStressIncrease: 20
     _failSubscriberDecrease: -20
