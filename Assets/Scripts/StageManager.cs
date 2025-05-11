@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
-using Stage;
 using UnityEngine;
 
 public class StageManager : MonoBehaviour
@@ -11,17 +10,12 @@ public class StageManager : MonoBehaviour
     [SerializeField] private SubscriberTierGroup[] _subscriberTierGroups;
     
     [Header("Special Milestone Story Data")] 
-    public SpecialStory[] _specialStories;
+    [SerializeField] private SpecialStory[] _specialStories;
 
-    //[SerializeField] private StoryData[] _storyDatas;
+    [SerializeField] private StoryData[] _storyDatas;
     [SerializeField] private StoryPresenter _storyPresenter;
     [SerializeField] private PlayerPresenter _playerPresenter;
     [SerializeField] private PlayerModel _playerModel;
-    
-    [Header("디버그 정보")]
-    [SerializeField] private string _currentTierName = "";
-    [SerializeField] private int _currentSubscribers = 0;
-    [SerializeField] private int _debugAddSubscribers = 100; // 한 번에 추가할 구독자 수
 
     private StoryData _curStoryData;
 
@@ -104,8 +98,6 @@ public class StageManager : MonoBehaviour
             _curStoryData = currentTierGroup.stories[_currentStoryIndex];
             _storyPresenter.SetNewStory(_curStoryData);
         }
-        
-        Debug.Log("Update!!");
     }
 
     private int GetTierIndexForSubscriberCount(int subscribers)
@@ -116,7 +108,6 @@ public class StageManager : MonoBehaviour
             if (subscribers >= tier.minSubscribers && subscribers <= tier.maxSubscribers)
             {
                 return i;
-                Debug.Log("Next Tier");
             }
         }
 
@@ -125,11 +116,13 @@ public class StageManager : MonoBehaviour
 
     public void OnSubscriberCountChanged(int newSubscriberCount)
     {
+        // 먼저 특별 스토리 체크
         if (CheckForSpecialStory(newSubscriberCount))
         {
             return; // 특별 스토리가 있으면 일반 진행 중단
         }
             
+        // 일반 티어 변경 체크
         int oldTierIndex = _currentTierIndex;
         int newTierIndex = GetTierIndexForSubscriberCount(newSubscriberCount);
             
@@ -143,6 +136,8 @@ public class StageManager : MonoBehaviour
         string message = toTier > fromTier
             ? $"Congratuation! {_subscriberTierGroups[toTier].tierName} Tier!"
             : $"{_subscriberTierGroups[toTier].tierName} ";
+
+        Debug.Log(message);
     }
     public void DebugForceTierChange()
     {
