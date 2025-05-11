@@ -7,7 +7,6 @@ public class StageManager : MonoBehaviour
 {
     public static StageManager instance;
 
-
     [Header("Subscriber Story Data")]
     [SerializeField] private SubscriberTierGroup[] _subscriberTierGroups;
     
