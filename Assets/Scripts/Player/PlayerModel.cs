@@ -13,7 +13,6 @@ public class PlayerModel : MonoBehaviour
     public event Action<int> OnStressChanged;
     public event Action<int> OnFamousChanged;
     public event Action<int> OnSubscriberChanged;
-
     public int Stress => _stress;
     public int Famous => _famous;
     public int Subscriber => _subscriber;
