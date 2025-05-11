@@ -12,7 +12,7 @@ public class StageManager : MonoBehaviour
     [SerializeField] private StorySelector _storySelector;
 
     private StoryData _curStoryData;
-    public StoryData CurStoryData=> _curStoryData;
+    public StoryData CurStoryData => _curStoryData;
 
     private void Awake()
     {
