@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class PlayerView : ViewBase
 {
@@ -18,8 +19,7 @@ public class PlayerView : ViewBase
     
     public enum Tmps
     {
-        SubscriberText,
-        StressText      
+        SubscriberText,  
     }
 
     private void Awake()
@@ -28,28 +28,38 @@ public class PlayerView : ViewBase
         Bind<Image>(typeof(Images));
     }
 
-    private IEnumerator ChangeColorCoroutine(Image image, Color targetColor)
+    private IEnumerator ChangeColorCoroutine(Image image, Color targetColor, int amount)
     {
+        float start = image.fillAmount;
+        float end = Mathf.Max(0f, amount) / 100f;
+        float elapsed = 0f;
+
         image.color = targetColor;
-        yield return new WaitForSeconds(0.3f);
+
+        while (elapsed < 0.3f)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / 0.3f;
+            image.fillAmount = Mathf.Lerp(start, end, t);
+            yield return null;
+        }
+
         image.color = originalColor;
+
+        image.fillAmount = end;
     }
 
     public void UpdatePlayerStress(int value)
     {
         Image image = GetImage((int)Images.StressImage);
-        image.fillAmount = value / 100.0f;
-
-        TextMeshProUGUI tmp = GetTmp((int)Tmps.StressText);
-        tmp.text = value.ToString();
 
         originalColor = image.color;
 
         StopAllCoroutines();
         if (value < _previousStress)
-            StartCoroutine(ChangeColorCoroutine(image, stressDecreaseColor));
+            StartCoroutine(ChangeColorCoroutine(image, stressDecreaseColor, value));
         else if (value > _previousStress)
-            StartCoroutine(ChangeColorCoroutine(image, stressIncreaseColor));
+            StartCoroutine(ChangeColorCoroutine(image, stressIncreaseColor, value));
 
         _previousStress = value;
     }

@@ -8,8 +8,8 @@ public class StageManager : MonoBehaviour
     public static StageManager instance;
 
 
-    [Header("Subscriber Story Data")] [SerializeField]
-    private SubscriberTierGroup[] _subscriberTierGroups;
+    [Header("Subscriber Story Data")]
+    [SerializeField] private SubscriberTierGroup[] _subscriberTierGroups;
     
     [Header("Special Milestone Story Data")] 
     public SpecialStory[] _specialStories;
@@ -88,7 +88,7 @@ public class StageManager : MonoBehaviour
     {
         if (_isInSpecialStory)
             return;
-        var _currentSubscribers = _playerModel.GetPlayerSubscriber();
+        var _currentSubscribers = _playerModel.Subscriber;
 
         int newTierIndex = GetTierIndexForSubscriberCount(_currentSubscribers);
 
