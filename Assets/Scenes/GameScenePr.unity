@@ -1983,15 +1983,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e617823bf6ce5084092d8081e4d587a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _storyDatas:
-  - {fileID: 11400000, guid: 38fd45e224ec99044a5ac60f470262a6, type: 2}
-  - {fileID: 11400000, guid: 356b3555cf8991f4e97e816bc85f0e44, type: 2}
-  - {fileID: 11400000, guid: ecd14c2543c939143855c5f55a64590c, type: 2}
-  - {fileID: 11400000, guid: 9d01e23f9051e0c45ae69a7474c7f69d, type: 2}
-  - {fileID: 11400000, guid: 26273a151a465cd4b854b82da0ee123f, type: 2}
+  _subscriberTierGroups:
+  - tierName: 
+    minSubscribers: 0
+    maxSubscribers: 100
+    stories:
+    - {fileID: 11400000, guid: 356b3555cf8991f4e97e816bc85f0e44, type: 2}
+  - tierName: 
+    minSubscribers: 101
+    maxSubscribers: 1000
+    stories:
+    - {fileID: 11400000, guid: 9d01e23f9051e0c45ae69a7474c7f69d, type: 2}
+    - {fileID: 11400000, guid: 26273a151a465cd4b854b82da0ee123f, type: 2}
+    - {fileID: 11400000, guid: 38fd45e224ec99044a5ac60f470262a6, type: 2}
+    - {fileID: 11400000, guid: 26273a151a465cd4b854b82da0ee123f, type: 2}
+  _specialStories: []
   _storyPresenter: {fileID: 110028768}
   _playerPresenter: {fileID: 387522991}
   _playerModel: {fileID: 1783508168}
+  _currentTierName: 
+  _currentSubscribers: 0
+  _debugAddSubscribers: 100
 --- !u!1 &1381655176
 GameObject:
   m_ObjectHideFlags: 0

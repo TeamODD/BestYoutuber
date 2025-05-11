@@ -18,10 +18,10 @@ MonoBehaviour:
   _rightCommentData:
     _successChance: 50
     _choiceComment: ChoiceComment
-    _successComment: SuccessCommentSuccessComment
-    _successDescription: SuccessDescriptionSuccessDescriptionSuccessDescriptionSuccessDescription
+    _successComment: "\uC131\uACF5\uD588\uC2B5\uB2C8\uB2E4"
+    _successDescription: "\uC131\uACF5\uBB18\uC0AC"
     _failComment: FailComment
-    _failDescription: FailDescriptionFailDescriptionFailDescriptionFailDescription
+    _failDescription: FailedText
     _successFamousIncrease: 20
     _successStressDecrease: -20
     _successSubscriberIncrease: 20
