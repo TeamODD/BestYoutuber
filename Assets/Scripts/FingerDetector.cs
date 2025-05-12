@@ -9,31 +9,39 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     [SerializeField] private GameObject _rightChoiceResultGroup;
     [SerializeField] private GameObject _choiceChildGroup;
     [SerializeField] private StoryModel _storyModel;
+    [SerializeField] private SadEndingManager _endingManager;
 
-    RectTransform _rectTransform;
-    bool _isDragging = false;
-    float _targetZRotation = 0f;
-    float _rotationAmount = 25f;
-    float _sensitivity = 0.2f;
+    private RectTransform _rectTransform;
+    private bool _isDragging = false;
+    private float _targetZRotation = 0f;
+    private float _rotationAmount = 25f;
+    private float _sensitivity = 0.2f;
     public bool canMove;
 
-    // 터치 입력 처리를 위한 추가 변수
+    private bool _endingSwipeMode = false;
     private Vector2 _lastTouchPosition;
 
-    void Awake()
+    private void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
     }
 
-    public void Initialize(GameObject leftSelectChanceGroup, GameObject rightSelectChanceGroup,
-        GameObject leftChoiceResultGroup, GameObject rightChoiceResultGroup, GameObject choiceChildGroup,
-        StoryModel storyModel)
+    public void Initialize(
+        GameObject leftSelectChanceGroup, GameObject rightSelectChanceGroup,
+        GameObject leftChoiceResultGroup, GameObject rightChoiceResultGroup,
+        GameObject choiceChildGroup, StoryModel storyModel)
     {
         _leftChoiceResultGroup = leftChoiceResultGroup;
         _rightChoiceResultGroup = rightChoiceResultGroup;
         _leftSelectChanceGroup = leftSelectChanceGroup;
         _rightSelectChanceGroup = rightSelectChanceGroup;
+        _choiceChildGroup = choiceChildGroup;
         _storyModel = storyModel;
+    }
+
+    public void EnableEndingSwipe(bool enable)
+    {
+        _endingSwipeMode = enable;
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -53,6 +61,19 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     public void OnPointerUp(PointerEventData eventData)
     {
         _isDragging = false;
+
+        if (_endingSwipeMode)
+        {
+            if (_targetZRotation > 20f)
+            {
+                _endingManager.HandleSwipeResult(true); // 왼쪽 → 메인메뉴
+            }
+            else if (_targetZRotation < -20f)
+            {
+                _endingManager.HandleSwipeResult(false); // 오른쪽 → 다시 시작
+            }
+            return;
+        }
 
         if (_targetZRotation > 20f)
         {
@@ -77,9 +98,9 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         _rightSelectChanceGroup.SetActive(false);
     }
 
-    void Update()
+    private void Update()
     {
-        if (canMove)
+        if (canMove || _endingSwipeMode)
         {
             float currentZ = _rectTransform.localEulerAngles.z;
             if (currentZ > 180f) currentZ -= 360f;
@@ -94,23 +115,27 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         Vector2 currentPosition = GetInputPosition();
         Vector2 localInputPos;
 
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(_rectTransform, currentPosition, Camera.main,
-            out localInputPos);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            _rectTransform, currentPosition, Camera.main, out localInputPos);
 
-        if (localInputPos.x < 0)
+        if (!_endingSwipeMode)
         {
-            _leftSelectChanceGroup.SetActive(true);
-            _rightSelectChanceGroup.SetActive(false);
-        }
-        else if (localInputPos.x > 0)
-        {
-            _leftSelectChanceGroup.SetActive(false);
-            _rightSelectChanceGroup.SetActive(true);
+            if (localInputPos.x < 0)
+            {
+                _leftSelectChanceGroup.SetActive(true);
+                _rightSelectChanceGroup.SetActive(false);
+            }
+            else if (localInputPos.x > 0)
+            {
+                _leftSelectChanceGroup.SetActive(false);
+                _rightSelectChanceGroup.SetActive(true);
+            }
         }
 
         float delta = (currentPosition.x - _lastTouchPosition.x) / Screen.width;
 
-        _targetZRotation = Mathf.Clamp(_targetZRotation - delta * _rotationAmount * _sensitivity * 100f,
+        _targetZRotation = Mathf.Clamp(
+            _targetZRotation - delta * _rotationAmount * _sensitivity * 100f,
             -_rotationAmount, _rotationAmount);
 
         _lastTouchPosition = currentPosition;
@@ -119,12 +144,8 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     private Vector2 GetInputPosition()
     {
         if (Input.touchCount > 0)
-        {
             return Input.GetTouch(0).position;
-        }
         else
-        {
             return Input.mousePosition;
-        }
     }
 }

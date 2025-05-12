@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class StoryModel : MonoBehaviour
 {
+    [SerializeField] private EndingConditionManager _endingManager;
     [SerializeField] private StoryPresenter _presenter;
     [SerializeField] private PlayerModel _playerModel;
 
@@ -58,6 +59,7 @@ public class StoryModel : MonoBehaviour
                 _playerModel.UpdatePlayerSubscriber(storyData.RightCommentData.FailSubscriberDecrease);
             }
         }
+        _endingManager.CheckForEnding();
     }
 
     private bool GetResult(int chance)

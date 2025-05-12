@@ -9,12 +9,26 @@ public class PlayerModel : MonoBehaviour
     [SerializeField] private int _famous;
     [SerializeField] private int _subscriber;
 
+    [Header("InitialStatus")]
+    [SerializeField] private int _initialStress = 50;
+    [SerializeField] private int _initialFamous = 50;
+    [SerializeField] private int _initialSubscriber = 100;
+
     public event Action<int> OnStressChanged;
     public event Action<int> OnFamousChanged;
     public event Action<int> OnSubscriberChanged;
+
     public int Stress => _stress;
     public int Famous => _famous;
     public int Subscriber => _subscriber;
+
+    private void Awake()
+    {
+        _stress = Mathf.Clamp(_initialStress, 0, 100);
+        _famous = Mathf.Clamp(_initialFamous, 0, 100);
+        _subscriber = Mathf.Clamp(_initialSubscriber, 0, 10000000);
+    }
+
 
     public void UpdatePlayerStress(int value)
     {
@@ -30,7 +44,10 @@ public class PlayerModel : MonoBehaviour
 
     public void UpdatePlayerSubscriber(int value)
     {
+        Debug.Log($"[PlayerModel] 실제 변경된 Subscriber = {_subscriber} (InstanceID = {this.GetInstanceID()})");
+        Debug.Log($"[PlayerModel] Subscriber 변화 요청: +{value}, 이전 값: {_subscriber}");
         _subscriber = Mathf.Clamp(_subscriber + value, 0, 10000000);
+        Debug.Log($"[PlayerModel] 변경 후 Subscriber: {_subscriber}");
         OnSubscriberChanged?.Invoke(_subscriber);
     }
 }
