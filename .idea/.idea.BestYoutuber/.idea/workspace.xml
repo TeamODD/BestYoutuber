@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da7d57f1-6056-4b5a-867a-4c5db2af75e7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StageManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StorySelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StorySelector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Font/OnGulip SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Font/OnGulip SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenePr.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenePr.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,20 +33,20 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "SangWon",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.1.1f1\Editor\Unity.exe" />
@@ -111,6 +113,7 @@
       <workItem from="1746873073610" duration="4000" />
       <workItem from="1746975061971" duration="73000" />
       <workItem from="1746975732524" duration="54000" />
+      <workItem from="1747057040897" duration="4007000" />
     </task>
     <servers />
   </component>
