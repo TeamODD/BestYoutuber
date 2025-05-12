@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3927df3b7e3a64bb3e580ad3cc2410, type: 3}
   m_Name: Famous0
   m_EditorClassIdentifier: 
-  EndingType: 0
-  EndingImage: {fileID: 0}
+  EndingType: 3
+  EndingImage: {fileID: 7811920421843427267, guid: 751fb8869d4dd3443a54e3c31c64f971, type: 3}
+  Description: Famous0

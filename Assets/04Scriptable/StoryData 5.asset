@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
   m_Name: StoryData 5
   m_EditorClassIdentifier: 
-  _index: 4
+  _index: 5
   _choiceText: aaaaaaaaaaaaaaaaaaaaa
   _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   _rightCommentData:
-    _successChance: 100
+    _successChance: 9
     _choiceComment: ChoiceComment
     _successComment: SuccessCommentSuccessComment
     _successDescription: SuccessDescriptionSuccessDescriptionSuccessDescriptionSuccessDescription
     _failComment: FailComment
     _failDescription: FailDescriptionFailDescriptionFailDescriptionFailDescription
     _successFamousIncrease: 20
-    _successStressDecrease: -20
+    _successStressDecrease: 22
     _successSubscriberIncrease: 50000
-    _failFamousDecrease: -20
+    _failFamousDecrease: 22
     _failStressIncrease: 20
-    _failSubscriberDecrease: -20
+    _failSubscriberDecrease: 22
   _leftCommentData:
     _successChance: 50
     _choiceComment: ChoiceComment
@@ -36,8 +36,8 @@ MonoBehaviour:
     _failComment: FailComment
     _failDescription: FailDescriptionFailDescriptionFailDescriptionFailDescription
     _successFamousIncrease: 20
-    _successStressDecrease: -20
+    _successStressDecrease: 22
     _successSubscriberIncrease: 20
-    _failFamousDecrease: -20
+    _failFamousDecrease: 22
     _failStressIncrease: 20
-    _failSubscriberDecrease: -20
+    _failSubscriberDecrease: 22

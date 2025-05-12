@@ -16,6 +16,8 @@ public class EndingConditionManager : MonoBehaviour
 
     public void CheckForEnding()
     {
+        Debug.Log($"[EndingConditionManager] 확인 시작: _playerModel.InstanceID = {_playerModel.GetInstanceID()}");
+        Debug.Log($"[EndingConditionManager] Stress: {_playerModel.Stress}, Famous: {_playerModel.Famous}, Subscriber: {_playerModel.Subscriber}");
         if (_hasEnded)
         {
             Debug.Log("CheckForEnding skipped: already ended.");

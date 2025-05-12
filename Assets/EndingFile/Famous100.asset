@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Famous100
   m_EditorClassIdentifier: 
   EndingType: 0
-  EndingImage: {fileID: 0}
+  EndingImage: {fileID: 5182223560938258404, guid: dbc850c8bfe08e24a99941f3b5a54cd5, type: 3}
+  Description: Famous100

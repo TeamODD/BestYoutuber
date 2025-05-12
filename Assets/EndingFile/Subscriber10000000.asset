@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Subscriber10000000
   m_EditorClassIdentifier: 
   EndingType: 4
-  EndingImage: {fileID: 0}
+  EndingImage: {fileID: -3768254793138427525, guid: c854c4e60b2030747ab9655745de1663, type: 3}
+  Description: Sub

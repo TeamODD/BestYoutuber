@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Stress100
   m_EditorClassIdentifier: 
   EndingType: 0
-  EndingImage: {fileID: 0}
+  EndingImage: {fileID: -3221648745111194104, guid: fbc0a394fe4e65243a990c440a9985cd, type: 3}
+  Description: Stress100
