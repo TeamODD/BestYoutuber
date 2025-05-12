@@ -122,21 +122,12 @@ TextureImporter:
       name: TextImage_0
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
         x: 318
         y: 1279
         width: 1373
         height: 535
       alignment: 0
       pivot: {x: 0, y: 0}
-=======
-        x: 320
-        y: 1283
-        width: 1358
-        height: 531
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,21 +144,12 @@ TextureImporter:
       name: TextImage_1
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
         x: 133
         y: 453
         width: 1285
         height: 631
       alignment: 0
       pivot: {x: 0, y: 0}
-=======
-        x: 126
-        y: 446
-        width: 1733
-        height: 631
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -180,7 +162,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-<<<<<<< Updated upstream
     - serializedVersion: 2
       name: TextImage_2
       rect:
@@ -203,17 +184,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-=======
->>>>>>> Stashed changes
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
     spriteID: 
-=======
-    spriteID: 5d25c9436601361428489e3cdd80ef1f
->>>>>>> Stashed changes
     internalID: 0
     vertices: []
     indices: 
@@ -222,13 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< Updated upstream
     nameFileIdTable: {}
-=======
-    nameFileIdTable:
-      TextImage_0: 3062265120500472512
-      TextImage_1: 8418630818194862580
->>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
