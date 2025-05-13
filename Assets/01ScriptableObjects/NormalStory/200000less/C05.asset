@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
-  m_Name: A00
+  m_Name: C05
   m_EditorClassIdentifier: 
   _index: 0
-  _choiceText: "\uC120\uD0DD\uC9C00"
+  _choiceText: "\uC120\uD0DD\uC9C05"
   _choiceSprite: {fileID: 0}
   _rightCommentData:
     _successChance: 50
-    _choiceComment: "\uC624\uB978\uCABD\uC120\uD0DD0"
-    _successComment: "\uC624\uB978\uC131\uACF50"
+    _choiceComment: "\uC624\uB978\uCABD\uC120\uD0DD5"
+    _successComment: "\uC624\uB978\uCABD\uC131\uACF55"
     _successSprite: {fileID: 0}
-    _failComment: "\uC624\uB978\uC2E4\uD3280"
+    _failComment: "\uC624\uB978\uCABD\uC2E4\uD3285"
     _failSprite: {fileID: 0}
     _successFamousIncrease: 0
     _successStressDecrease: 0
@@ -33,10 +33,10 @@ MonoBehaviour:
     _failResultSound: {fileID: 0}
   _leftCommentData:
     _successChance: 50
-    _choiceComment: "\uC67C\uCABD\uC120\uD0DD0"
-    _successComment: "\uC67C\uCABD\uC131\uACF50"
+    _choiceComment: "\uC67C\uCABD\uC120\uD0DD\uC9C05"
+    _successComment: "\uC67C\uCABD\uC131\uACF55"
     _successSprite: {fileID: 0}
-    _failComment: "\uC67C\uCABD\uC2E4\uD3280"
+    _failComment: "\uC67C\uCABD\uC2E4\uD3285"
     _failSprite: {fileID: 0}
     _successFamousIncrease: 0
     _successStressDecrease: 0
