@@ -44,10 +44,7 @@ public class PlayerModel : MonoBehaviour
 
     public void UpdatePlayerSubscriber(int value)
     {
-        Debug.Log($"[PlayerModel] 실제 변경된 Subscriber = {_subscriber} (InstanceID = {this.GetInstanceID()})");
-        Debug.Log($"[PlayerModel] Subscriber 변화 요청: +{value}, 이전 값: {_subscriber}");
         _subscriber = Mathf.Clamp(_subscriber + value, 0, 10000000);
-        Debug.Log($"[PlayerModel] 변경 후 Subscriber: {_subscriber}");
         OnSubscriberChanged?.Invoke(_subscriber);
     }
 }

@@ -24,6 +24,7 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     private void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
+        Debug.Log("[FingerDetector] Awake() 호출됨");
     }
 
     public void Initialize(
@@ -42,17 +43,19 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     public void EnableEndingSwipe(bool enable)
     {
         _endingSwipeMode = enable;
+        Debug.Log($"[FingerDetector] EnableEndingSwipe({enable}) 호출됨");
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         _isDragging = true;
         _lastTouchPosition = GetInputPosition();
+        Debug.Log("[FingerDetector] OnPointerDown - 터치 시작");
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (canMove && _isDragging)
+        if (canMove || _endingSwipeMode)
         {
             HandleDragInput();
         }
@@ -62,40 +65,66 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     {
         _isDragging = false;
 
+        Debug.Log($"[FingerDetector] OnPointerUp 호출 - endingSwipeMode = {_endingSwipeMode}, Z = {_targetZRotation}");
+
         if (_endingSwipeMode)
         {
             if (_targetZRotation > 20f)
             {
-                _endingManager.HandleSwipeResult(true); // 왼쪽 → 메인메뉴
+                Debug.Log("[FingerDetector] → 왼쪽 스와이프 인식");
+                if (_endingManager == null)
+                {
+                    Debug.LogError("[FingerDetector] _endingManager가 연결되지 않았습니다!");
+                }
+                else
+                {
+                    _endingManager.HandleSwipeResult(true);
+                }
             }
             else if (_targetZRotation < -20f)
             {
-                _endingManager.HandleSwipeResult(false); // 오른쪽 → 다시 시작
+                Debug.Log("[FingerDetector] → 오른쪽 스와이프 인식");
+                if (_endingManager == null)
+                {
+                    Debug.LogError("[FingerDetector] _endingManager가 연결되지 않았습니다!");
+                }
+                else
+                {
+                    _endingManager.HandleSwipeResult(false);
+                }
             }
+            else
+            {
+                Debug.Log("[FingerDetector] → 회전 각도가 부족하여 스와이프 실패");
+            }
+
             return;
         }
 
+        // 선택지 모드 처리
         if (_targetZRotation > 20f)
         {
+            Debug.Log("[FingerDetector] 선택지: 왼쪽 선택 실행");
             _storyModel.UpdatePlayerUI(true);
-            _leftChoiceResultGroup.SetActive(true);
-            _choiceChildGroup.SetActive(false);
+            _leftChoiceResultGroup?.SetActive(true);
+            _choiceChildGroup?.SetActive(false);
             _rectTransform.localEulerAngles = Vector3.zero;
             canMove = false;
         }
         else if (_targetZRotation < -20f)
         {
+            Debug.Log("[FingerDetector] 선택지: 오른쪽 선택 실행");
             _storyModel.UpdatePlayerUI(false);
-            _rightChoiceResultGroup.SetActive(true);
-            _choiceChildGroup.SetActive(false);
+            _rightChoiceResultGroup?.SetActive(true);
+            _choiceChildGroup?.SetActive(false);
             _rectTransform.localEulerAngles = Vector3.zero;
             canMove = false;
         }
 
         _targetZRotation = 0f;
 
-        _leftSelectChanceGroup.SetActive(false);
-        _rightSelectChanceGroup.SetActive(false);
+        _leftSelectChanceGroup?.SetActive(false);
+        _rightSelectChanceGroup?.SetActive(false);
     }
 
     private void Update()
@@ -122,13 +151,13 @@ public class FingerDetector : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         {
             if (localInputPos.x < 0)
             {
-                _leftSelectChanceGroup.SetActive(true);
-                _rightSelectChanceGroup.SetActive(false);
+                _leftSelectChanceGroup?.SetActive(true);
+                _rightSelectChanceGroup?.SetActive(false);
             }
             else if (localInputPos.x > 0)
             {
-                _leftSelectChanceGroup.SetActive(false);
-                _rightSelectChanceGroup.SetActive(true);
+                _leftSelectChanceGroup?.SetActive(false);
+                _rightSelectChanceGroup?.SetActive(true);
             }
         }
 
