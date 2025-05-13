@@ -23,34 +23,45 @@ public class StoryPresenter : MonoBehaviour
 
         Image leftImage = _choiceSelectView.GetImage((int)ChoiceSelectView.Images.LeftSelectChanceImage);
         leftImage.fillAmount = story.LeftCommentData.SuccessChance / 100.0f;
-        _choiceSelectView.SetTmpText((int)ChoiceSelectView.Tmps.LeftSelectChanceText, story.LeftCommentData.SuccessChance.ToString("f0"));
+        _choiceSelectView.SetTmpText((int)ChoiceSelectView.Tmps.LeftSelectChanceText,
+            story.LeftCommentData.SuccessChance.ToString("f0"));
 
         Image rightImage = _choiceSelectView.GetImage((int)ChoiceSelectView.Images.RightSelectChanceImage);
         rightImage.fillAmount = story.RightCommentData.SuccessChance / 100.0f;
-        _choiceSelectView.SetTmpText((int)ChoiceSelectView.Tmps.RightSelectChanceText, story.RightCommentData.SuccessChance.ToString("f0"));
+        _choiceSelectView.SetTmpText((int)ChoiceSelectView.Tmps.RightSelectChanceText,
+            story.RightCommentData.SuccessChance.ToString("f0"));
 
         _storyModel.SetLeftSuccess(story.LeftCommentData.SuccessChance);
         _storyModel.SetRightSuccess(story.RightCommentData.SuccessChance);
-  
+
         if (_storyModel.LeftSuccess)
         {
-            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultCommentText, story.LeftCommentData.SuccessComment);
-            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultDescriptionText, story.LeftCommentData.SuccessDescription);
+            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultCommentText,
+                story.LeftCommentData.SuccessComment);
+            _choiceResultView.SetImageSprite((int)ChoiceResultView.Images.LeftSelectChangeImage,
+                story.LeftCommentData.SuccessSprite);
         }
         else
         {
-            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultCommentText, story.LeftCommentData.FailComment);
-            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultDescriptionText, story.LeftCommentData.FailDescription);        }
+            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.LeftResultCommentText,
+                story.LeftCommentData.FailComment);
+            _choiceResultView.SetImageSprite((int)ChoiceResultView.Images.LeftSelectChangeImage,
+                story.LeftCommentData.FailSprite);
+        }
 
         if (_storyModel.RightSuccess)
         {
-            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultCommentText, story.RightCommentData.SuccessComment);
-            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultDescriptionText, story.RightCommentData.SuccessDescription);
+            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultCommentText,
+                story.RightCommentData.SuccessComment);
+            _choiceResultView.SetImageSprite((int)ChoiceResultView.Images.RightSelectChangeImage,
+                story.RightCommentData.SuccessSprite);
         }
         else
         {
-            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultCommentText, story.RightCommentData.FailComment);
-            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultDescriptionText, story.RightCommentData.FailDescription);
+            _choiceResultView.SetTmpText((int)ChoiceResultView.Tmps.RightResultCommentText,
+                story.RightCommentData.FailComment);
+            _choiceResultView.SetImageSprite((int)ChoiceResultView.Images.RightSelectChangeImage,
+                story.RightCommentData.FailSprite);
         }
     }
 }

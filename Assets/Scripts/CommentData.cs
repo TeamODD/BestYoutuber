@@ -8,10 +8,10 @@ public class CommentData
     [SerializeField] private string _choiceComment;
 
     [SerializeField] private string _successComment;
-    [SerializeField] private string _successDescription;
+    [SerializeField] private Sprite _successSprite;
 
     [SerializeField] private string _failComment;
-    [SerializeField] private string _failDescription;
+    [SerializeField] private Sprite _failSprite;
 
     [SerializeField] private int _successFamousIncrease;
     [SerializeField] private int _successStressDecrease;
@@ -25,10 +25,10 @@ public class CommentData
     public string ChoiceComment => _choiceComment;
 
     public string SuccessComment => _successComment;
-    public string SuccessDescription => _successDescription;
+    public Sprite SuccessSprite => _successSprite;
 
     public string FailComment => _failComment;
-    public string FailDescription => _failDescription;
+    public Sprite FailSprite => _failSprite;
 
     public int SuccessFamousIncrease => _successFamousIncrease;
     public int SuccessStressDecrease => _successStressDecrease;

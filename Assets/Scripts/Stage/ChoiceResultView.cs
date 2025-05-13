@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChoiceResultView : ViewBase
 {
@@ -7,12 +8,17 @@ public class ChoiceResultView : ViewBase
     {
         LeftResultCommentText,
         RightResultCommentText,
-        LeftResultDescriptionText,
-        RightResultDescriptionText
+    }
+
+    public enum Images
+    {
+        LeftSelectChangeImage,
+        RightSelectChangeImage,
     }
 
     private void Awake()
     {
         Bind<TextMeshProUGUI>(typeof(Tmps));
+        Bind<Image>(typeof(Images));
     }
 }
