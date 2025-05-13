@@ -25,7 +25,7 @@ MonoBehaviour:
     _successFamousIncrease: 20
     _successStressDecrease: 22
     _successSubscriberIncrease: 15000
-    _failFamousDecrease: 22
+    _failFamousDecrease: 10
     _failStressIncrease: 20
     _failSubscriberDecrease: 22
   _leftCommentData:

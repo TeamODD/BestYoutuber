@@ -177,10 +177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7736a431dbc0c8644a3c325645bb9c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _endingCanvas: {fileID: 1888735111}
-  _endingImage: {fileID: 194711207}
-  _endingDescription: {fileID: 224058414}
-  _fingerDetector: {fileID: 194711209}
 --- !u!1 &110028766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,6 +2184,7 @@ MonoBehaviour:
   _playerPresenter: {fileID: 387522991}
   _playerModel: {fileID: 387522990}
   _storySelector: {fileID: 1260080459}
+  _endingConditionManager: {fileID: 1260080461}
 --- !u!114 &1260080459
 MonoBehaviour:
   m_ObjectHideFlags: 0

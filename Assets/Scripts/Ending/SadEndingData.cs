@@ -5,7 +5,6 @@ public class SadEndingData : ScriptableObject
 {
     public SadEndingType EndingType;
     public Sprite EndingImage;
-
-    [TextArea(3, 10)]
+    public string TargetSceneName;
     public string Description;  
 }

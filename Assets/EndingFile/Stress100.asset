@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndingType: 0
   EndingImage: {fileID: -3221648745111194104, guid: fbc0a394fe4e65243a990c440a9985cd, type: 3}
+  TargetSceneName: Famous0BadScene
   Description: Stress100

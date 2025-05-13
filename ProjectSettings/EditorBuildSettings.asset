@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene0.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Endings/Famous0BadScene.unity
+    guid: 0bb40cb4e5180e643b47592a8d610faa
+  - enabled: 1
+    path: Assets/Scenes/Endings/Stress100BadScene.unity
+    guid: f5ea925ad7f57164abbe06a23936a6da
+  - enabled: 1
+    path: Assets/Scenes/GameScenePr.unity
+    guid: 533826f902480d74a951843079784b40
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: eac84d4bde26b624facde3525cd41157, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

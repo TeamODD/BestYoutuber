@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Famous0
   m_EditorClassIdentifier: 
   EndingType: 3
-  EndingImage: {fileID: 7811920421843427267, guid: 751fb8869d4dd3443a54e3c31c64f971, type: 3}
+  EndingImage: {fileID: 8150177316115412703, guid: e86f088c1531bac48a3f59fa09b20c0f, type: 3}
+  TargetSceneName: Famous0BadScene
   Description: Famous0
