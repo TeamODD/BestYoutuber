@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Managers;
 using TMPro;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class StoryModel : MonoBehaviour
 {
     [SerializeField] private StoryPresenter _presenter;
     [SerializeField] private PlayerModel _playerModel;
-
+    
     private bool _leftSuccess;
     private bool _rightSuccess;
 
@@ -35,12 +36,16 @@ public class StoryModel : MonoBehaviour
                 _playerModel.UpdatePlayerFamous(storyData.LeftCommentData.SuccessFamousIncrease);
                 _playerModel.UpdatePlayerStress(storyData.LeftCommentData.SuccessStressDecrease);
                 _playerModel.UpdatePlayerSubscriber(storyData.LeftCommentData.SuccessSubscriberIncrease);
+                
+                AudioManager.Instance.PlaySfx(storyData.LeftCommentData.SuccessResultSound);
             }
             else
             {
                 _playerModel.UpdatePlayerFamous(storyData.LeftCommentData.FailFamousDecrease);
                 _playerModel.UpdatePlayerStress(storyData.LeftCommentData.FailStressIncrease);
                 _playerModel.UpdatePlayerSubscriber(storyData.LeftCommentData.FailSubscriberDecrease);
+                
+                AudioManager.Instance.PlaySfx(storyData.LeftCommentData.FailResultSound);
             }
         }
         else
@@ -50,12 +55,16 @@ public class StoryModel : MonoBehaviour
                 _playerModel.UpdatePlayerFamous(storyData.RightCommentData.SuccessFamousIncrease);
                 _playerModel.UpdatePlayerStress(storyData.RightCommentData.SuccessStressDecrease);
                 _playerModel.UpdatePlayerSubscriber(storyData.RightCommentData.SuccessSubscriberIncrease);
+                
+                AudioManager.Instance.PlaySfx(storyData.RightCommentData.SuccessResultSound);
             }
             else
             {
                 _playerModel.UpdatePlayerFamous(storyData.RightCommentData.FailFamousDecrease);
                 _playerModel.UpdatePlayerStress(storyData.RightCommentData.FailStressIncrease);
                 _playerModel.UpdatePlayerSubscriber(storyData.RightCommentData.FailSubscriberDecrease);
+                
+                AudioManager.Instance.PlaySfx(storyData.RightCommentData.FailResultSound);
             }
         }
     }

@@ -21,6 +21,10 @@ public class CommentData
     [SerializeField] private int _failStressIncrease;
     [SerializeField] private int _failSubscriberDecrease;
 
+    [SerializeField] private AudioClip _choiceSelectSound;
+    [SerializeField] private AudioClip _successResultSound;
+    [SerializeField] private AudioClip _failResultSound;
+
     public int SuccessChance => _successChance;
     public string ChoiceComment => _choiceComment;
 
@@ -37,5 +41,9 @@ public class CommentData
     public int FailFamousDecrease => _failFamousDecrease;
     public int FailStressIncrease => _failStressIncrease;
     public int FailSubscriberDecrease => _failSubscriberDecrease;
+    
+    public AudioClip ChoiceSelectSound => _choiceSelectSound;
+    public AudioClip SuccessResultSound => _successResultSound;
+    public AudioClip FailResultSound => _failResultSound;
 
 }
