@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: StoryData
   m_EditorClassIdentifier: 
   _index: 0
-  _choiceText: aaaaaaaaaaaaaaaaaaaaa
-  _choiceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  _choiceText: "\uB17C\uB780 \uC0AC\uAC74\uC0AC\uACE0 \uAE30\uC0AC\uAC00 \uB0AC\uC5B4..
+    \uC5B4\uB5BB\uAC8C \uB300\uC751\uD558\uC9C0?"
+  _choiceSprite: {fileID: -3128241189126332704, guid: ec58f0b239480284da0c7ae1879509e1, type: 3}
   _rightCommentData:
     _successChance: 100
-    _choiceComment: ChoiceComment
+    _choiceComment: "\uBB34\uC751\uB2F5\uD55C\uB2E4. "
     _successComment: SuccessCommentSuccessComment
-    _successSprite: {fileID: -4252943357524202713, guid: a74bde1dbb5adaa438b6a10ed4586329, type: 3}
+    _successSprite: {fileID: -2245336038349599158, guid: 01e8debdacacb804d899d59d2d95d317, type: 3}
     _failComment: FailComment
-    _failSprite: {fileID: -4252943357524202713, guid: a74bde1dbb5adaa438b6a10ed4586329, type: 3}
+    _failSprite: {fileID: -2245336038349599158, guid: 01e8debdacacb804d899d59d2d95d317, type: 3}
     _successFamousIncrease: 20
     _successStressDecrease: -20
     _successSubscriberIncrease: 1500
@@ -33,10 +34,10 @@ MonoBehaviour:
     _failResultSound: {fileID: 0}
   _leftCommentData:
     _successChance: 50
-    _choiceComment: ChoiceComment
-    _successComment: SuccessCommentSuccessComment
+    _choiceComment: "\uBC29\uC1A1\uC5D0\uC11C \uBE44\uD310\uD55C\uB2E4. "
+    _successComment: "\uC800\uB7F0 \uBC14\uB2C8\uAC78\uC774 \uB418\uC5C8\uC2B5\uB2C8\uB2E4. "
     _successSprite: {fileID: -2245336038349599158, guid: 01e8debdacacb804d899d59d2d95d317, type: 3}
-    _failComment: FailComment
+    _failComment: "\uC800\uB7F0 \uBC14\uB2C8\uAC78\uC774 \uB418\uC5C8\uC2B5\uB2C8\uB2E4. "
     _failSprite: {fileID: -2245336038349599158, guid: 01e8debdacacb804d899d59d2d95d317, type: 3}
     _successFamousIncrease: 20
     _successStressDecrease: -20

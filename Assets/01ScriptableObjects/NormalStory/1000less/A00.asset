@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: A00
   m_EditorClassIdentifier: 
   _index: 0
-  _choiceText: 
+  _choiceText: "\uC120\uD0DD\uC9C00"
   _choiceSprite: {fileID: 0}
   _rightCommentData:
     _successChance: 0
-    _choiceComment: 
-    _successComment: 
+    _choiceComment: "\uC624\uB978\uCABD\uC120\uD0DD0"
+    _successComment: "\uC624\uB978\uC131\uACF50"
     _successSprite: {fileID: 0}
-    _failComment: 
+    _failComment: "\uC624\uB978\uC2E4\uD3280"
     _failSprite: {fileID: 0}
     _successFamousIncrease: 0
     _successStressDecrease: 0
@@ -33,10 +33,10 @@ MonoBehaviour:
     _failResultSound: {fileID: 0}
   _leftCommentData:
     _successChance: 0
-    _choiceComment: 
-    _successComment: 
+    _choiceComment: "\uC67C\uCABD\uC120\uD0DD0"
+    _successComment: "\uC67C\uCABD\uC131\uACF50"
     _successSprite: {fileID: 0}
-    _failComment: 
+    _failComment: "\uC67C\uCABD\uC2E4\uD3280"
     _failSprite: {fileID: 0}
     _successFamousIncrease: 0
     _successStressDecrease: 0
