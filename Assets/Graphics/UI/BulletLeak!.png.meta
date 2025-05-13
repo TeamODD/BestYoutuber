@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BulletLeak!_0: -1319480716571703023
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
