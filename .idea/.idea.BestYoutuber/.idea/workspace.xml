@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da7d57f1-6056-4b5a-867a-4c5db2af75e7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/UI/BulletLeak!.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/UI/BulletLeak!.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenePr.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenePr.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/StageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/StageManager.cs" afterDir="false" />
-    </list>
+    <list default="true" id="da7d57f1-6056-4b5a-867a-4c5db2af75e7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

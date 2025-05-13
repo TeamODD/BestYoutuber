@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 72066943}
   - component: {fileID: 72066945}
   - component: {fileID: 72066944}
+  - component: {fileID: 72066946}
   m_Layer: 5
   m_Name: RightSelectChangeImage
   m_TagString: Untagged
@@ -194,6 +195,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72066942}
   m_CullTransparentMesh: 1
+--- !u!114 &72066946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72066942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b971c647231a446ab41713417e1a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _choiceChildGroup: {fileID: 1151477157}
+  _leftSelectChanceGroup: {fileID: 1148274015}
+  _rightSelectChanceGroup: {fileID: 756960834}
+  _leftChoiceResultGroup: {fileID: 1823520917}
+  _rightChoiceResultGroup: {fileID: 1221231367}
 --- !u!1 &110028766
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +828,7 @@ GameObject:
   - component: {fileID: 439678247}
   - component: {fileID: 439678249}
   - component: {fileID: 439678248}
+  - component: {fileID: 439678250}
   m_Layer: 5
   m_Name: LeftSelectChangeImage
   m_TagString: Untagged
@@ -874,6 +893,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439678246}
   m_CullTransparentMesh: 1
+--- !u!114 &439678250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439678246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b971c647231a446ab41713417e1a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _choiceChildGroup: {fileID: 1151477157}
+  _leftSelectChanceGroup: {fileID: 1148274015}
+  _rightSelectChanceGroup: {fileID: 756960834}
+  _leftChoiceResultGroup: {fileID: 1823520917}
+  _rightChoiceResultGroup: {fileID: 1221231367}
 --- !u!1 &466947827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,8 +2617,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _storyDatas1:
-  - {fileID: 11400000, guid: 356b3555cf8991f4e97e816bc85f0e44, type: 2}
   - {fileID: 11400000, guid: 38fd45e224ec99044a5ac60f470262a6, type: 2}
+  - {fileID: 11400000, guid: 356b3555cf8991f4e97e816bc85f0e44, type: 2}
+  - {fileID: 11400000, guid: ecd14c2543c939143855c5f55a64590c, type: 2}
   _storyDatas2:
   - {fileID: 11400000, guid: 356b3555cf8991f4e97e816bc85f0e44, type: 2}
   _storyDatas3:

@@ -27,7 +27,7 @@ namespace Managers
 
         public void SetNewStory()
         {
-            Debug.LogError("NewStoryComing");
+            //Debug.LogError("NewStoryComing");
             _curStoryData = _storySelector.GetStory(_playerModel.Subscriber);
             _storyPresenter.SetNewStory(_curStoryData);
         }
