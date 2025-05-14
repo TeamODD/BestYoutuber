@@ -7,8 +7,11 @@ public class EndingSwipe : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private RectTransform _rectTransform;
     private bool _isDragging = false;
     private float _targetZRotation = 0f;
-    private float _rotationAmount = 25f;
-    private float _sensitivity = 0.2f;
+
+    [SerializeField] private float _rotationAmount = 25f;       // 최대 회전 각도
+    [SerializeField] private float _sensitivity = 0.2f;          // 드래그 민감도
+    [SerializeField] private float _rotationSpeed = 10f;         // 회전 보간 속도
+
     private Vector2 _lastTouchPosition;
 
     private const string SceneMainMenu = "MainMenu";
@@ -27,24 +30,23 @@ public class EndingSwipe : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (_isDragging)
-        {
-            Vector2 currentPosition = GetInputPosition();
-            float delta = (currentPosition.x - _lastTouchPosition.x) / Screen.width;
+        if (!_isDragging) return;
 
-            // Z축 회전만 적용
-            _targetZRotation = Mathf.Clamp(
-                _targetZRotation - delta * _rotationAmount * _sensitivity * 100f,
-                -_rotationAmount, _rotationAmount);
+        Vector2 currentPosition = GetInputPosition();
+        float delta = (currentPosition.x - _lastTouchPosition.x) / Screen.width;
 
-            _lastTouchPosition = currentPosition;
-        }
+        _targetZRotation = Mathf.Clamp(
+            _targetZRotation - delta * _rotationAmount * _sensitivity * 100f,
+            -_rotationAmount, _rotationAmount);
+
+        _lastTouchPosition = currentPosition;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         _isDragging = false;
 
+        // 회전 각도 기준으로 판단
         if (_targetZRotation > 20f)
         {
             SceneManager.LoadScene(SceneMainMenu);
@@ -54,7 +56,7 @@ public class EndingSwipe : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             SceneManager.LoadScene(SceneGame);
         }
 
-        // 원위치로 복귀
+        // 회전 초기화 시작
         _targetZRotation = 0f;
     }
 
@@ -63,9 +65,8 @@ public class EndingSwipe : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         float currentZ = _rectTransform.localEulerAngles.z;
         if (currentZ > 180f) currentZ -= 360f;
 
-        float newZ = Mathf.Lerp(currentZ, _targetZRotation, Time.deltaTime * 10f);
-
-        _rectTransform.localEulerAngles = new Vector3(0, 0, newZ);
+        float newZ = Mathf.Lerp(currentZ, _targetZRotation, Time.deltaTime * _rotationSpeed);
+        _rectTransform.localEulerAngles = new Vector3(0f, 0f, newZ);
     }
 
     private Vector2 GetInputPosition()
