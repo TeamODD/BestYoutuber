@@ -23,6 +23,7 @@ public class PlayerPresenter : MonoBehaviour
     public void UpdatePlayerFamous(int value)
     {
         Image image = _view.GetImage((int)PlayerView.Images.FamousImage);
+        Debug.Log(value);
         image.fillAmount = value / 100.0f;
     }
 
