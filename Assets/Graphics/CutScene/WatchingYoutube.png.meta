@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WatchingYoutube_0: -3128241189126332704
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,6 +15,7 @@ public class ClickDetector : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
+            Debug.Log("Left mouse button clicked");
             _choiceChildGroup.SetActive(true);
 
             _leftChoiceResultGroup.SetActive(false);
