@@ -1252,13 +1252,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547325392}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1381655177}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1284,7 +1284,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -6656339842187083710, guid: 355d7134a6391424c97ec3e078af69f4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2543,15 +2543,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificationImageObject: {fileID: 1632728918}
   notificationText: {fileID: 1418561227}
+  playerModel: {fileID: 1783508168}
   slideInTime: 0.5
   stayTime: 1
-  startPosition: {x: -549, y: 483}
-  endPosition: {x: -1, y: 483}
-  playerModel: {fileID: 1783508168}
+  _subscriberMilestones: 64000000e803000010270000a086010040420f00
   _notificationTexts:
   - notificationType: Subscribers100
+    type: 1
     message: "\uCC9C\uB9AC\uAE38\uB3C4\uD55C\uAC78\uC74C\uBD80\uD130"
   - notificationType: 
+    type: 1
     message: 
 --- !u!1 &1260080456
 GameObject:
@@ -2615,26 +2616,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _storyDatas1:
-  - {fileID: 11400000, guid: 38fd45e224ec99044a5ac60f470262a6, type: 2}
-  - {fileID: 11400000, guid: 356b3555cf8991f4e97e816bc85f0e44, type: 2}
-  - {fileID: 11400000, guid: ecd14c2543c939143855c5f55a64590c, type: 2}
+  - {fileID: 11400000, guid: 70de32bbe4836d04fac07ce155cd9c7b, type: 2}
+  - {fileID: 11400000, guid: 6bf3f750f27746145922ea98e3c7d6e6, type: 2}
+  - {fileID: 11400000, guid: ccb65be9f09f9d44cb6760df6622e914, type: 2}
+  - {fileID: 11400000, guid: b393991bc64522c43920f87ab3d9b0b6, type: 2}
+  - {fileID: 11400000, guid: b062b091c66796a4ca879c39f15945ba, type: 2}
+  - {fileID: 11400000, guid: dc011d5f989891c449ba32d268fc9dd1, type: 2}
   _storyDatas2:
-  - {fileID: 11400000, guid: 356b3555cf8991f4e97e816bc85f0e44, type: 2}
+  - {fileID: 11400000, guid: 1436456e3a1ab824a9928099cdee74b6, type: 2}
+  - {fileID: 11400000, guid: 186de6a1dc67a2f43ab2d35c3ba8c448, type: 2}
+  - {fileID: 11400000, guid: 62c98650e0ded5949bb20844e932ba49, type: 2}
+  - {fileID: 11400000, guid: 93b52e75f9f7a1d49b1c03765d2b15e9, type: 2}
+  - {fileID: 11400000, guid: 17d2d9e0360125447a202c5308196243, type: 2}
+  - {fileID: 11400000, guid: 86b4bfd7d061c0a4f95d296a76914443, type: 2}
   _storyDatas3:
-  - {fileID: 11400000, guid: ecd14c2543c939143855c5f55a64590c, type: 2}
+  - {fileID: 11400000, guid: 981d1e08473cd634f8719d1acf84c143, type: 2}
+  - {fileID: 11400000, guid: 7d00fab7c065f114ea8f9019ac49b306, type: 2}
+  - {fileID: 11400000, guid: 5aeafb79fdb76484bac9a78122b0dd90, type: 2}
+  - {fileID: 11400000, guid: 0b66c357bfd8fec44bad4ac0d9c6c8c6, type: 2}
+  - {fileID: 11400000, guid: aafcc78d8d7dd8e418c1d1e484040f3e, type: 2}
+  - {fileID: 11400000, guid: 6403650c5386ed44b874938a50c9427d, type: 2}
   _storyDatas4:
-  - {fileID: 11400000, guid: 9d01e23f9051e0c45ae69a7474c7f69d, type: 2}
+  - {fileID: 11400000, guid: baf5da5cd474b114daaf5a04a1585cc8, type: 2}
+  - {fileID: 11400000, guid: 1fb1505205039cb4185f4a0ee91305ac, type: 2}
+  - {fileID: 11400000, guid: edc687beaf6774a46841d3502de34404, type: 2}
+  - {fileID: 11400000, guid: e9fdb4d401b2b9b4caf372d1b3012da4, type: 2}
+  - {fileID: 11400000, guid: 5b1694c6210929c4e8d916664f1bdd3c, type: 2}
+  - {fileID: 11400000, guid: 6569d139f3163374d9bdf0d18fbe688a, type: 2}
   _storyDatas5:
-  - {fileID: 11400000, guid: 26273a151a465cd4b854b82da0ee123f, type: 2}
-  _storyDatas6: []
-  _storyDatas7: []
-  _DisPatchDatas: []
+  - {fileID: 11400000, guid: e6bf572ab72774a49baa1cff8128dedd, type: 2}
+  - {fileID: 11400000, guid: 53b20cd458f728346aaf127493a3da7a, type: 2}
+  - {fileID: 11400000, guid: f4feebf26f46a8945b66a833f8cce1ef, type: 2}
+  - {fileID: 11400000, guid: b4212a91f9ad7cb4d87b7a20dbc2c7da, type: 2}
+  - {fileID: 11400000, guid: abdeaf3cae847bd48a48266ea9860f20, type: 2}
+  - {fileID: 11400000, guid: a0f1819c39bbd774eb5fe0ed048e2b00, type: 2}
+  _storyDatas6:
+  - {fileID: 11400000, guid: 6c15cb04686a39f4fa4725b27b4b4004, type: 2}
+  - {fileID: 11400000, guid: d76a6cc050ddb2c4daf8825181df5cb6, type: 2}
+  - {fileID: 11400000, guid: c28884379d45d8a4bb52bdff59d75975, type: 2}
+  - {fileID: 11400000, guid: 468effcd92bb30f46b8640d366cd3ebd, type: 2}
+  - {fileID: 11400000, guid: 3de3f38c3615e5246bdbfcfa226b20cb, type: 2}
+  - {fileID: 11400000, guid: 362d899f16bd48c469d38a6c14680657, type: 2}
+  _storyDatas7:
+  - {fileID: 11400000, guid: b227f3db86d37a544b65c14b3766208c, type: 2}
+  - {fileID: 11400000, guid: af964f84358416f439c13faf66a3c895, type: 2}
+  - {fileID: 11400000, guid: 7366359fc9c319a4c97571965cde50d9, type: 2}
+  - {fileID: 11400000, guid: a73e8f79fa3d1e3498627efaee1377b1, type: 2}
+  - {fileID: 11400000, guid: 0bf3ad1483aa7a343bda5f814cb11479, type: 2}
+  - {fileID: 11400000, guid: 4ec123fda54a75e44a267789b417b09f, type: 2}
+  _DisPatchDatas:
+  - {fileID: 11400000, guid: ad6e48806b30bba4e932197a1c5c77d8, type: 2}
+  - {fileID: 11400000, guid: 4d7c9d68911dbe94790a340cc67b86d2, type: 2}
+  - {fileID: 11400000, guid: 8240d3fba08658a4890252dab6bcd4a3, type: 2}
   _LowStressandFamousDatas: []
   _LowStressDatas: []
   _HighStressandFamousDatas: []
   _StuckInTierOneDatas: []
-  _playerModel: {fileID: 0}
-  _notificationSystem: {fileID: 0}
+  _playerModel: {fileID: 1783508168}
+  _notificationSystem: {fileID: 1226897505}
 --- !u!1 &1381655176
 GameObject:
   m_ObjectHideFlags: 0
@@ -2918,7 +2957,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462880010}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58b971c647231a446ab41713417e1a59, type: 3}
   m_Name: 
@@ -3553,7 +3592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -6656339842187083710, guid: 355d7134a6391424c97ec3e078af69f4, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

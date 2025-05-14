@@ -18,7 +18,8 @@ public class StorySelector : MonoBehaviour
         Hidden_HighStressandFamous,
         Hidden_StuckInTierOne  // 추가된 타입
     }
-
+    
+    [Header("Story Data Arrays")]
     [SerializeField] private StoryData[] _storyDatas1;
     [SerializeField] private StoryData[] _storyDatas2;
     [SerializeField] private StoryData[] _storyDatas3;
@@ -31,19 +32,21 @@ public class StorySelector : MonoBehaviour
     [SerializeField] private StoryData[] _LowStressDatas;
     [SerializeField] private StoryData[] _HighStressandFamousDatas;
     [SerializeField] private StoryData[] _StuckInTierOneDatas;  // 추가된 데이터 배열
+    
+    [Header("References")]
+    [SerializeField] private PlayerModel _playerModel;
+    [SerializeField] private NotificationSystem _notificationSystem;
 
     private Dictionary<StoryTierType, Queue<StoryData>> _queueDictionary = new();
-
+    private HashSet<StoryTierType> _discoveredHiddenStoryTypes = new();
     private bool _hiddenStoryActivated = false;
-    [SerializeField] private PlayerModel _playerModel;
     private StoryTierType _activeHiddenStoryType;
     
     public event System.Action<StoryTierType> OnHiddenStoryActivated;
     
-    [SerializeField] private NotificationSystem _notificationSystem;
-    
     private void Awake()
     {
+        //InitializeQueues(); PopulateQueues();
         _queueDictionary.Add(StoryTierType.One, new Queue<StoryData>());
         _queueDictionary.Add(StoryTierType.Two, new Queue<StoryData>());
         _queueDictionary.Add(StoryTierType.Three, new Queue<StoryData>());
@@ -99,7 +102,6 @@ public class StorySelector : MonoBehaviour
             {
                 StoryData hiddenStory = _queueDictionary[_activeHiddenStoryType].Dequeue();
                 
-                // 히든 스토리 큐가 비었으면 히든 스토리 모드 비활성화
                 if (_queueDictionary[_activeHiddenStoryType].Count == 0)
                 {
                     _hiddenStoryActivated = false;
@@ -109,12 +111,10 @@ public class StorySelector : MonoBehaviour
             }
             else
             {
-                // 히든 스토리가 더 이상 없으면 비활성화하고 일반 스토리로 진행
                 _hiddenStoryActivated = false;
             }
         }
         
-        // 일반 스토리 반환
         StoryTierType curTier = GetStoryTierType(subscriber);
 
         if (_queueDictionary.TryGetValue(curTier, out var storys) && storys.Count > 0)
@@ -123,38 +123,32 @@ public class StorySelector : MonoBehaviour
         }
         else
         {
-            Debug.LogError("스토리 큐가 비었습니다: " + curTier);
+            Debug.LogError("Story queue is empty: " + curTier);
             return null;
         }
     }
     
     private void CheckHiddenStoryConditions(int _)
     {
-        // 이미 활성화된 히든 스토리가 있으면 추가 체크 건너뛰기
         if (_hiddenStoryActivated) return;
         
-        // 스트레스와 인기도가 모두 낮은 경우
         if (_playerModel.Stress <= 20 && _playerModel.Famous <= 20)
         {
             ActivateHiddenStory(StoryTierType.Hidden_LowStressandFamous);
         }
-        // 스트레스만 낮은 경우
         else if (_playerModel.Stress <= 20)
         {
             ActivateHiddenStory(StoryTierType.Hidden_LowStress);
         }
-        // 스트레스는 높고 인기도도 높은 경우
         else if (_playerModel.Stress >= 80 && _playerModel.Famous >= 80)
         {
             ActivateHiddenStory(StoryTierType.Hidden_HighStressandFamous);
         }
-        // 낮은 구독자 수에서 Tier One 스토리가 소진된 경우
         else if (_playerModel.Subscriber <= 1000 && 
                 _queueDictionary[StoryTierType.One].Count == 0)
         {
             ActivateHiddenStory(StoryTierType.Hidden_StuckInTierOne);
         }
-        // 디스패치 히든 스토리 조건 (예: 스트레스 ≥ 80 && 인기도 ≤ 20)
         else if (_playerModel.Stress >= 80 && _playerModel.Famous <= 20)
         {
             ActivateHiddenStory(StoryTierType.Hidden_DisPatch);
@@ -163,21 +157,36 @@ public class StorySelector : MonoBehaviour
     
     private void ActivateHiddenStory(StoryTierType hiddenType)
     {
+        if (IsHiddenStoryType(hiddenType) && _discoveredHiddenStoryTypes.Contains(hiddenType))
+        {
+            Debug.Log($"Already discovered hidden story: {hiddenType}");
+            return;
+        }
         if (_queueDictionary[hiddenType].Count > 0)
         {
             _hiddenStoryActivated = true;
             _activeHiddenStoryType = hiddenType;
+
+            if (IsHiddenStoryType(hiddenType))
+            {
+                _discoveredHiddenStoryTypes.Add(hiddenType);
+            }
             
             OnHiddenStoryActivated?.Invoke(hiddenType);
             
             if (_notificationSystem != null)
             {
-                // string notificationMessage = GetHiddenStoryNotificationMessage(hiddenType);
-                // _notificationSystem.ShowNotification(notificationMessage, GetHiddenStoryColor(hiddenType));
+                string hiddenTypeName = hiddenType.ToString().Substring(7);
+                _notificationSystem.NotifyHiddenChoiceFound(hiddenTypeName);
             }
-            
-            Debug.Log($"히든 스토리 활성화: {hiddenType}");
+            Debug.Log($"Hidden story activated: {hiddenType}");
         }
+    }
+    
+    private bool IsHiddenStoryType(StoryTierType type)
+    {
+        // 열거형 이름에 "Hidden_"이 포함되어 있으면 히든 타입으로 간주
+        return type.ToString().StartsWith("Hidden_");
     }
     
     private string GetHiddenStoryNotificationMessage(StoryTierType hiddenType)
@@ -225,13 +234,23 @@ public class StorySelector : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"유효하지 않은 히든 스토리 타입: {hiddenTypeName}");
+            Debug.LogError($"Invalid hidden story type: {hiddenTypeName}");
         }
     }
     
-    // 현재 활성화된 히든 스토리 유형 반환 (디버깅용)
     public string GetActiveHiddenStoryType()
     {
         return _hiddenStoryActivated ? _activeHiddenStoryType.ToString() : "None";
+    }
+    
+    public void ResetDiscoveredHiddenStories()
+    {
+        _discoveredHiddenStoryTypes.Clear();
+        Debug.Log("All hidden story discovery records have been reset.");
+    }
+    
+    public bool IsHiddenStoryDiscovered(StoryTierType hiddenType)
+    {
+        return _discoveredHiddenStoryTypes.Contains(hiddenType);
     }
 }

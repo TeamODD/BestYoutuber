@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da7d57f1-6056-4b5a-867a-4c5db2af75e7" name="Changes" comment="" />
+    <list default="true" id="da7d57f1-6056-4b5a-867a-4c5db2af75e7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01ScriptableObjects/NormalStory/1000less/A00.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01ScriptableObjects/NormalStory/1000less/A00.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01ScriptableObjects/NormalStory/1000less/A01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01ScriptableObjects/NormalStory/1000less/A01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01ScriptableObjects/NormalStory/1000less/A02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01ScriptableObjects/NormalStory/1000less/A02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01ScriptableObjects/NormalStory/1000less/A03.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01ScriptableObjects/NormalStory/1000less/A03.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01ScriptableObjects/NormalStory/1000less/A04.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01ScriptableObjects/NormalStory/1000less/A04.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/CutScene/WatchingYoutube.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/CutScene/WatchingYoutube.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/UI/CardBackGroundReal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/UI/CardBackGroundReal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/UI/UiBackGroundReal.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/UI/UiBackGroundReal.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenePr.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenePr.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClickDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClickDetector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NotificationImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NotificationImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NotificationSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NotificationSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StorySelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StorySelector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,6 +130,8 @@
       <workItem from="1747130647170" duration="3413000" />
       <workItem from="1747134899988" duration="4221000" />
       <workItem from="1747139913909" duration="652000" />
+      <workItem from="1747184639666" duration="4512000" />
+      <workItem from="1747228687927" duration="37000" />
     </task>
     <servers />
   </component>

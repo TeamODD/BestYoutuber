@@ -1,7 +1,8 @@
 ﻿using Managers;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ClickDetector : MonoBehaviour
+public class ClickDetector : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private GameObject _choiceChildGroup;
 
@@ -11,9 +12,21 @@ public class ClickDetector : MonoBehaviour
     [SerializeField] private GameObject _leftChoiceResultGroup;
     [SerializeField] private GameObject _rightChoiceResultGroup;
 
+    private bool _isPointerOver = false;
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        _isPointerOver = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        _isPointerOver = false;
+    }
+
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (_isPointerOver && Input.GetMouseButtonDown(0))
         {
             _choiceChildGroup.SetActive(true);
 
