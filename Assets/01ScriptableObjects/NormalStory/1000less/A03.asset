@@ -17,7 +17,7 @@ MonoBehaviour:
     \uC720\uD589\uD558\uB294 \uCC4C\uB9B0\uC9C0\uB97C \uB530\uB77C\uD560\uAE4C?"
   _choiceSprite: {fileID: 0}
   _rightCommentData:
-    _successChance: 25
+    _successChance: 50
     _choiceComment: "\uC778\uAE30 \uC788\uB294 \uCC4C\uB9B0\uC9C0\uB97C \uD55C\uBC88
       \uD574\uBCFC\uB798!"
     _successComment: "\uC624\uB978\uC131\uACF53"

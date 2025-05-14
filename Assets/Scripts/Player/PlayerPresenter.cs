@@ -28,7 +28,6 @@ public class PlayerPresenter : MonoBehaviour
 
     public void UpdatePlayerSubscriber(int value)
     {
-        TextMeshProUGUI tmp = _view.GetTmp((int)PlayerView.Tmps.SubscriberText);
-        tmp.text = value.ToString();
+        _view.UpdatePlayerSubscribers(value);
     }
 }

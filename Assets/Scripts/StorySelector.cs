@@ -38,6 +38,7 @@ public class StorySelector : MonoBehaviour
     [SerializeField] private NotificationSystem _notificationSystem;
 
     private Dictionary<StoryTierType, Queue<StoryData>> _queueDictionary = new();
+
     private HashSet<StoryTierType> _discoveredHiddenStoryTypes = new();
     private bool _hiddenStoryActivated = false;
     private StoryTierType _activeHiddenStoryType;
@@ -123,8 +124,8 @@ public class StorySelector : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Story queue is empty: " + curTier);
-            return null;
+            InitializeQueueByType(curTier);
+            return GetStory(subscriber);
         }
     }
     
@@ -224,6 +225,23 @@ public class StorySelector : MonoBehaviour
             return StoryTierType.Six;
         else
             return StoryTierType.Seven;
+    }
+    private void InitializeQueueByType(StoryTierType storyType)
+    {
+        if(storyType == StoryTierType.One)
+            foreach (var story in _storyDatas1) _queueDictionary[StoryTierType.One].Enqueue(story);
+        else if(storyType == StoryTierType.Two)
+            foreach (var story in _storyDatas2) _queueDictionary[StoryTierType.Two].Enqueue(story);
+        else if (storyType == StoryTierType.Three)
+            foreach (var story in _storyDatas3) _queueDictionary[StoryTierType.Three].Enqueue(story);
+        else if (storyType == StoryTierType.Four)
+            foreach (var story in _storyDatas4) _queueDictionary[StoryTierType.Four].Enqueue(story);
+        else if (storyType == StoryTierType.Five)
+            foreach (var story in _storyDatas5) _queueDictionary[StoryTierType.Five].Enqueue(story);
+        else if (storyType == StoryTierType.Six)
+            foreach (var story in _storyDatas6) _queueDictionary[StoryTierType.Six].Enqueue(story);
+        else if (storyType == StoryTierType.Seven)
+            foreach (var story in _storyDatas7) _queueDictionary[StoryTierType.Seven].Enqueue(story);
     }
     
     public void ForceActivateHiddenStory(string hiddenTypeName)
