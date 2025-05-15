@@ -48,6 +48,6 @@ MonoBehaviour:
     _failFamousDecrease: 0
     _failStressIncrease: 15
     _failSubscriberDecrease: 0
-    _choiceSelectSound: {fileID: 0}
-    _successResultSound: {fileID: 0}
-    _failResultSound: {fileID: 0}
+    _choiceSelectSound: {fileID: 8300000, guid: 44e80da4dfa92e24183cc74304f77a73, type: 3}
+    _successResultSound: {fileID: 8300000, guid: 44e80da4dfa92e24183cc74304f77a73, type: 3}
+    _failResultSound: {fileID: 8300000, guid: 44e80da4dfa92e24183cc74304f77a73, type: 3}
