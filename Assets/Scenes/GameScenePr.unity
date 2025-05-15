@@ -261,7 +261,6 @@ MonoBehaviour:
   _choiceSelectView: {fileID: 1136510872}
   _choiceResultView: {fileID: 1892324572}
   _storyModel: {fileID: 110028769}
-  _dialogModel: {fileID: 0}
   _fingerDetector: {fileID: 1895494936}
 --- !u!114 &110028769
 MonoBehaviour:
@@ -2527,7 +2526,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1080, y: 1920}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -3766,7 +3765,6 @@ MonoBehaviour:
   _rightChoiceResultGroup: {fileID: 1221231367}
   _choiceChildGroup: {fileID: 1151477157}
   _storyModel: {fileID: 110028769}
-  _choiceView: {fileID: 0}
   canMove: 1
 --- !u!1 &1909667941
 GameObject:
