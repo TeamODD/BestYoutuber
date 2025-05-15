@@ -215,19 +215,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 83974955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1097094276}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Scene0
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &83974955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,12 +472,12 @@ Transform:
   m_GameObject: {fileID: 1097094275}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -230.4101, y: -627.8301, z: 160.3713}
+  m_LocalPosition: {x: -1.4009552, y: -0.6513672, z: 163.64352}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1207493593}
-  m_Father: {fileID: 1963588317}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1207493592
 GameObject:
@@ -619,12 +607,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354547332}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 229.00914, y: 627.1787, z: 3.27222}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1963588317}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1354547334
 MonoBehaviour:
@@ -642,6 +630,13 @@ MonoBehaviour:
   _musicSource: {fileID: 1354547335}
   _sfxVolume: 1
   _musicVolume: 0.5
+  _sceneMusicData:
+  - sceneName: MainMenu
+    musicClip: {fileID: 8300000, guid: bd97276724ad7074aab766213940c280, type: 3}
+  - sceneName: Scene0
+    musicClip: {fileID: 8300000, guid: 44e80da4dfa92e24183cc74304f77a73, type: 3}
+  - sceneName: GameScenePr
+    musicClip: {fileID: 8300000, guid: bd97276724ad7074aab766213940c280, type: 3}
 --- !u!82 &1354547335
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1024,7 +1019,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8646028546895431749, guid: 1ff55ddc9e7cf10458c32af2ec9ceec4, type: 3}
+  m_Sprite: {fileID: 4572600460452358224, guid: e66319839b889984cbb7b66bd8e19a2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1179,39 +1174,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!1 &1963588316
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1963588317}
-  m_Layer: 0
-  m_Name: Managers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1963588317
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963588316}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 229.00914, y: 627.1787, z: 3.27222}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1097094277}
-  - {fileID: 1354547333}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1219,4 +1181,5 @@ SceneRoots:
   - {fileID: 1735089871}
   - {fileID: 1563503925}
   - {fileID: 928883963}
-  - {fileID: 1963588317}
+  - {fileID: 1097094277}
+  - {fileID: 1354547333}

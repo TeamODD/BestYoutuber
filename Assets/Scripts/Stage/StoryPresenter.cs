@@ -16,7 +16,8 @@ public class StoryPresenter : MonoBehaviour
     {
         _fingerDetector.canMove = true;
 
-        _choiceView.SetTmpText((int)ChoiceView.Tmps.ChoiceText, story.ChoiceText);
+        _choiceView.StartTypeLineCor(_choiceView.GetTmp((int)ChoiceView.Tmps.ChoiceText), story.ChoiceText);
+        //_choiceView.SetTmpText((int)ChoiceView.Tmps.ChoiceText, story.ChoiceText);
         _choiceView.SetImageSprite((int)ChoiceView.Images.ChoiceImage, story.ChoiceSprite);
         _choiceSelectView.SetTmpText((int)ChoiceSelectView.Tmps.LeftSelectText, story.LeftCommentData.ChoiceComment);
         _choiceSelectView.SetTmpText((int)ChoiceSelectView.Tmps.RightSelectText, story.RightCommentData.ChoiceComment);
