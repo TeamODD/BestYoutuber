@@ -37,7 +37,7 @@ public class StoryModel : MonoBehaviour
                 _playerModel.UpdatePlayerStress(storyData.LeftCommentData.SuccessStressDecrease);
                 _playerModel.UpdatePlayerSubscriber(storyData.LeftCommentData.SuccessSubscriberIncrease);
                 
-                AudioManager.Instance.PlaySfx(storyData.LeftCommentData.SuccessResultSound);
+                //AudioManager.Instance.PlaySfx(storyData.LeftCommentData.SuccessResultSound);
             }
             else
             {
@@ -45,7 +45,7 @@ public class StoryModel : MonoBehaviour
                 _playerModel.UpdatePlayerStress(storyData.LeftCommentData.FailStressIncrease);
                 _playerModel.UpdatePlayerSubscriber(storyData.LeftCommentData.FailSubscriberDecrease);
                 
-                AudioManager.Instance.PlaySfx(storyData.LeftCommentData.FailResultSound);
+                //AudioManager.Instance.PlaySfx(storyData.LeftCommentData.FailResultSound);
             }
         }
         else
@@ -56,7 +56,7 @@ public class StoryModel : MonoBehaviour
                 _playerModel.UpdatePlayerStress(storyData.RightCommentData.SuccessStressDecrease);
                 _playerModel.UpdatePlayerSubscriber(storyData.RightCommentData.SuccessSubscriberIncrease);
                 
-                AudioManager.Instance.PlaySfx(storyData.RightCommentData.SuccessResultSound);
+                //AudioManager.Instance.PlaySfx(storyData.RightCommentData.SuccessResultSound);
             }
             else
             {
@@ -64,7 +64,7 @@ public class StoryModel : MonoBehaviour
                 _playerModel.UpdatePlayerStress(storyData.RightCommentData.FailStressIncrease);
                 _playerModel.UpdatePlayerSubscriber(storyData.RightCommentData.FailSubscriberDecrease);
                 
-                AudioManager.Instance.PlaySfx(storyData.RightCommentData.FailResultSound);
+                //AudioManager.Instance.PlaySfx(storyData.RightCommentData.FailResultSound);
             }
         }
     }
