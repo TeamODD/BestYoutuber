@@ -136,6 +136,7 @@ public class StorySelector : MonoBehaviour
         if (_playerModel.Stress <= 20 && _playerModel.Famous <= 20)
         {
             ActivateHiddenStory(StoryTierType.Hidden_LowStressandFamous);
+            //무명의 평화 
         }
         else if (_playerModel.Stress <= 20)
         {
