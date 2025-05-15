@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
   m_Name: A02
   m_EditorClassIdentifier: 
-  _index: 0
+  _index: 2
   _choiceText: "\uCCAB \uC601\uC0C1 \uC870\uD68C\uC218\uAC00 \uB108\uBB34 \uC801\uC5B4\uC11C
     \uC2E4\uB9DD\uC774\uC57C. \uC5B4\uB5BB\uAC8C \uD560\uAE4C?"
   _choiceSprite: {fileID: 0}

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
+  m_Name: a07
+  m_EditorClassIdentifier: 
+  _index: 7
+  _choiceText: "\uB2E4\uB978 \uC720\uD29C\uBC84\uB4E4\uC758 \uC601\uC0C1\uC744 \uCC38\uACE0\uD574\uC57C
+    \uD560\uAE4C?"
+  _choiceSprite: {fileID: 0}
+  _rightCommentData:
+    _successChance: 50
+    _choiceComment: "\uB098\uB9CC\uC758 \uB3C5\uCC3D\uC801\uC778 \uC2A4\uD0C0\uC77C
+      \uAC1C\uBC1C"
+    _successComment: "\"\uC544\uC9C1 \uC11C\uD234\uC9C0\uB9CC \uB098\uB9CC\uC758
+      \uC0C9\uAE54\uC774 \uB2F4\uAE34 \uC601\uC0C1\uC774 \uD2B9\uBCC4\uD55C \uD32C\uCE35\uC744
+      \uB9CC\uB4E4\uC5B4\uB0C8\uC5B4!\""
+    _successSprite: {fileID: 0}
+    _failComment: "\"\uB108\uBB34 \uB3C5\uD2B9\uD55C \uC2A4\uD0C0\uC77C\uC774 \uB300\uC911\uC5D0\uAC8C
+      \uBC1B\uC544\uB4E4\uC5EC\uC9C0\uC9C0 \uC54A\uB294 \uAC83 \uAC19\uC544... \uC870\uD68C\uC218\uAC00
+      \uB108\uBB34 \uC801\uC5B4.\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 20
+    _successStressDecrease: 10
+    _successSubscriberIncrease: 30
+    _failFamousDecrease: 0
+    _failStressIncrease: 15
+    _failSubscriberDecrease: 0
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
+  _leftCommentData:
+    _successChance: 65
+    _choiceComment: "\uC778\uAE30 \uC720\uD29C\uBC84 \uC601\uC0C1 \uB9CE\uC774 \uBCF4\uAE30"
+    _successComment: "\"\uC778\uAE30 \uC720\uD29C\uBC84\uB4E4\uC758 \uB178\uD558\uC6B0\uB97C
+      \uCC38\uACE0\uD558\uB2C8 \uB0B4 \uC601\uC0C1\uC758 \uD004\uB9AC\uD2F0\uAC00
+      \uD655\uC2E4\uD788 \uB192\uC544\uC84C\uC5B4!\""
+    _successSprite: {fileID: 0}
+    _failComment: "\"\uC778\uAE30 \uC720\uD29C\uBC84 \uC2A4\uD0C0\uC77C\uC744 \uB108\uBB34
+      \uB530\uB77C\uD588\uB098\uBD10... \uBAA8\uBC29\uC7C1\uC774\uB77C\uB294 \uB313\uAE00\uC774
+      \uB2EC\uB838\uC5B4.\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 10
+    _successStressDecrease: 5
+    _successSubscriberIncrease: 20
+    _failFamousDecrease: 15
+    _failStressIncrease: 10
+    _failSubscriberDecrease: 5
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
