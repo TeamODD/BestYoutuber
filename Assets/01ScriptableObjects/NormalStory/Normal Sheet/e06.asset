@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
+  m_Name: e06
+  m_EditorClassIdentifier: 
+  _index: 6
+  _choiceText: "\uB0B4 \uC2A4\uD1A0\uB9AC\uB97C \uB2F4\uC740 \uCC45\uC744 \uCD9C\uD310\uD574\uBCFC\uAE4C?
+    \uCD9C\uD310\uC0AC\uC5D0\uC11C \uC790\uC11C\uC804 \uC81C\uC548\uC774 \uC654\uC5B4."
+  _choiceSprite: {fileID: 0}
+  _rightCommentData:
+    _successChance: 70
+    _choiceComment: "\uC544\uC9C1\uC740 \uC2DC\uAE30\uC0C1\uC870\uB77C\uACE0 \uAC70\uC808"
+    _successComment: "\"\uB354 \uB9CE\uC740 \uC774\uC57C\uAE30\uB97C \uC313\uAE30\uB85C
+      \uACB0\uC815\uD588\uC5B4. \uB300\uC2E0 \uC628\uB77C\uC778 \uCF58\uD150\uCE20\uC5D0
+      \uB354 \uC9D1\uC911\uD558\uB2C8 \uCDA9\uC131\uB3C4\uAC00 \uB192\uC544\uC9C0\uACE0
+      \uB354 \uC758\uBBF8 \uC788\uB294 \uC131\uC7A5\uC744 \uD558\uACE0 \uC788\uC5B4!\""
+    _successSprite: {fileID: 0}
+    _failComment: "\"\uB2E4\uB978 \uC778\uD50C\uB8E8\uC5B8\uC11C\uB4E4\uC758 \uCC45\uC774
+      \uC5F0\uC774\uC5B4 \uD788\uD2B8\uD558\uB294\uAC78 \uBCF4\uB2C8 \uD0C0\uC774\uBC0D\uC744
+      \uB193\uCE5C \uAC83 \uAC19\uC544... \uB0B4 \uC774\uC57C\uAE30\uC5D0 \uB300\uD55C
+      \uAD00\uC2EC\uC774 \uC2DC\uB4E4\uD574\uC9C8\uAE4C\uBD10 \uAC71\uC815\uB3FC.\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 20
+    _successStressDecrease: 25
+    _successSubscriberIncrease: 80000
+    _failFamousDecrease: 0
+    _failStressIncrease: 15
+    _failSubscriberDecrease: 0
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
+  _leftCommentData:
+    _successChance: 55
+    _choiceComment: "\uC790\uC11C\uC804 \uCD9C\uAC04\uD558\uAE30"
+    _successComment: "\"\uB0B4 \uC131\uC7A5 \uC2A4\uD1A0\uB9AC\uB97C \uB2F4\uC740
+      \uCC45\uC774 \uBCA0\uC2A4\uD2B8\uC140\uB7EC\uC5D0 \uC62C\uB790\uC5B4! \uB9CE\uC740
+      \uC80A\uC740\uC774\uB4E4\uC5D0\uAC8C \uC601\uAC10\uC744 \uC8FC\uB294 \uB864\uBAA8\uB378\uC774
+      \uB41C \uAC83 \uAC19\uC544 \uBFCC\uB4EF\uD574.\""
+    _successSprite: {fileID: 0}
+    _failComment: "\"\uCC45\uC774 \uAE30\uB300\uC5D0 \uBABB \uBBF8\uCE58\uB294 \uD3C9\uAC00\uB97C
+      \uBC1B\uACE0 \uC788\uC5B4... '\uB0B4\uC6A9\uC774 \uBED4\uD558\uB2E4', '\uB108\uBB34
+      \uC774\uB978 \uC790\uC11C\uC804'\uC774\uB77C\uB294 \uD639\uD3C9\uC774 \uB9CE\uC544
+      \uC0C1\uCC98\uBC1B\uC558\uC5B4.\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 50
+    _successStressDecrease: 10
+    _successSubscriberIncrease: 150000
+    _failFamousDecrease: 35
+    _failStressIncrease: 45
+    _failSubscriberDecrease: 50000
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
