@@ -20,12 +20,14 @@ public class PlayerModel : MonoBehaviour
     {
         _stress = Mathf.Clamp(_stress + value, 0, 100);
         OnStressChanged?.Invoke(_stress);
+        Debug.Log($"Stress: {_stress}");
     }
 
     public void UpdatePlayerFamous(int value)
     {
         _famous = Mathf.Clamp(_famous + value, 0, 100);
         OnFamousChanged?.Invoke(_famous);
+        Debug.Log($"Famous: {_famous}");
     }
 
     public void UpdatePlayerSubscriber(int value)
