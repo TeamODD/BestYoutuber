@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
+  m_Name: a11
+  m_EditorClassIdentifier: 
+  _index: 11
+  _choiceText: "\uAD6C\uB3C5\uC790\uC218\uAC00 \uC815\uCCB4\uB41C\uAC83\uAC19\uC544... "
+  _choiceSprite: {fileID: 0}
+  _rightCommentData:
+    _successChance: 70
+    _choiceComment: "\uCF58\uD150\uCE20 \uD004\uB9AC\uD2F0 \uD5A5\uC0C1\uC5D0 \uC9D1\uC911"
+    _successComment: "\"\uC601\uC0C1 \uD004\uB9AC\uD2F0\uC5D0 \uC9D1\uC911\uD588\uB354\uB2C8
+      \uC54C\uACE0\uB9AC\uC998\uC774 \uB0B4 \uC601\uC0C1\uC744 \uCD94\uCC9C\uD574\uC8FC\uAE30
+      \uC2DC\uC791\uD588\uC5B4!\""
+    _successSprite: {fileID: 0}
+    _failComment: "\"\uC544\uBB34\uB9AC \uD004\uB9AC\uD2F0\uB97C \uB192\uC5EC\uB3C4
+      \uB178\uCD9C\uC774 \uC548 \uB418\uB294 \uAC83 \uAC19\uC544... \uB108\uBB34
+      \uC2E4\uB9DD\uC2A4\uB7EC\uC6CC.\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 15
+    _successStressDecrease: 10
+    _successSubscriberIncrease: 20
+    _failFamousDecrease: 0
+    _failStressIncrease: 15
+    _failSubscriberDecrease: 10
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
+  _leftCommentData:
+    _successChance: 60
+    _choiceComment: "SNS\uC5D0 \uD64D\uBCF4\uD558\uAE30"
+    _successComment: "\uC778\uC2A4\uD0C0\uADF8\uB7A8\uC5D0 \uC601\uC0C1 \uD558\uC774\uB77C\uC774\uD2B8\uB97C
+      \uC62C\uB838\uB354\uB2C8 \uC0C8\uB85C\uC6B4 \uC2DC\uCCAD\uC790\uB4E4\uC774
+      \uB9CE\uC774 \uC720\uC785\uB410\uC5B4!"
+    _successSprite: {fileID: 0}
+    _failComment: "SNS \uD64D\uBCF4\uAC00 \uC624\uD788\uB824 \uC2A4\uD338\uCC98\uB7FC
+      \uB290\uAEF4\uC84C\uB098\uBD10... \uD314\uB85C\uC6CC \uC218\uAC00 \uC904\uC5C8\uC5B4."
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 10
+    _successStressDecrease: 0
+    _successSubscriberIncrease: 25
+    _failFamousDecrease: 15
+    _failStressIncrease: 10
+    _failSubscriberDecrease: 0
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}

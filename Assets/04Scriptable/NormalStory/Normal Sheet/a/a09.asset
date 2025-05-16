@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
+  m_Name: a09
+  m_EditorClassIdentifier: 
+  _index: 9
+  _choiceText: "\uC601\uC0C1 \uC81C\uBAA9\uACFC \uC378\uB124\uC77C\uC774 \uC911\uC694\uD558\uB2E4\uACE0
+    \uD558\uB294\uB370..."
+  _choiceSprite: {fileID: 0}
+  _rightCommentData:
+    _successChance: 75
+    _choiceComment: "\uC815\uD655\uD558\uACE0 \uC2EC\uD50C\uD55C \uC81C\uBAA9\uACFC
+      \uC378\uB124\uC77C"
+    _successComment: "\"\uC815\uC9C1\uD55C \uC811\uADFC\uC774 \uD1B5\uD588\uC5B4!
+      \uC2DC\uCCAD\uC790\uB4E4\uC774 \uB0B4 \uCC44\uB110\uC758 \uC2E0\uB8B0\uC131\uC744
+      \uB192\uAC8C \uD3C9\uAC00\uD574\uC8FC\uACE0 \uC788\uC5B4.\""
+    _successSprite: {fileID: 0}
+    _failComment: "\"\uB108\uBB34 \uD3C9\uBC94\uD574\uC11C \uB208\uC5D0 \uB744\uC9C0
+      \uC54A\uC558\uB098\uBD10... \uC870\uD68C\uC218\uAC00 \uAC70\uC758 \uC548 \uB098\uC654\uC5B4.\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 15
+    _successStressDecrease: 15
+    _successSubscriberIncrease: 10
+    _failFamousDecrease: 0
+    _failStressIncrease: 5
+    _failSubscriberDecrease: 15
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
+  _leftCommentData:
+    _successChance: 55
+    _choiceComment: "\uC790\uADF9\uC801\uC778 \uC81C\uBAA9\uACFC \uC378\uB124\uC77C"
+    _successComment: "\"\uC790\uADF9\uC801\uC778 \uC81C\uBAA9\uC774 \uD6A8\uACFC\uAC00
+      \uC788\uC5C8\uC5B4! \uD3C9\uC18C\uBCF4\uB2E4 \uC870\uD68C\uC218\uAC00 3\uBC30\uB294
+      \uB192\uC544\uC84C\uC5B4!\""
+    _successSprite: {fileID: 0}
+    _failComment: "\"\uB108\uBB34 \uACFC\uC7A5\uB41C \uC378\uB124\uC77C\uC774\uC5C8\uB098\uBD10...
+      '\uB09A\uC2DC\uC131'\uC774\uB77C\uB294 \uBE44\uD310 \uB313\uAE00\uC774 \uB9CE\uC544.\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 5
+    _successStressDecrease: 0
+    _successSubscriberIncrease: 30
+    _failFamousDecrease: 20
+    _failStressIncrease: 10
+    _failSubscriberDecrease: 5
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}

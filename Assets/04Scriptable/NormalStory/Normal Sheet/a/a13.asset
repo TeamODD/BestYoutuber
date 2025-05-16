@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
+  m_Name: a13
+  m_EditorClassIdentifier: 
+  _index: 13
+  _choiceText: "\uB313\uAE00\uC5D0 \uC2DC\uCCAD\uC790\uB4E4 \uC9C8\uBB38\uC774 \uC313\uC774\uACE0
+    \uC788\uC5B4... 300\uBA85 \uB3CC\uD30C \uAE30\uB150\uC73C\uB85C \uC18C\uD1B5\uD574\uBCFC\uAE4C?"
+  _choiceSprite: {fileID: 0}
+  _rightCommentData:
+    _successChance: 75
+    _choiceComment: "Q&A \uC601\uC0C1 \uB530\uB85C \uC81C\uC791\uD558\uAE30"
+    _successComment: "\"\uC9C8\uBB38\uB4E4\uC744 \uBAA8\uC544\uC11C \uC900\uBE44\uB41C
+      Q&A \uC601\uC0C1\uC744 \uB9CC\uB4E4\uC5C8\uB354\uB2C8 \uBC18\uC751\uC774 \uC815\uB9D0
+      \uC88B\uC544!\""
+    _successSprite: {fileID: 0}
+    _failComment: "\"Q&A \uC601\uC0C1\uC774 \uB108\uBB34 \uC9C0\uB8E8\uD588\uB098\uBD10...
+      \uC870\uD68C\uC218\uAC00 \uD3C9\uC18C\uBCF4\uB2E4 \uB0AE\uC544.\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 10
+    _successStressDecrease: 15
+    _successSubscriberIncrease: 15
+    _failFamousDecrease: 5
+    _failStressIncrease: 5
+    _failSubscriberDecrease: 10
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
+  _leftCommentData:
+    _successChance: 55
+    _choiceComment: "\uB77C\uC774\uBE0C \uBC29\uC1A1\uC73C\uB85C \uC18C\uD1B5\uD558\uAE30"
+    _successComment: "\"300\uBA85 \uAD6C\uB3C5\uC790 \uAE30\uB150 \uCCAB \uB77C\uC774\uBE0C\uC600\uB294\uB370
+      20\uBA85\uC774\uB098 \uCC38\uC5EC\uD574\uC92C\uC5B4! \uC0DD\uAC01\uBCF4\uB2E4
+      \uC7AC\uBC0C\uC5C8\uC5B4!\""
+    _successSprite: {fileID: 0}
+    _failComment: "\"\uB77C\uC774\uBE0C \uC911\uC5D0 \uB2F9\uD669\uD574\uC11C \uB9D0\uC744
+      \uB354\uB4EC\uACE0 \uCE68\uBB35\uC774 \uAE38\uC5B4\uC84C\uC5B4... \uC2DC\uCCAD\uC790\uB4E4\uC774
+      \uC810\uC810 \uBE60\uC838\uB098\uAC14\uC5B4.\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 20
+    _successStressDecrease: 5
+    _successSubscriberIncrease: 25
+    _failFamousDecrease: 10
+    _failStressIncrease: 20
+    _failSubscriberDecrease: 5
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}

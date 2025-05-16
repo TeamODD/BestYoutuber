@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
+  m_Name: A01
+  m_EditorClassIdentifier: 
+  _index: 1
+  _choiceText: "\uCE5C\uAD6C\uB4E4\uD55C\uD14C \uC720\uD29C\uBC84 \uD558\uB294\uAC83\uC744
+    \uB2F9\uB2F9\uD558\uAC8C \uACF5\uAC1C\uD560\uAE4C?"
+  _choiceSprite: {fileID: 0}
+  _rightCommentData:
+    _successChance: 50
+    _choiceComment: "\uADF8\uB0E5 \uB2F9\uB2F9\uD558\uAC8C \uC778\uC815\uD560\uB798!"
+    _successComment: "\uCE5C\uAD6C\uB4E4\uC774 \uC751\uC6D0\uD574\uC8FC\uB124? \uC624\uD788\uB824
+      \uC88B\uC558\uC5B4"
+    _successSprite: {fileID: 0}
+    _failComment: "\uD559\uAD50\uC5D0\uC11C \uC720\uD29C\uBC84 \uB180\uB9BC\uB2F9\uD558\uB294
+      \uC911..."
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 8
+    _successStressDecrease: -7
+    _successSubscriberIncrease: 80
+    _failFamousDecrease: -5
+    _failStressIncrease: 20
+    _failSubscriberDecrease: 15
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
+  _leftCommentData:
+    _successChance: 50
+    _choiceComment: "\uC77C\uB2E8\uC740 \uBE44\uBC00\uB85C \uD560\uB798."
+    _successComment: "\uBAA8\uB974\uB294 \uC0AC\uB78C\uB4E4\uC5D0\uAC8C \uC194\uC9C1\uD558\uAC8C
+      \uD45C\uD604\uD558\uB2C8 \uB354 \uC790\uC720\uB85C\uC6CC!\""
+    _successSprite: {fileID: 0}
+    _failComment: "\uB0B4 \uC601\uC0C1\uC744 \uD655\uC778\uD558\uACE0 \uD559\uAD50\uC5D0\uC11C
+      \uB180\uB9BC\uAC70\uB9AC\uAC00 \uB42C\uC5B4..."
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 6
+    _successStressDecrease: -10
+    _successSubscriberIncrease: 50
+    _failFamousDecrease: -3
+    _failStressIncrease: 15
+    _failSubscriberDecrease: 20
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
