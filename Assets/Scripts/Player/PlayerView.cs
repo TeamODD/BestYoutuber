@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System;
 using NUnit.Framework.Interfaces;
+using Unity.VisualScripting;
 
 public class PlayerView : ViewBase
 {
@@ -29,11 +30,30 @@ public class PlayerView : ViewBase
     {
         SubscriberText,  
     }
+    public enum Buttons
+    {
+        StateButton,
+    }
+
+    public event Action OnStateButtonClicked;
 
     private void Awake()
     {
         Bind<TextMeshProUGUI>(typeof(Tmps));
         Bind<Image>(typeof(Images));
+        Bind<Button>(typeof(Buttons));
+    }
+
+    private void Start()
+    {
+        Button stateButton = GetButton((int)Buttons.StateButton);
+        if (stateButton != null)
+        {
+            stateButton.onClick.AddListener(() =>
+            {
+                OnStateButtonClicked?.Invoke();
+            });
+        }
     }
 
     IEnumerator ShowResultCo(TextMeshProUGUI tmp, int preSubscribers, int curSubscribers)
