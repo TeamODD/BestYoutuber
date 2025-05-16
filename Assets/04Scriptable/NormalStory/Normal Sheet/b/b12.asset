@@ -15,7 +15,7 @@ MonoBehaviour:
   _index: 12
   _choiceText: "\uC601\uC0C1 \uD3B8\uC9D1 \uC2DC\uAC04\uC774 \uB108\uBB34 \uC624\uB798
     \uAC78\uB824\uC11C \uD798\uB4E4\uC5B4. \uC5B4\uB5BB\uAC8C \uD574\uACB0\uD560\uAE4C?"
-  _choiceSprite: {fileID: 0}
+  _choiceSprite: {fileID: 8587328587093555049, guid: 3c7fa3966c00ce24995f7269f4792758, type: 3}
   _rightCommentData:
     _successChance: 80
     _choiceComment: "\uD3B8\uC9D1 \uD15C\uD50C\uB9BF \uB9CC\uB4E4\uC5B4 \uD6A8\uC728\uD654\uD558\uAE30"
@@ -23,11 +23,11 @@ MonoBehaviour:
       \uB9CC\uB4E4\uC5C8\uB354\uB2C8 \uC791\uC5C5 \uC2DC\uAC04\uC774 \uC808\uBC18\uC73C\uB85C
       \uC904\uC5C8\uC5B4! \uC77C\uAD00\uB41C \uC2A4\uD0C0\uC77C\uB85C \uBE0C\uB79C\uB529
       \uD6A8\uACFC\uB3C4 \uC788\uC5B4.\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uD15C\uD50C\uB9BF \uB54C\uBB38\uC5D0 \uBAA8\uB4E0 \uC601\uC0C1\uC774
       \uBE44\uC2B7\uD574 \uBCF4\uC5EC... \uC2DC\uCCAD\uC790\uB4E4\uC774 \uC2DD\uC0C1\uD558\uB2E4\uACE0
       \uB290\uB07C\uB294 \uAC83 \uAC19\uC544.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 5
     _successStressDecrease: 15
     _successSubscriberIncrease: 80
@@ -44,11 +44,11 @@ MonoBehaviour:
       \uC2DC\uAC04\uB3C4 \uC808\uC57D\uB418\uACE0 \uD004\uB9AC\uD2F0\uB3C4 \uC62C\uB77C\uAC14\uC5B4!
       \uC601\uC0C1 \uC5C5\uB85C\uB4DC \uC8FC\uAE30\uB3C4 \uBE68\uB77C\uC838\uC11C
       \uC88B\uC544.\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uD3B8\uC9D1\uC790\uC640 \uC2A4\uD0C0\uC77C\uC774 \uC798 \uB9DE\uC9C0
       \uC54A\uC544... \uC758\uC0AC\uC18C\uD1B5 \uBB38\uC81C\uB85C \uC624\uD788\uB824
       \uB354 \uC2A4\uD2B8\uB808\uC2A4\uAC00 \uC313\uC600\uC5B4.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 15
     _successStressDecrease: 25
     _successSubscriberIncrease: 150

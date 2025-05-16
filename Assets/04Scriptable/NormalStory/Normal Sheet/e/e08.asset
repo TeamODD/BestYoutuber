@@ -15,7 +15,7 @@ MonoBehaviour:
   _index: 8
   _choiceText: "\uD574\uC678 \uD32C\uB4E4\uC774 \uAE09\uC99D\uD558\uACE0 \uC788\uC5B4.
     \uAE00\uB85C\uBC8C \uC2DC\uC7A5\uC73C\uB85C \uBCF8\uACA9 \uC9C4\uCD9C\uD560\uAE4C?"
-  _choiceSprite: {fileID: 0}
+  _choiceSprite: {fileID: 8587328587093555049, guid: 3c7fa3966c00ce24995f7269f4792758, type: 3}
   _rightCommentData:
     _successChance: 60
     _choiceComment: "\uAD6D\uB0B4 \uD65C\uB3D9 \uAC15\uD654 \uBC0F \uBC88\uC5ED \uC790\uB9C9
@@ -25,12 +25,12 @@ MonoBehaviour:
       \uC624\uD788\uB824 \uBC18\uC751\uC774 \uC88B\uC544! \uBB34\uB9AC\uD558\uC9C0
       \uC54A\uC73C\uBA74\uC11C\uB3C4 \uAE00\uB85C\uBC8C \uD32C\uCE35\uC774 \uAFB8\uC900\uD788
       \uB298\uACE0 \uC788\uC5B4.\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uCD5C\uC18C\uD55C\uC758 \uB178\uB825\uC73C\uB85C\uB294 \uD574\uC678
       \uC2DC\uC7A5\uC744 \uC81C\uB300\uB85C \uACF5\uB7B5\uD558\uAE30 \uC5B4\uB824\uC6B4
       \uAC83 \uAC19\uC544... \uAE00\uB85C\uBC8C \uACBD\uC7C1\uC5D0\uC11C \uB4A4\uCC98\uC9C0\uB294
       \uB290\uB08C\uC774\uC57C.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 25
     _successStressDecrease: 20
     _successSubscriberIncrease: 150000
@@ -48,12 +48,12 @@ MonoBehaviour:
       \uD574\uC678 \uD22C\uC5B4\uAE4C\uC9C0 \uC131\uACF5\uC801\uC73C\uB85C \uB9C8\uCCE4\uC5B4!
       \uC774\uC81C \uC9C4\uC815\uD55C \uAE00\uB85C\uBC8C \uC778\uD50C\uB8E8\uC5B8\uC11C\uB85C
       \uD65C\uB3D9 \uBC94\uC704\uAC00 \uB113\uC5B4\uC84C\uC5B4.\" "
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uC5B8\uC5B4\uC640 \uBB38\uD654\uC801 \uCC28\uC774\uB97C \uADF9\uBCF5\uD558\uC9C0
       \uBABB\uD588\uC5B4... \uD22C\uC790\uD55C \uBE44\uC6A9\uC5D0 \uBE44\uD574 \uC131\uACFC\uAC00
       \uC800\uC870\uD558\uACE0 \uAD6D\uB0B4 \uD32C\uB4E4\uC5D0\uB3C4 \uC18C\uD640\uD574\uC9C4
       \uAC83 \uAC19\uC544.\" "
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 65
     _successStressDecrease: 0
     _successSubscriberIncrease: 500000

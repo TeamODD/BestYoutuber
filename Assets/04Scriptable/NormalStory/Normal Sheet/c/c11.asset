@@ -16,7 +16,7 @@ MonoBehaviour:
   _choiceText: "\uD32C\uB364\uC774 \uCEE4\uC9C0\uBA74\uC11C \uC2A4\uD2B8\uB9AC\uBC0D
     \uC774\uBCA4\uD2B8\uB97C \uC5F4\uC5B4\uB2EC\uB77C\uB294 \uC694\uCCAD\uC774 \uB9CE\uC544.
     \uC5B4\uB5BB\uAC8C \uD560\uAE4C?"
-  _choiceSprite: {fileID: 0}
+  _choiceSprite: {fileID: 8587328587093555049, guid: 3c7fa3966c00ce24995f7269f4792758, type: 3}
   _rightCommentData:
     _successChance: 75
     _choiceComment: "\uC815\uAE30\uC801\uC778 \uC18C\uADDC\uBAA8 \uD32C \uBBF8\uD305"
@@ -24,12 +24,12 @@ MonoBehaviour:
       \uC2DC\uAC04\uC744 \uAC00\uC9C0\uB2C8 \uAE4A\uC774 \uC788\uB294 \uAD00\uACC4\uAC00
       \uD615\uC131\uB410\uC5B4! \uC9C0\uC18D \uAC00\uB2A5\uD55C \uBC29\uC2DD\uC774\uB77C
       \uC88B\uC544.\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uC18C\uADDC\uBAA8\uB85C \uC9C4\uD589\uD558\uB2E4 \uBCF4\uB2C8
       \uCC38\uC5EC\uD558\uC9C0 \uBABB\uD55C \uD32C\uB4E4\uC758 \uBD88\uB9CC\uC774
       \uCEE4\uC9C0\uACE0 \uC788\uC5B4... \uACF5\uC815\uD558\uAC8C \uC6B4\uC601\uD558\uAE30\uAC00
       \uC5B4\uB824\uC6CC.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 15
     _successStressDecrease: 15
     _successSubscriberIncrease: 10000
@@ -46,11 +46,11 @@ MonoBehaviour:
       \uB300\uC131\uACF5\uC774\uC5C8\uC5B4! \uD32C\uB4E4\uACFC \uD568\uAED8 \uC758\uBBF8
       \uC788\uB294 \uC2DC\uAC04\uC744 \uBCF4\uB0B4\uACE0 \uCC44\uB110\uC758 \uC601\uD5A5\uB825\uB3C4
       \uD655\uC778\uD588\uC5B4.\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uC7A5\uC2DC\uAC04 \uBC29\uC1A1\uD558\uB2E4\uAC00 \uCCB4\uB825\uC774
       \uB5A8\uC5B4\uC838 \uC911\uAC04\uC5D0 \uBB38\uC81C\uAC00 \uC0DD\uACBC\uC5B4...
       \uC900\uBE44\uAC00 \uBD80\uC871\uD588\uB358 \uAC83 \uAC19\uC544 \uC544\uC26C\uC6CC.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 30
     _successStressDecrease: 0
     _successSubscriberIncrease: 25000

@@ -15,18 +15,18 @@ MonoBehaviour:
   _index: 15
   _choiceText: "\uD32C\uB4E4\uACFC \uC18C\uD1B5\uD560 \uC218 \uC788\uB294 \uCEE4\uBBA4\uB2C8\uD2F0
     \uACF5\uAC04\uC744 \uB9CC\uB4E4\uC5B4\uBCFC\uAE4C?"
-  _choiceSprite: {fileID: 0}
+  _choiceSprite: {fileID: 8587328587093555049, guid: 3c7fa3966c00ce24995f7269f4792758, type: 3}
   _rightCommentData:
     _successChance: 60
     _choiceComment: "\uD32C\uCE74\uD398 \uB9CC\uB4E4\uAE30"
     _successComment: "\"\uC131\uACF5\uC801\uC774\uC57C! \uD32C\uCE74\uD398\uAC00
       \uD65C\uC131\uD654\uB418\uC5B4 \uC678\uBD80 \uC720\uC785 \uB610\uD55C \uAE09\uC99D\uD558\uACE0
       \uC788\uC5B4.\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uD32C\uCE74\uD398\uC5D0\uC11C \uC11C\uB85C \uB2E4\uD22C\uB294
       \uAE00\uB4E4\uC774 \uB118\uCCD0\uB098\uBA74\uC11C, \uC624\uD788\uB824 \uD32C\uB4E4\uACFC
       \uAC70\uB9AC\uAC10\uC774 \uC0DD\uACBC\uC5B4.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 25
     _successStressDecrease: 5
     _successSubscriberIncrease: 8000
@@ -42,12 +42,12 @@ MonoBehaviour:
     _successComment: "\"\uB313\uAE00\uB85C\uB9CC \uC18C\uD1B5\uD558\uB2C8\uAE4C \uBD80\uB2F4\uAC10\uB3C4
       \uB35C\uD558\uACE0, \uAD6C\uB3C5\uC790\uB4E4\uB3C4 \uD3B8\uD558\uAC8C \uC18C\uD1B5\uD558\uB294
       \uAC83 \uAC19\uC544\uC11C \uB2E4\uD589\uC774\uC57C.\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uB313\uAE00\uB85C\uB9CC \uC18C\uD1B5\uD558\uB294 \uAC83\uC774
       \uD32C\uB4E4\uC5D0\uAC8C\uB294 \uADF8\uC800 \uBB34\uC131\uC758\uD558\uAC8C
       \uB290\uAEF4\uC84C\uB098\uBD10. \uC694\uC998 \uB313\uAE00 \uBC18\uC751\uC774
       \uB208\uC5D0 \uB744\uAC8C \uC904\uC5C8\uC5B4.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 10
     _successStressDecrease: 0
     _successSubscriberIncrease: 5000
