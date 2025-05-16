@@ -7,31 +7,10 @@
     <list default="true" id="da7d57f1-6056-4b5a-867a-4c5db2af75e7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/5c14q5u2/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/5c14q5u2/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01ScriptableObjects/Hidden_DisPatch/DIsPatch01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01ScriptableObjects/Hidden_DisPatch/DIsPatch01.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01ScriptableObjects/Hidden_HighStressandFamous/H3-10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01ScriptableObjects/Hidden_HighStressandFamous/H3-10.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a02.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a03.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a03.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a04.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a04.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a06.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a06.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a07.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a07.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a08.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a08.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Font/OnGulip SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Font/OnGulip SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenePr.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenePr.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingConditionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingConditionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LogoUpDown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LogoUpDown.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Endings/Images/Stress0BadEnd.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Endings/Images/Stress0BadEnd.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Endings/Images/Stress100BadEnd.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Endings/Images/Stress100BadEnd.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/StageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/StageManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoadUIController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoadUIController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/GameSaveData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/GameSaveData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +54,17 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/GameFile\SANGWON.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Won\Desktop\GameFile" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.1.1f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\Won\Documents\GitHub\BestYoutuber -debugCodeOptimization" />
@@ -161,6 +151,7 @@
       <workItem from="1747406033105" duration="697000" />
       <workItem from="1747406782493" duration="666000" />
       <workItem from="1747409906173" duration="778000" />
+      <workItem from="1747413743063" duration="297000" />
     </task>
     <servers />
   </component>
