@@ -27,8 +27,8 @@ MonoBehaviour:
       \uB2E4\uD589\uC774\uC57C.\""
     _successSprite: {fileID: 0}
     _failComment: "\"\uB0B4\uAC00 \uCE68\uBB35\uD558\uB294 \uC0AC\uC774 \uAC08\uB4F1\uC774
-      \uCEE4\uC838\uBC84\uB838\uC5B4... \uACB0\uAD6D \uB0B4 \uD32C\uB4E4\uC774 \uC2E4\uB9DD\uD558\uACE0
-      \uB5A0\uB098\uACE0 \uC788\uC5B4.\""
+      \uCEE4\uC838\uBC84\uB838\uC5B4... \uACB0\uAD6D \uB098\uC758 \uD32C\uB4E4\uC774
+      \uC2E4\uB9DD\uD558\uACE0 \uB5A0\uB098\uACE0 \uC788\uC5B4.\""
     _failSprite: {fileID: 0}
     _successFamousIncrease: 5
     _successStressDecrease: 20

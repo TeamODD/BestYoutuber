@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: d12
   m_EditorClassIdentifier: 
   _index: 12
-  _choiceText: "\uAD6C\uB3C5\uC790 15\uB9CC \uB2EC\uC131! \uD300\uC744 \uB354 \uD655\uC7A5\uD574\uC57C
-    \uD560\uAE4C? \uC694\uCCAD\uC774 \uB9CE\uC544 \uAC10\uB2F9\uC774 \uC548 \uB3FC."
+  _choiceText: "\uC694\uC998 \uB4E4\uC5B4 \uC694\uCCAD\uC774 \uBD80\uCA4D \uB298\uC5C8\uB2E4.
+    \uC774\uC81C \uD300\uC744 \uB354 \uD655\uC7A5\uD574\uC57C \uD560\uAE4C?"
   _choiceSprite: {fileID: 0}
   _rightCommentData:
     _successChance: 80

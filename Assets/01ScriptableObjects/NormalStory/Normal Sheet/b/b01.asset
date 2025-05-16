@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _index: 1
   _choiceText: "\uB2E4\uB978 \uC720\uD29C\uBC84\uC640 \uCF5C\uB77C\uBCF4 \uC81C\uC548\uC774
-    \uC654\uC5B4. \uB0B4 \uAD6C\uB3C5\uC790\uBCF4\uB2E4 \uC57D\uAC04 \uB9CE\uC740
-    \uCC44\uB110\uC774\uC57C."
+    \uC654\uC5B4. \uAD6C\uB3C5\uC790 \uC218\uAC00 \uB098\uBCF4\uB2E4 \uC57D\uAC04
+    \uB354 \uB9CE\uC740 \uCC44\uB110\uC774\uC57C."
   _choiceSprite: {fileID: 0}
   _rightCommentData:
     _successChance: 60

@@ -41,7 +41,7 @@ MonoBehaviour:
     _failResultSound: {fileID: 0}
   _leftCommentData:
     _successChance: 55
-    _choiceComment: "\uB2E4\uC591\uD55C \uCF58\uD150\uCE20\uB85C \uD655\uC7A5"
+    _choiceComment: "\uBC95\uC801 \uB300\uC751 \uC608\uACE0"
     _successComment: "\"\uC804\uBB38 \uBC95\uBB34\uD300\uACFC \uD568\uAED8 \uCCB4\uACC4\uC801\uC73C\uB85C
       \uB300\uC751\uD558\uB2C8 \uBD88\uBC95 \uCF58\uD150\uCE20\uAC00 \uD06C\uAC8C
       \uC904\uC5C8\uC5B4! \uC9C0\uC801\uC7AC\uC0B0\uAD8C\uC5D0 \uB300\uD55C \uC778\uC2DD\uB3C4

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: d09
   m_EditorClassIdentifier: 
   _index: 9
-  _choiceText: "\uD504\uB77C\uC774\uBC84\uC2DC \uBB38\uC81C\uAC00 \uACE0\uBBFC\uB3FC.
-    \uC778\uAE30\uAC00 \uCEE4\uC9C8\uC218\uB85D \uC0AC\uC0DD\uD65C \uCE68\uD574\uAC00
-    \uC2EC\uD574\uC838."
+  _choiceText: "\uD504\uB77C\uC774\uBC84\uC2DC \uBB38\uC81C\uAC00 \uAC71\uC815\uB3FC.
+    \uC778\uAE30\uAC00 \uB192\uC774\uC9C8 \uC218\uB85D \uC0AC\uC0DD\uD65C \uCE68\uD574\uB3C4
+    \uC2EC\uD574\uC9C0\uB294 \uAC83 \uAC19\uC544."
   _choiceSprite: {fileID: 0}
   _rightCommentData:
     _successChance: 80
