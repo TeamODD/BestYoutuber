@@ -12,7 +12,7 @@ public class HappyEndingManager : MonoBehaviour
 
     [Header("Å©·¹µ÷")]
     [SerializeField] private RectTransform creditGroup;
-    [SerializeField] private float creditSpeed = 50f;
+    [SerializeField] private float creditSpeed = 200f;
     [SerializeField] private float creditStartDelay = 1f;
 
     private Vector2 startPosition;
