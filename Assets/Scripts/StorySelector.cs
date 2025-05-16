@@ -212,7 +212,7 @@ public class StorySelector : MonoBehaviour
         }
     }
 
-    private StoryTierType GetStoryTierType(int subscriber)
+    public StoryTierType GetStoryTierType(int subscriber)
     {
         if (subscriber <= 1000)
             return StoryTierType.One;

@@ -12,8 +12,20 @@ public class YoutubeSubscriberManager : MonoBehaviour
     public GameObject SilverButton;
     public GameObject GoldButton;
     
-    private bool _silverButtonShown = false;
-    private bool _goldButtonShown = false;
+    public bool _silverButtonShown = false;
+    public bool _goldButtonShown = false;
+    
+    public bool SilverButtonShown
+    {
+        get { return _silverButtonShown; }
+        set { _silverButtonShown = value; }
+    }
+
+    public bool GoldButtonShown
+    {
+        get { return _goldButtonShown; }
+        set { _goldButtonShown = value; }
+    }
 
     private void Update()
     {

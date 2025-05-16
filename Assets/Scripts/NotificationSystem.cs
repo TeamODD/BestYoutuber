@@ -49,6 +49,8 @@ public class NotificationSystem : MonoBehaviour
         public string message;
     }
     
+    
+    
     [Header("Custom Notification Messages")]
     [SerializeField] private List<NotificationTextMapping> _notificationTexts;
     
@@ -82,6 +84,56 @@ public class NotificationSystem : MonoBehaviour
         {
             Debug.LogWarning("Notification image object reference is missing!");
         }
+    }
+    
+    // NotificationSystem.cs에 추가할 메서드
+
+// 표시된 알림 목록 가져오기
+    public List<string> GetShownNotifications()
+    {
+        // HashSet을 List로 변환하여 반환
+        return new List<string>(_shownNotifications);
+    }
+
+// 표시된 알림 목록 복원
+    public void RestoreShownNotifications(List<string> notifications)
+    {
+        if (notifications == null) return;
+    
+        // 기존 알림 기록 초기화 (선택 사항)
+        _shownNotifications.Clear();
+    
+        // 알림 목록 복원
+        foreach (string notification in notifications)
+        {
+            _shownNotifications.Add(notification);
+        }
+    }
+
+// 임시 알림 표시 (저장/불러오기 성공 등을 알리기 위한 용도)
+    public void ShowTemporaryNotification(string message)
+    {
+        if (string.IsNullOrEmpty(message) || notificationImageObject == null) return;
+    
+        // 텍스트 설정
+        if (notificationText != null)
+        {
+            notificationText.text = message;
+        }
+    
+        // 알림 활성화
+        _isNotificationActive = true;
+        notificationImageObject.SetActive(true);
+    
+        // 3초 후 자동으로 닫히도록 설정
+        StartCoroutine(CloseNotificationAfterDelay(3.0f));
+    }
+
+// 지정된 시간 후 알림 닫기
+    private IEnumerator CloseNotificationAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        CloseCurrentNotification();
     }
     
     private void Start()
