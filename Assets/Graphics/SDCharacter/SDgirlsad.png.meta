@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 57a4833cfbdda094c95d81abfef2b4e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2769253595300484536
+    second: SDgirlsad_0
+  - first:
+      213: -337621902549850522
+    second: SDgirlsad_1
+  - first:
+      213: -5577135677405818985
+    second: SDgirlsad_2
+  - first:
+      213: -7068458607306011121
+    second: SDgirlsad_3
+  - first:
+      213: -6482890509642794184
+    second: SDgirlsad_4
+  - first:
+      213: 2110826568728659558
+    second: SDgirlsad_5
+  - first:
+      213: 5321698829590461131
+    second: SDgirlsad_6
+  - first:
+      213: 6622471947024921051
+    second: SDgirlsad_7
+  - first:
+      213: 6440689183415644558
+    second: SDgirlsad_8
+  - first:
+      213: 1108166802975307459
+    second: SDgirlsad_9
+  - first:
+      213: 1455195440631786083
+    second: SDgirlsad_10
+  - first:
+      213: -1757871381984046589
+    second: SDgirlsad_11
+  - first:
+      213: 1880588339492454121
+    second: SDgirlsad_12
+  - first:
+      213: 7173233246684964682
+    second: SDgirlsad_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SDgirlsad_0
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 918
+        width: 24
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a2427f682a199d0800000000000000
+      internalID: -2769253595300484536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_1
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 993
+        width: 23
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666ef1e1ba6805bf0800000000000000
+      internalID: -337621902549850522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 167
+        width: 723
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f811c76a80a92b0800000000000000
+      internalID: -5577135677405818985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_3
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1078
+        width: 24
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e09f1d85ac7ed90800000000000000
+      internalID: -7068458607306011121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_4
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1148
+        width: 22
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b7df6ed652806a0800000000000000
+      internalID: -6482890509642794184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1153
+        width: 21
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6664783a4992b4d10800000000000000
+      internalID: 2110826568728659558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_6
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1140
+        width: 25
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcaf953d3e87ad940800000000000000
+      internalID: 5321698829590461131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_7
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1155
+        width: 24
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1f861062fb7eb50800000000000000
+      internalID: 6622471947024921051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_8
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1149
+        width: 21
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81b03620bce16950800000000000000
+      internalID: 6440689183415644558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_9
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1120
+        width: 25
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6393306dff06f00800000000000000
+      internalID: 1108166802975307459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_10
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 912
+        width: 50
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a20a51b84e13410800000000000000
+      internalID: 1455195440631786083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_11
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 720
+        width: 100
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302140caa49ca97e0800000000000000
+      internalID: -1757871381984046589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 769
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee70388121391a10800000000000000
+      internalID: 1880588339492454121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SDgirlsad_13
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 778
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47eda7e1a17c8360800000000000000
+      internalID: 7173233246684964682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SDgirlsad_0: -2769253595300484536
+      SDgirlsad_1: -337621902549850522
+      SDgirlsad_10: 1455195440631786083
+      SDgirlsad_11: -1757871381984046589
+      SDgirlsad_12: 1880588339492454121
+      SDgirlsad_13: 7173233246684964682
+      SDgirlsad_2: -5577135677405818985
+      SDgirlsad_3: -7068458607306011121
+      SDgirlsad_4: -6482890509642794184
+      SDgirlsad_5: 2110826568728659558
+      SDgirlsad_6: 5321698829590461131
+      SDgirlsad_7: 6622471947024921051
+      SDgirlsad_8: 6440689183415644558
+      SDgirlsad_9: 1108166802975307459
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
