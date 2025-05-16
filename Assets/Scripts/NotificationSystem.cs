@@ -23,18 +23,15 @@ public class NotificationSystem : MonoBehaviour
     [Header("Milestone Settings")]
     [SerializeField] private int[] _subscriberMilestones = { 100, 1000, 10000, 100000, 1000000 };
     
-    // 알림 유형 열거형
     public enum NotificationType
     {
-        OneTime,    // 일회용 알림
-        Repeatable  // 반복 가능 알림
+        OneTime,    
+        Repeatable  
     }
+
+    private HashSet<string> _shownNotifications = new();
     
-    // 한 번만 표시할 알림 추적
-    private HashSet<string> _shownNotifications = new HashSet<string>();
-    
-    // 큐를 사용하여 알림 순서 관리
-    private Queue<string> _notificationQueue = new Queue<string>();
+    private Queue<string> _notificationQueue = new();
     private bool _isProcessingQueue = false;
     private bool _isNotificationActive = false;
     
@@ -52,10 +49,11 @@ public class NotificationSystem : MonoBehaviour
         public string message;
     }
     
+    
+    
     [Header("Custom Notification Messages")]
     [SerializeField] private List<NotificationTextMapping> _notificationTexts;
     
-    // 미리 정의된 일회용 알림 목록
     private HashSet<string> _predefinedOneTimeNotifications = new HashSet<string>
     {
         "SilverButton", 
@@ -65,7 +63,6 @@ public class NotificationSystem : MonoBehaviour
         "Subscribers10000",
         "Subscribers100000",
         "Subscribers1000000"
-        // 필요한 경우 여기에 더 추가
     };
     
     private void Awake()
@@ -89,16 +86,65 @@ public class NotificationSystem : MonoBehaviour
         }
     }
     
+    // NotificationSystem.cs에 추가할 메서드
+
+// 표시된 알림 목록 가져오기
+    public List<string> GetShownNotifications()
+    {
+        // HashSet을 List로 변환하여 반환
+        return new List<string>(_shownNotifications);
+    }
+
+// 표시된 알림 목록 복원
+    public void RestoreShownNotifications(List<string> notifications)
+    {
+        if (notifications == null) return;
+    
+        // 기존 알림 기록 초기화 (선택 사항)
+        _shownNotifications.Clear();
+    
+        // 알림 목록 복원
+        foreach (string notification in notifications)
+        {
+            _shownNotifications.Add(notification);
+        }
+    }
+
+// 임시 알림 표시 (저장/불러오기 성공 등을 알리기 위한 용도)
+    public void ShowTemporaryNotification(string message)
+    {
+        if (string.IsNullOrEmpty(message) || notificationImageObject == null) return;
+    
+        // 텍스트 설정
+        if (notificationText != null)
+        {
+            notificationText.text = message;
+        }
+    
+        // 알림 활성화
+        _isNotificationActive = true;
+        notificationImageObject.SetActive(true);
+    
+        // 3초 후 자동으로 닫히도록 설정
+        StartCoroutine(CloseNotificationAfterDelay(3.0f));
+    }
+
+// 지정된 시간 후 알림 닫기
+    private IEnumerator CloseNotificationAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        CloseCurrentNotification();
+    }
+    
     private void Start()
     {
         if (playerModel != null)
         {
-            // 플레이어 모델 이벤트 구독
             playerModel.OnStressChanged += CheckStressNotification;
             playerModel.OnFamousChanged += CheckFamousNotification;
             playerModel.OnSubscriberChanged += CheckSubscriberNotification;
             
-            // 초기값 저장
+            // 초기값 장
             _previousSubscribers = playerModel.Subscriber;
             _previousStress = playerModel.Stress;
             _previousFamous = playerModel.Famous;
@@ -111,7 +157,6 @@ public class NotificationSystem : MonoBehaviour
     
     private void OnDestroy()
     {
-        // 이벤트 구독 해제
         if (playerModel != null)
         {
             playerModel.OnStressChanged -= CheckStressNotification;
@@ -119,7 +164,6 @@ public class NotificationSystem : MonoBehaviour
             playerModel.OnSubscriberChanged -= CheckSubscriberNotification;
         }
         
-        // 알림 이미지 이벤트 구독 해제
         if (notificationImageObject != null)
         {
             NotificationImage notificationImage = notificationImageObject.GetComponent<NotificationImage>();
@@ -130,22 +174,18 @@ public class NotificationSystem : MonoBehaviour
         }
     }
     
-    // 알림이 닫힐 때 호출될 메소드
     private void OnNotificationClosed()
     {
         _isNotificationActive = false;
         
-        // 큐에 다음 알림이 있는 경우 처리 계속
         if (_notificationQueue.Count > 0)
         {
             ProcessNextNotification();
         }
     }
     
-    // 구독자 수 변화 확인
     private void CheckSubscriberNotification(int newValue)
     {
-        // 마일스톤 달성 확인 (일회용 알림)
         foreach (int milestone in _subscriberMilestones)
         {
             if (_previousSubscribers < milestone && newValue >= milestone)
@@ -157,12 +197,11 @@ public class NotificationSystem : MonoBehaviour
             }
         }
         
-        // 구독자 급변화 확인 (반복 알림)
-        if (newValue > _previousSubscribers * 1.5f && _previousSubscribers > 0)  // 50% 이상 증가
+        if (newValue > _previousSubscribers * 1.5f && _previousSubscribers > 0)  
         {
             QueueNotification("SubscribersIncrease");
         }
-        else if (newValue < _previousSubscribers * 0.7f && _previousSubscribers > 100)  // 30% 이상 감소
+        else if (newValue < _previousSubscribers * 0.7f && _previousSubscribers > 100)  
         {
             QueueNotification("SubscribersDecrease");
         }

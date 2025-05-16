@@ -138,7 +138,6 @@ public class StorySelector : MonoBehaviour
         if (_playerModel.Stress <= 20 && _playerModel.Famous <= 20)
         {
             ActivateHiddenStory(StoryTierType.Hidden_LowStressandFamous);
-            //무명의 평화 
         }
         else if (_playerModel.Stress <= 20)
         {
@@ -191,7 +190,6 @@ public class StorySelector : MonoBehaviour
     
     private bool IsHiddenStoryType(StoryTierType type)
     {
-        // 열거형 이름에 "Hidden_"이 포함되어 있으면 히든 타입으로 간주
         return type.ToString().StartsWith("Hidden_");
     }
     
@@ -214,7 +212,7 @@ public class StorySelector : MonoBehaviour
         }
     }
 
-    private StoryTierType GetStoryTierType(int subscriber)
+    public StoryTierType GetStoryTierType(int subscriber)
     {
         if (subscriber <= 1000)
             return StoryTierType.One;
