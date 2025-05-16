@@ -23,18 +23,15 @@ public class NotificationSystem : MonoBehaviour
     [Header("Milestone Settings")]
     [SerializeField] private int[] _subscriberMilestones = { 100, 1000, 10000, 100000, 1000000 };
     
-    // 알림 유형 열거형
     public enum NotificationType
     {
-        OneTime,    // 일회용 알림
-        Repeatable  // 반복 가능 알림
+        OneTime,    
+        Repeatable  
     }
+
+    private HashSet<string> _shownNotifications = new();
     
-    // 한 번만 표시할 알림 추적
-    private HashSet<string> _shownNotifications = new HashSet<string>();
-    
-    // 큐를 사용하여 알림 순서 관리
-    private Queue<string> _notificationQueue = new Queue<string>();
+    private Queue<string> _notificationQueue = new();
     private bool _isProcessingQueue = false;
     private bool _isNotificationActive = false;
     
@@ -55,7 +52,6 @@ public class NotificationSystem : MonoBehaviour
     [Header("Custom Notification Messages")]
     [SerializeField] private List<NotificationTextMapping> _notificationTexts;
     
-    // 미리 정의된 일회용 알림 목록
     private HashSet<string> _predefinedOneTimeNotifications = new HashSet<string>
     {
         "SilverButton", 
@@ -65,7 +61,6 @@ public class NotificationSystem : MonoBehaviour
         "Subscribers10000",
         "Subscribers100000",
         "Subscribers1000000"
-        // 필요한 경우 여기에 더 추가
     };
     
     private void Awake()
@@ -93,12 +88,11 @@ public class NotificationSystem : MonoBehaviour
     {
         if (playerModel != null)
         {
-            // 플레이어 모델 이벤트 구독
             playerModel.OnStressChanged += CheckStressNotification;
             playerModel.OnFamousChanged += CheckFamousNotification;
             playerModel.OnSubscriberChanged += CheckSubscriberNotification;
             
-            // 초기값 저장
+            // 초기값 장
             _previousSubscribers = playerModel.Subscriber;
             _previousStress = playerModel.Stress;
             _previousFamous = playerModel.Famous;
@@ -111,7 +105,6 @@ public class NotificationSystem : MonoBehaviour
     
     private void OnDestroy()
     {
-        // 이벤트 구독 해제
         if (playerModel != null)
         {
             playerModel.OnStressChanged -= CheckStressNotification;
@@ -119,7 +112,6 @@ public class NotificationSystem : MonoBehaviour
             playerModel.OnSubscriberChanged -= CheckSubscriberNotification;
         }
         
-        // 알림 이미지 이벤트 구독 해제
         if (notificationImageObject != null)
         {
             NotificationImage notificationImage = notificationImageObject.GetComponent<NotificationImage>();
@@ -130,22 +122,18 @@ public class NotificationSystem : MonoBehaviour
         }
     }
     
-    // 알림이 닫힐 때 호출될 메소드
     private void OnNotificationClosed()
     {
         _isNotificationActive = false;
         
-        // 큐에 다음 알림이 있는 경우 처리 계속
         if (_notificationQueue.Count > 0)
         {
             ProcessNextNotification();
         }
     }
     
-    // 구독자 수 변화 확인
     private void CheckSubscriberNotification(int newValue)
     {
-        // 마일스톤 달성 확인 (일회용 알림)
         foreach (int milestone in _subscriberMilestones)
         {
             if (_previousSubscribers < milestone && newValue >= milestone)
@@ -157,12 +145,11 @@ public class NotificationSystem : MonoBehaviour
             }
         }
         
-        // 구독자 급변화 확인 (반복 알림)
-        if (newValue > _previousSubscribers * 1.5f && _previousSubscribers > 0)  // 50% 이상 증가
+        if (newValue > _previousSubscribers * 1.5f && _previousSubscribers > 0)  
         {
             QueueNotification("SubscribersIncrease");
         }
-        else if (newValue < _previousSubscribers * 0.7f && _previousSubscribers > 100)  // 30% 이상 감소
+        else if (newValue < _previousSubscribers * 0.7f && _previousSubscribers > 100)  
         {
             QueueNotification("SubscribersDecrease");
         }

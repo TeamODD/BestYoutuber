@@ -15,17 +15,17 @@ MonoBehaviour:
   _index: 5
   _choiceText: "\uD3B8\uC9D1\uC774 \uB108\uBB34 \uC5B4\uB824\uC6CC... \uBA87\uC2DC\uAC04\uC9F8
     \uC528\uB984 \uC911\uC774\uC57C."
-  _choiceSprite: {fileID: 0}
+  _choiceSprite: {fileID: 7722535952592266324, guid: 5548cb3e554e29440893c2b042303f75, type: 3}
   _rightCommentData:
     _successChance: 55
     _choiceComment: "\uD2B8\uB80C\uB514\uD55C \uD3B8\uC9D1\uC5D0 \uC2DC\uAC04 \uD22C\uC790"
     _successComment: "\"\uBC24\uC0C8 \uD3B8\uC9D1\uD55C \uBCF4\uB78C\uC774 \uC788\uC5B4!
       \uD3B8\uC9D1 \uC2A4\uD0C0\uC77C\uC5D0 \uB300\uD55C \uCE6D\uCC2C \uB313\uAE00\uC774
       \uB9CE\uC774 \uB2EC\uB838\uC5B4!\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uB108\uBB34 \uACFC\uD55C \uD3B8\uC9D1\uC774 \uB418\uC5B4\uBC84\uB838\uB098\uBD10...
       \uC5B4\uC9C0\uB7FD\uB2E4\uB294 \uB313\uAE00\uC774 \uB9CE\uC544.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 15
     _successStressDecrease: 0
     _successSubscriberIncrease: 25
@@ -41,11 +41,11 @@ MonoBehaviour:
       \uC5C5\uB85C\uB4DC"
     _successComment: "\"\uB2E8\uC21C\uD558\uAC8C \uD3B8\uC9D1\uD588\uB294\uB370\uB3C4
       \uB0B4\uC6A9 \uC790\uCCB4\uAC00 \uC88B\uC544\uC11C \uBC18\uC751\uC774 \uAD1C\uCC2E\uC544!\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uB108\uBB34 \uB300\uCDA9 \uD3B8\uC9D1\uD55C \uAC83 \uAC19\uC544...
       \uC2DC\uCCAD\uC790\uB4E4\uC774 \uD3B8\uC9D1 \uD004\uB9AC\uD2F0\uAC00 \uB0AE\uB2E4\uACE0
       \uC9C0\uC801\uD574.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 5
     _successStressDecrease: 15
     _successSubscriberIncrease: 15
