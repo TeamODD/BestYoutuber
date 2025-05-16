@@ -31,7 +31,7 @@ MonoBehaviour:
       \uCEE4\uC9C0\uACE0 \uC788\uC5B4... \uC77C\uBD80\uB294 \uB5A0\uB098\uACE0 \uC788\uC5B4.\""
     _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 10
-    _successStressDecrease: 15
+    _successStressDecrease: -15
     _successSubscriberIncrease: 5000
     _failFamousDecrease: 5
     _failStressIncrease: 10

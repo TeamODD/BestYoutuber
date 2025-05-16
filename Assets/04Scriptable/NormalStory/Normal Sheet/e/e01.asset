@@ -28,7 +28,7 @@ MonoBehaviour:
       \uD32C\uB4E4\uC740 \uB0B4\uAC8C \uC2E4\uB9DD\uD55C \uAC83 \uAC19\uC544.\""
     _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 30
-    _successStressDecrease: 10
+    _successStressDecrease: -10
     _successSubscriberIncrease: 100000
     _failFamousDecrease: 30
     _failStressIncrease: 30
@@ -50,7 +50,7 @@ MonoBehaviour:
       \uAC83 \uAC19\uC544.\""
     _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 50
-    _successStressDecrease: 10
+    _successStressDecrease: -10
     _successSubscriberIncrease: 200000
     _failFamousDecrease: 30
     _failStressIncrease: 40

@@ -28,7 +28,7 @@ MonoBehaviour:
       \uB313\uAE00\uC774 \uB2EC\uB838\uC5B4.\""
     _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 15
-    _successStressDecrease: 15
+    _successStressDecrease: -15
     _successSubscriberIncrease: 10
     _failFamousDecrease: 10
     _failStressIncrease: 10

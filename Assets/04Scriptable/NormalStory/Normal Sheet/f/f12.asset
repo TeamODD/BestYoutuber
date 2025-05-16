@@ -55,7 +55,7 @@ MonoBehaviour:
       \uC7A5\uC545\uD558\uB294 \uB3D9\uC548 \uAE30\uD68C\uB97C \uB193\uCCE4\uC5B4.\" "
     _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 20
-    _successStressDecrease: 15
+    _successStressDecrease: -15
     _successSubscriberIncrease: 500000
     _failFamousDecrease: 15
     _failStressIncrease: 20

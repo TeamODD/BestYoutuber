@@ -30,7 +30,7 @@ MonoBehaviour:
       \uC0C8\uB85C\uC6B4 \uCF58\uD150\uCE20\uB97C \uC6D0\uD588\uB358 \uAC83 \uAC19\uC544.\""
     _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 20
-    _successStressDecrease: 15
+    _successStressDecrease: -15
     _successSubscriberIncrease: 12000
     _failFamousDecrease: 5
     _failStressIncrease: 10
