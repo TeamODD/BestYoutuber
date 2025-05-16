@@ -8,7 +8,6 @@ public class EndingConditionManager : MonoBehaviour
     [Header("Ending Data")]
     [SerializeField] private SadEndingData Stress100Data;
     [SerializeField] private SadEndingData Stress0Data;
-    [SerializeField] private SadEndingData Famous100Data;
     [SerializeField] private SadEndingData Famous0Data;
     [SerializeField] private SadEndingData Subscriber10000000Data;
 
@@ -26,11 +25,6 @@ public class EndingConditionManager : MonoBehaviour
         else if (_playerModel.Stress <= 0)
         {
             _sadEndingManager.ShowSadEnding(Stress0Data);
-            _hasEnded = true;
-        }
-        else if (_playerModel.Famous >= 100)
-        {
-            _sadEndingManager.ShowSadEnding(Famous100Data);
             _hasEnded = true;
         }
         else if (_playerModel.Famous <= 0)

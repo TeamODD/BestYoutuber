@@ -797,7 +797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _presenter: {fileID: 387522991}
   _stress: 50
-  _famous: 0
+  _famous: 20
   _subscriber: 0
   _endingConditionManager: {fileID: 1639944638}
 --- !u!114 &387522991
@@ -1691,6 +1691,8 @@ MonoBehaviour:
   _notificationSystem: {fileID: 1226897505}
   SilverButton: {fileID: 845986270}
   GoldButton: {fileID: 1697998342}
+  _silverButtonShown: 0
+  _goldButtonShown: 0
 --- !u!1 &694148972
 GameObject:
   m_ObjectHideFlags: 0
@@ -4648,10 +4650,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerModel: {fileID: 387522990}
   _sadEndingManager: {fileID: 1639944639}
-  Stress100Data: {fileID: 11400000, guid: ea9613734fd89404e8ec33a7a3f710b9, type: 2}
-  Stress0Data: {fileID: 11400000, guid: ea9613734fd89404e8ec33a7a3f710b9, type: 2}
-  Famous100Data: {fileID: 11400000, guid: ea9613734fd89404e8ec33a7a3f710b9, type: 2}
-  Famous0Data: {fileID: 11400000, guid: ea9613734fd89404e8ec33a7a3f710b9, type: 2}
+  Stress100Data: {fileID: 11400000, guid: 735d7ac699a825c468556070b67921a4, type: 2}
+  Stress0Data: {fileID: 11400000, guid: fe6440da2e9653647be916f2e960c19d, type: 2}
+  Famous0Data: {fileID: 11400000, guid: 9e61e00a136ec02489bf1d2bf9eea84c, type: 2}
   Subscriber10000000Data: {fileID: 11400000, guid: ea9613734fd89404e8ec33a7a3f710b9, type: 2}
 --- !u!114 &1639944639
 MonoBehaviour:
