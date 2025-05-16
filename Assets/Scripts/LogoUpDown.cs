@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class LogoUpDown : MonoBehaviour
 {
-    public float moveDistance = 1f; 
-    public float moveSpeed = 2f;    
+    [SerializeField]
+    private float moveDistance = 1f;
+    [SerializeField]
+    private float moveSpeed = 2f;    
     private Vector3 startPos;       
 
     void Start()
@@ -11,7 +13,7 @@ public class LogoUpDown : MonoBehaviour
         startPos = transform.position;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         transform.position = new Vector3(startPos.x, startPos.y + Mathf.Sin(Time.time * moveSpeed) * moveDistance, startPos.z);
     }

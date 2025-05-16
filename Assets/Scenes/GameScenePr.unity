@@ -797,7 +797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _presenter: {fileID: 387522991}
   _stress: 50
-  _famous: 0
+  _famous: 20
   _subscriber: 0
   _endingConditionManager: {fileID: 1639944638}
 --- !u!114 &387522991
@@ -1691,6 +1691,8 @@ MonoBehaviour:
   _notificationSystem: {fileID: 1226897505}
   SilverButton: {fileID: 845986270}
   GoldButton: {fileID: 1697998342}
+  _silverButtonShown: 0
+  _goldButtonShown: 0
 --- !u!1 &694148972
 GameObject:
   m_ObjectHideFlags: 0
