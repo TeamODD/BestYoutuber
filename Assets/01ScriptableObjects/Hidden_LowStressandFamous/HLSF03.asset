@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
   m_Name: HLSF03
   m_EditorClassIdentifier: 
-  _index: 0
+  _index: 3
   _choiceText: "\uC6B0\uB9AC \uD32C\uB364\uB4E4\uC774 \uC624\uD504\uB77C\uC778 \uBC0B\uC5C5\uC744
     \uC81C\uC548\uD588\uC5B4. \uC801\uC740 \uC778\uC6D0\uC774\uC9C0\uB9CC \uB9CC\uB098\uBCFC\uAE4C?"
   _choiceSprite: {fileID: 3754751434034673125, guid: f3d3aac60a96f024eae910018dd6f241, type: 3}
