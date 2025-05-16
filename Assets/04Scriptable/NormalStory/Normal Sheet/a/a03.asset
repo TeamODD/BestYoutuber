@@ -50,7 +50,7 @@ MonoBehaviour:
     _successStressDecrease: 0
     _successSubscriberIncrease: 30
     _failFamousDecrease: 0
-    _failStressIncrease: 20
+    _failStressIncrease: 15
     _failSubscriberDecrease: 0
     _choiceSelectSound: {fileID: 0}
     _successResultSound: {fileID: 0}
