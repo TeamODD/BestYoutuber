@@ -11,6 +11,7 @@ public class StoryPresenter : MonoBehaviour
     [SerializeField] private ChoiceResultView _choiceResultView;
     [SerializeField] private StoryModel _storyModel;
     [SerializeField] private FingerDetector _fingerDetector;
+    [SerializeField] private CommentPresenter _commentPresenter;
 
     public void SetNewStory(StoryData story)
     {
@@ -64,5 +65,7 @@ public class StoryPresenter : MonoBehaviour
             _choiceResultView.SetImageSprite((int)ChoiceResultView.Images.RightSelectChangeImage,
                 story.RightCommentData.FailSprite);
         }
+
+        _commentPresenter.CreateNewComment();
     }
 }
