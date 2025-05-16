@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
   m_Name: DIsPatch01
   m_EditorClassIdentifier: 
-  _index: 0
-  _choiceText: 
-  _choiceSprite: {fileID: 0}
+  _index: 1
+  _choiceText: "\uC778\uAE30\uAC00 \uB192\uC544\uC9C0\uBA74\uC11C \uD55C \uC5F0\uC608\uC778\uACFC
+    \uCE5C\uD574\uC84C\uB2E4. \uACB0\uAD6D \uC5F0\uC560\uB97C \uC2DC\uC791\uD558\uAC8C
+    \uB418\uB294\uB370...."
+  _choiceSprite: {fileID: 8587328587093555049, guid: 3c7fa3966c00ce24995f7269f4792758, type: 3}
   _rightCommentData:
     _successChance: 0
     _choiceComment: 

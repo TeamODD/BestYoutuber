@@ -30,7 +30,7 @@ MonoBehaviour:
       \uB0A8\uC544\uC788\uC5B4... \uD63C\uB780\uC2A4\uB7EC\uC6CC."
     _failSprite: {fileID: 0}
     _successFamousIncrease: 0
-    _successStressDecrease: 40
+    _successStressDecrease: -40
     _successSubscriberIncrease: 0
     _failFamousDecrease: 0
     _failStressIncrease: 15

@@ -16,7 +16,7 @@ MonoBehaviour:
   _choiceText: "\uB300\uD615 \uC5D4\uD130\uD14C\uC778\uBA3C\uD2B8 \uD68C\uC0AC\uC5D0\uC11C
     \uC804\uC18D\uACC4\uC57D \uC81C\uC548\uC774 \uC654\uC5B4. \uC18C\uC18D\uC0AC\uC5D0
     \uB4E4\uC5B4\uAC08\uAE4C?"
-  _choiceSprite: {fileID: 0}
+  _choiceSprite: {fileID: 8587328587093555049, guid: 3c7fa3966c00ce24995f7269f4792758, type: 3}
   _rightCommentData:
     _successChance: 75
     _choiceComment: "\uB3C5\uB9BD \uD06C\uB9AC\uC5D0\uC774\uD130\uB85C \uB0A8\uAE30"
@@ -24,13 +24,13 @@ MonoBehaviour:
       \uD65C\uB3D9\uD558\uB2C8 \uD32C\uB4E4\uC774 \uB354 \uC9C4\uC815\uC131\uC744
       \uB290\uB07C\uB294 \uAC83 \uAC19\uC544! \uC804\uC18D\uACC4\uC57D \uC5C6\uC774\uB3C4
       \uC6D0\uD558\uB294 \uD611\uC5C5\uC740 \uB2E4 \uD560 \uC218 \uC788\uAC8C \uB410\uC5B4.\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uD63C\uC790\uC11C \uBAA8\uB4E0 \uAC83\uC744 \uAD00\uB9AC\uD558\uB2E4
       \uBCF4\uB2C8 \uD55C\uACC4\uB97C \uB290\uAEF4... \uB354 \uD070 \uC131\uC7A5\uC744
       \uC704\uD55C \uAE30\uD68C\uB97C \uB193\uCE5C \uAC83 \uAC19\uC544 \uC544\uC26C\uC6CC.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 25
-    _successStressDecrease: 5
+    _successStressDecrease: -5
     _successSubscriberIncrease: 8000
     _failFamousDecrease: 10
     _failStressIncrease: 15
@@ -46,14 +46,14 @@ MonoBehaviour:
       \uB2E4\uC591\uD55C \uAE30\uD68C\uAC00 \uC0DD\uACBC\uC5B4! \uB354 \uCCB4\uACC4\uC801\uC778
       \uD65C\uB3D9\uC774 \uAC00\uB2A5\uD574\uC9C0\uACE0 \uD6E8\uC52C \uD070 \uD504\uB85C\uC81D\uD2B8\uB3C4
       \uC9C4\uD589\uD560 \uC218 \uC788\uAC8C \uB410\uC5B4.\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uACC4\uC57D \uD6C4 \uCC3D\uC791\uC758 \uC790\uC720\uAC00 \uD06C\uAC8C
       \uC81C\uD55C\uB410\uC5B4... \uD68C\uC0AC \uBC29\uD5A5\uC131\uACFC \uB0B4 \uC2A4\uD0C0\uC77C\uC774
       \uCDA9\uB3CC\uD558\uACE0 \uD32C\uB4E4\uB3C4 \uBCC0\uD654\uB97C \uBABB \uBC1B\uC544\uB4E4\uC774\uB294
       \uAC83 \uAC19\uC544.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 55
-    _successStressDecrease: 20
+    _successStressDecrease: -20
     _successSubscriberIncrease: 200000
     _failFamousDecrease: 60
     _failStressIncrease: 50

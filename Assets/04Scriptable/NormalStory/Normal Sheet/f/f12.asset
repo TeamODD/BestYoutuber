@@ -16,7 +16,7 @@ MonoBehaviour:
   _choiceText: "\uB0B4 \uC774\uB984\uC744 \uAC74 NFT/\uBA54\uD0C0\uBC84\uC2A4 \uD504\uB85C\uC81D\uD2B8
     \uC81C\uC548\uC774 \uC654\uC5B4. \uB514\uC9C0\uD138 \uC790\uC0B0\uC73C\uB85C
     \uD655\uC7A5\uD560\uAE4C? "
-  _choiceSprite: {fileID: 0}
+  _choiceSprite: {fileID: 8587328587093555049, guid: 3c7fa3966c00ce24995f7269f4792758, type: 3}
   _rightCommentData:
     _successChance: 35
     _choiceComment: "\uB300\uADDC\uBAA8 \uB514\uC9C0\uD138 \uC790\uC0B0 \uD504\uB85C\uC81D\uD2B8
@@ -25,12 +25,12 @@ MonoBehaviour:
       \uD504\uB85C\uC81D\uD2B8\uAC00 \uB300\uC131\uACF5\uD588\uC5B4! \uC0C8\uB85C\uC6B4
       \uB514\uC9C0\uD138 \uACBD\uC81C \uC601\uC5ED\uC5D0\uC11C \uC120\uAD6C\uC790\uC801
       \uC704\uCE58\uB97C \uCC28\uC9C0\uD558\uAC8C \uB410\uC5B4.\" "
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uCD08\uAE30 \uC5F4\uD48D \uC774\uD6C4 \uAE09\uACA9\uD788 \uC778\uAE30\uAC00
       \uC2DD\uC5C8\uACE0, \uC0AC\uAE30 \uB17C\uB780\uAE4C\uC9C0 \uC77C\uBD80 \uC81C\uAE30\uB410\uC5B4...
       \uB9C9\uB300\uD55C \uD22C\uC790 \uC190\uC2E4\uACFC \uD568\uAED8 \uD3C9\uD310\uC5D0\uB3C4
       \uD0C0\uACA9\uC774 \uC654\uC5B4.\" "
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 60
     _successStressDecrease: 0
     _successSubscriberIncrease: 2000000
@@ -48,14 +48,14 @@ MonoBehaviour:
       \uC0B4\uD53C\uBA70 \uCC9C\uCC9C\uD788 \uD655\uC7A5\uD588\uC5B4. \uB9AC\uC2A4\uD06C\uB294
       \uCD5C\uC18C\uD654\uD558\uBA74\uC11C \uC0C8 \uC601\uC5ED\uC744 \uD0D0\uC0C9\uD560
       \uC218 \uC788\uC5C8\uC5B4!\" "
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uC18C\uADF9\uC801\uC778 \uC811\uADFC\uC73C\uB85C \uC778\uD574
       \uCD08\uAE30 \uC2DC\uC7A5\uC744 \uC120\uC810\uD558\uC9C0 \uBABB\uD588\uC5B4...
       \uB2E4\uB978 \uC778\uD50C\uB8E8\uC5B8\uC11C\uB4E4\uC774 \uC774 \uBD84\uC57C\uB97C
       \uC7A5\uC545\uD558\uB294 \uB3D9\uC548 \uAE30\uD68C\uB97C \uB193\uCCE4\uC5B4.\" "
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 20
-    _successStressDecrease: 15
+    _successStressDecrease: -15
     _successSubscriberIncrease: 500000
     _failFamousDecrease: 15
     _failStressIncrease: 20

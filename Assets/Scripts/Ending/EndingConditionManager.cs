@@ -4,6 +4,7 @@ public class EndingConditionManager : MonoBehaviour
 {
     [SerializeField] private PlayerModel _playerModel;
     [SerializeField] private SadEndingManager _sadEndingManager;
+    private StorySelector.StoryTierType _storyTierType;
 
     [Header("Ending Data")]
     [SerializeField] private SadEndingData Stress100Data;
