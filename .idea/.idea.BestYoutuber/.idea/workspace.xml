@@ -4,125 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da7d57f1-6056-4b5a-867a-4c5db2af75e7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G00.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G00.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G01.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G01.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G02.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G02.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G03.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G03.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G04.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G04.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G05.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000000less/G05.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B00.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B00.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B01.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B01.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B02.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B02.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B03.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B03.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B04.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B04.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B05.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/10000less/B05.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A00.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A00.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A01.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A01.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A02.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A02.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A03.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A03.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A04.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A04.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A05.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1000less/A05.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E00.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E00.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E01.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E01.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E02.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E02.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E03.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E03.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E04.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E04.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E05.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/1500000less/E05.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C00.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C00.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C01.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C01.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C02.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C02.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C03.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C03.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C04.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C04.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C05.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/200000less/C05.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F00.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F00.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F01.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F01.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F02.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F02.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F03.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F03.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F04.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F04.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F05.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/5000000less/F05.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D00.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D00.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D01.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D01.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D02.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D02.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D03.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D03.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D04.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D04.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D05.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/600000less/D05.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a01.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a02.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a03.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a03.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a04.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a04.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a05.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a05.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a06.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a06.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a07.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a07.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a08.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a08.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a09.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04Scriptable/NormalStory/Normal Sheet/a/a09.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 3.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 3.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 4.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 4.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 5.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData 5.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04Scriptable/StoryData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Font/OnGulip SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Font/OnGulip SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScenePr.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScenePr.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NotificationSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NotificationSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StorySelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StorySelector.cs" afterDir="false" />
-    </list>
+    <list default="true" id="da7d57f1-6056-4b5a-867a-4c5db2af75e7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,6 +122,7 @@
       <workItem from="1747365322096" duration="5715000" />
       <workItem from="1747383288498" duration="935000" />
       <workItem from="1747386407100" duration="2762000" />
+      <workItem from="1747394395126" duration="4000" />
     </task>
     <servers />
   </component>
