@@ -30,7 +30,7 @@ MonoBehaviour:
       \uB354 \uC774\uC9C8\uAC10\uB9CC \uB290\uB07C\uAC8C \uB410\uB124. "
     _failSprite: {fileID: 0}
     _successFamousIncrease: 0
-    _successStressDecrease: 30
+    _successStressDecrease: -30
     _successSubscriberIncrease: 0
     _failFamousDecrease: 5
     _failStressIncrease: 15
@@ -52,7 +52,7 @@ MonoBehaviour:
       \uB290\uB07C\uAC8C \uB410\uC5B4. "
     _failSprite: {fileID: 0}
     _successFamousIncrease: 10
-    _successStressDecrease: 25
+    _successStressDecrease: -25
     _successSubscriberIncrease: 5000
     _failFamousDecrease: 0
     _failStressIncrease: 25

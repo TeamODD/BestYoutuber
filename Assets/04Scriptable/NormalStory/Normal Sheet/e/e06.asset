@@ -15,7 +15,7 @@ MonoBehaviour:
   _index: 6
   _choiceText: "\uB0B4 \uC2A4\uD1A0\uB9AC\uB97C \uB2F4\uC740 \uCC45\uC744 \uCD9C\uD310\uD574\uBCFC\uAE4C?
     \uCD9C\uD310\uC0AC\uC5D0\uC11C \uC790\uC11C\uC804 \uC81C\uC548\uC774 \uC654\uC5B4."
-  _choiceSprite: {fileID: 0}
+  _choiceSprite: {fileID: 8587328587093555049, guid: 3c7fa3966c00ce24995f7269f4792758, type: 3}
   _rightCommentData:
     _successChance: 70
     _choiceComment: "\uC544\uC9C1\uC740 \uC2DC\uAE30\uC0C1\uC870\uB77C\uACE0 \uAC70\uC808"
@@ -23,14 +23,14 @@ MonoBehaviour:
       \uACB0\uC815\uD588\uC5B4. \uB300\uC2E0 \uC628\uB77C\uC778 \uCF58\uD150\uCE20\uC5D0
       \uB354 \uC9D1\uC911\uD558\uB2C8 \uCDA9\uC131\uB3C4\uAC00 \uB192\uC544\uC9C0\uACE0
       \uB354 \uC758\uBBF8 \uC788\uB294 \uC131\uC7A5\uC744 \uD558\uACE0 \uC788\uC5B4!\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uB2E4\uB978 \uC778\uD50C\uB8E8\uC5B8\uC11C\uB4E4\uC758 \uCC45\uC774
       \uC5F0\uC774\uC5B4 \uD788\uD2B8\uD558\uB294\uAC78 \uBCF4\uB2C8 \uD0C0\uC774\uBC0D\uC744
       \uB193\uCE5C \uAC83 \uAC19\uC544... \uB0B4 \uC774\uC57C\uAE30\uC5D0 \uB300\uD55C
       \uAD00\uC2EC\uC774 \uC2DC\uB4E4\uD574\uC9C8\uAE4C\uBD10 \uAC71\uC815\uB3FC.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 20
-    _successStressDecrease: 25
+    _successStressDecrease: -25
     _successSubscriberIncrease: 80000
     _failFamousDecrease: 0
     _failStressIncrease: 15
@@ -45,14 +45,14 @@ MonoBehaviour:
       \uCC45\uC774 \uBCA0\uC2A4\uD2B8\uC140\uB7EC\uC5D0 \uC62C\uB790\uC5B4! \uB9CE\uC740
       \uC80A\uC740\uC774\uB4E4\uC5D0\uAC8C \uC601\uAC10\uC744 \uC8FC\uB294 \uB864\uBAA8\uB378\uC774
       \uB41C \uAC83 \uAC19\uC544 \uBFCC\uB4EF\uD574.\""
-    _successSprite: {fileID: 0}
+    _successSprite: {fileID: 218842996948643789, guid: da9099d8c199e1041b51fd06d9e692e3, type: 3}
     _failComment: "\"\uCC45\uC774 \uAE30\uB300\uC5D0 \uBABB \uBBF8\uCE58\uB294 \uD3C9\uAC00\uB97C
       \uBC1B\uACE0 \uC788\uC5B4... '\uB0B4\uC6A9\uC774 \uBED4\uD558\uB2E4', '\uB108\uBB34
       \uC774\uB978 \uC790\uC11C\uC804'\uC774\uB77C\uB294 \uD639\uD3C9\uC774 \uB9CE\uC544
       \uC0C1\uCC98\uBC1B\uC558\uC5B4.\""
-    _failSprite: {fileID: 0}
+    _failSprite: {fileID: 21300000, guid: 57a4833cfbdda094c95d81abfef2b4e2, type: 3}
     _successFamousIncrease: 50
-    _successStressDecrease: 10
+    _successStressDecrease: -10
     _successSubscriberIncrease: 150000
     _failFamousDecrease: 35
     _failStressIncrease: 45

@@ -52,7 +52,7 @@ MonoBehaviour:
       SNS\uC5D0\uC11C \uC545\uD3C9\uC774 \uC3DF\uC544\uC9C0\uACE0 \uC788\uC5B4. "
     _failSprite: {fileID: 0}
     _successFamousIncrease: 25
-    _successStressDecrease: 10
+    _successStressDecrease: -10
     _successSubscriberIncrease: 50000
     _failFamousDecrease: 20
     _failStressIncrease: 35

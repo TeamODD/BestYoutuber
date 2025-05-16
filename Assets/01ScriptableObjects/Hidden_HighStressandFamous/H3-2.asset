@@ -31,7 +31,7 @@ MonoBehaviour:
       \uC788\uC5B4. "
     _failSprite: {fileID: 0}
     _successFamousIncrease: 5
-    _successStressDecrease: 10
+    _successStressDecrease: -10
     _successSubscriberIncrease: 10
     _failFamousDecrease: 0
     _failStressIncrease: 20
