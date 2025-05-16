@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
+  m_Name: c01
+  m_EditorClassIdentifier: 
+  _index: 1
+  _choiceText: "\uC2AC\uC2AC \uB0B4 \uCC44\uB110\uC5D0 \uBCC0\uD654\uB97C \uC8FC\uACE0
+    \uC2F6\uC5B4. \uD504\uB85C\uD544\uC744 \uB9AC\uB274\uC5BC \uD574\uBCFC\uAE4C?"
+  _choiceSprite: {fileID: 0}
+  _rightCommentData:
+    _successChance: 60
+    _choiceComment: "\uD504\uB85C\uD544\uC744 \uC0C8\uB86D\uAC8C \uB9AC\uB274\uC5BC\uD55C\uB2E4."
+    _successComment: "\"\uD504\uB85C\uD544 \uD558\uB098 \uBC14\uAFE8\uC744 \uBFD0\uC778\uB370
+      \uCC44\uB110 \uBD84\uC704\uAE30\uAC00 \uC0C8\uB85C\uC6CC\uC9C4 \uB290\uB08C\uC774\uC57C!
+      \uAD6C\uB3C5\uC790\uB4E4\uB3C4 \uC88B\uC544\uD558\uB294 \uB4EF \uD574.\""
+    _successSprite: {fileID: 0}
+    _failComment: "\"\uC138\uB828\uB418\uAE34 \uD588\uC9C0\uB9CC \uB0AF\uC124\uB2E4\uB294
+      \uBC18\uC751\uC774 \uB9CE\uB2E4.. \uBC14\uAFB8\uC9C0 \uB9D0 \uAC78 \uADF8\uB7AC\uB098.\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 25
+    _successStressDecrease: 5
+    _successSubscriberIncrease: 8000
+    _failFamousDecrease: 20
+    _failStressIncrease: 10
+    _failSubscriberDecrease: 2000
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
+  _leftCommentData:
+    _successChance: 70
+    _choiceComment: "\uD504\uB85C\uD544\uC744 \uADF8\uB300\uB85C \uC720\uC9C0\uD55C\uB2E4."
+    _successComment: "\"\uC5ED\uC2DC \uC775\uC219\uD55C \uAC8C \uCD5C\uACE0\uB2E4.
+      \uBCC0\uD654\uB294 \uC5C6\uC5C8\uC9C0\uB9CC \uB0B4 \uCC44\uB110\uC758 \uC815\uCCB4\uC131\uC740
+      \uC810\uC810 "
+    _successSprite: {fileID: 0}
+    _failComment: "\"\uAD6C\uB3C5\uC790\uB4E4 \uC0AC\uC774\uC5D0\uC11C \uB0B4 \uD504\uB85C\uD544\uC774
+      \uAC1C\uC131 \uC5C6\uACE0 \uC694\uC998 \uAC10\uC131\uACFC\uB294 \uB9DE\uC9C0
+      \uC54A\uB294\uB2E4\uB294 \uC774\uC57C\uAE30\uAC00 \uB3C4\uB294 \uAC83 \uAC19\uB2E4...\""
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 15
+    _successStressDecrease: 0
+    _successSubscriberIncrease: 5000
+    _failFamousDecrease: 10
+    _failStressIncrease: 20
+    _failSubscriberDecrease: 3000
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
