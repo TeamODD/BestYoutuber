@@ -17,8 +17,7 @@ public class SimpleDialogue : MonoBehaviour
     
     [SerializeField] private TextMeshProUGUI _nameText;
     [SerializeField] private TextMeshProUGUI _dialogueText;
-    [SerializeField] private Image _playerImage;
-    [SerializeField] private Image _otherImage;
+  
 
     [SerializeField] private List<DialogueLine> _dialogueLines = new();
     
@@ -27,17 +26,17 @@ public class SimpleDialogue : MonoBehaviour
     private void Start()
     {
         SetupDialogue();
-        
-        DisplayCurrentLine();
     }
     
     private void SetupDialogue()
     {
-        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "안녕! 오늘 방송 준비는 다 됐어?", isPlayer = true });
-        _dialogueLines.Add(new DialogueLine { speakerName = "친구", dialogueText = "응, 다 준비됐어. 근데 오늘 주제는 뭐야?", isPlayer = false });
-        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "요즘 유행하는 메이크업 챌린지 할거야!", isPlayer = true });
-        _dialogueLines.Add(new DialogueLine { speakerName = "친구", dialogueText = "그거 재밌겠다! 도와줄게.", isPlayer = false });
-        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "고마워! 시작하자!", isPlayer = true });
+        _dialogueLines.Add(new DialogueLine { speakerName = "친구", dialogueText = "옆반 걔가 유튜버로 1억벌었다는데?", isPlayer = false });
+        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "진짜? 영상 한번 봐볼래", isPlayer = true });
+        _dialogueLines.Add(new DialogueLine { speakerName = "친구", dialogueText = "한번 봐봐", isPlayer = false });
+        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "이정도는 나도하겠는데?", isPlayer = true });
+        _dialogueLines.Add(new DialogueLine { speakerName = "친구", dialogueText = "너도 유튜버 해보게?", isPlayer = false });
+        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "유튜버 해보지 뭐. 오늘부터 꿈은 천만유튜버야!", isPlayer = true });
+
     }
     
     private void Update()
@@ -54,26 +53,18 @@ public class SimpleDialogue : MonoBehaviour
             {
                 DisplayCurrentLine();
             }
+            
         }
     }
-    
+
     private void DisplayCurrentLine()
     {
-        DialogueLine line = _dialogueLines[_currentLine];
+        DialogueLine currentDialogue = _dialogueLines[_currentLine];
         
-        _nameText.text = line.speakerName;
+        // 화자 이름 설정
+        _nameText.text = currentDialogue.speakerName;
         
-        _dialogueText.text = line.dialogueText;
-        
-        if (line.isPlayer)
-        {
-            _playerImage.color = Color.white; // 활성 상태
-            _otherImage.color = new Color(0.7f, 0.7f, 0.7f); // 비활성 상태
-        }
-        else
-        {
-            _playerImage.color = new Color(0.7f, 0.7f, 0.7f); // 비활성 상태
-            _otherImage.color = Color.white; // 활성 상태
-        }
+        // 대화 텍스트 설정
+        _dialogueText.text = currentDialogue.dialogueText;
     }
 }
