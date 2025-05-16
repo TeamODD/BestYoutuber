@@ -133,6 +133,8 @@ public class StorySelector : MonoBehaviour
     {
         if (_hiddenStoryActivated) return;
         
+        StoryTierType curTier = GetStoryTierType(_playerModel.Subscriber);
+        
         if (_playerModel.Stress <= 20 && _playerModel.Famous <= 20)
         {
             ActivateHiddenStory(StoryTierType.Hidden_LowStressandFamous);
@@ -151,9 +153,11 @@ public class StorySelector : MonoBehaviour
         {
             ActivateHiddenStory(StoryTierType.Hidden_StuckInTierOne);
         }
-        else if (_playerModel.Stress >= 80 && _playerModel.Famous <= 20)
+        else if (_playerModel.Stress >= 80 && _playerModel.Famous <= 20 && 
+                 (curTier == StoryTierType.Four))
         {
             ActivateHiddenStory(StoryTierType.Hidden_DisPatch);
+            Debug.Log("Dispatch story activated");
         }
     }
     

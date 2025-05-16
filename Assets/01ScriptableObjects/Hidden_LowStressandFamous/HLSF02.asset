@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edc2c4017fb7fd478e5c3e6b60bcb25, type: 3}
+  m_Name: HLSF02
+  m_EditorClassIdentifier: 
+  _index: 2
+  _choiceText: "\uC778\uC9C0\uB3C4\uB294 \uC801\uAE34\uD55C\uB370 \uC2A4\uD2B8\uB808\uC2A4\uB3C4
+    \uC801\uC5B4 \uC774\uB300\uB85C\uC0B4\uAE4C?"
+  _choiceSprite: {fileID: 8587328587093555049, guid: 3c7fa3966c00ce24995f7269f4792758, type: 3}
+  _rightCommentData:
+    _successChance: 0
+    _choiceComment: "\uD604\uC7AC\uC758 \uD3C9\uD654\uB97C \uC720\uC9C0\uD558\uBA74\uC11C\uB3C4
+      \uC131\uC7A5\uC744 \uC2DC\uB3C4\uD560\uAE4C?? "
+    _successComment: "\uC57D\uAC04\uC758 \uB178\uB825\uC73C\uB85C \uC778\uC9C0\uB3C4\uAC00
+      \uC870\uAE08 \uC62C\uB790\uC5B4. \uADF8\uB798\uB3C4 \uC5EC\uC804\uD788 \uD3C9\uD654\uB85C\uC6B4
+      \uC0C1\uD0DC\uB97C \uC720\uC9C0\uD560 \uC218 \uC788\uC5B4\uC11C \uB2E4\uD589\uC774\uC57C."
+    _successSprite: {fileID: 0}
+    _failComment: "\uC778\uAE30\uB97C \uC5BB\uC73C\uB824\uB2E4 \uB0B4 \uBCF8\uB798
+      \uCF58\uD150\uCE20 \uC2A4\uD0C0\uC77C\uC744 \uC783\uC5B4\uBC84\uB9B0 \uAC83
+      \uAC19\uC544... \uC624\uD788\uB824 \uC5ED\uD6A8\uACFC\uAC00 \uB0AC\uC5B4."
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 15
+    _successStressDecrease: 5
+    _successSubscriberIncrease: 20
+    _failFamousDecrease: -5
+    _failStressIncrease: 15
+    _failSubscriberDecrease: 5
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
+  _leftCommentData:
+    _successChance: 0
+    _choiceComment: "\uC18C\uC218 \uD32C\uCE35\uC758 \uD32C\uC2EC\uC744 \uB354 \uB298\uB9B4\uAE4C? "
+    _successComment: "\uC18C\uC218\uC9C0\uB9CC \uC9C4\uC2EC\uC73C\uB85C \uB098\uB97C
+      \uC751\uC6D0\uD574\uC8FC\uB294 \uD32C\uB4E4\uC774 \uB354 \uB192\uC740 \uCDA9\uC131\uB3C4\uB97C
+      \uAC00\uC9C0\uAC8C\uB42C\uC5B4!! "
+    _successSprite: {fileID: 0}
+    _failComment: "\uD32C\uB4E4\uACFC \uB108\uBB34 \uAC00\uAE4C\uC6CC\uC84C\uB354\uB2C8 
+      \uC57D\uAC04 \uBD80\uB2F4\uC2A4\uB7EC\uC6B4 \uC694\uCCAD\uB4E4\uC774 \uB298\uACE0
+      \uC788\uC5B4. \uBD80\uB2F4\uC774\uB3FC.."
+    _failSprite: {fileID: 0}
+    _successFamousIncrease: 5
+    _successStressDecrease: -15
+    _successSubscriberIncrease: 100
+    _failFamousDecrease: 0
+    _failStressIncrease: 0
+    _failSubscriberDecrease: 0
+    _choiceSelectSound: {fileID: 0}
+    _successResultSound: {fileID: 0}
+    _failResultSound: {fileID: 0}
