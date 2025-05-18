@@ -17,8 +17,6 @@ public class SimpleDialogue : MonoBehaviour
     
     [SerializeField] private TextMeshProUGUI _nameText;
     [SerializeField] private TextMeshProUGUI _dialogueText;
-    [SerializeField] private Image _playerImage;
-    [SerializeField] private Image _otherImage;
 
     [SerializeField] private List<DialogueLine> _dialogueLines = new();
     
@@ -33,11 +31,12 @@ public class SimpleDialogue : MonoBehaviour
     
     private void SetupDialogue()
     {
-        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "안녕! 오늘 방송 준비는 다 됐어?", isPlayer = true });
-        _dialogueLines.Add(new DialogueLine { speakerName = "친구", dialogueText = "응, 다 준비됐어. 근데 오늘 주제는 뭐야?", isPlayer = false });
-        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "요즘 유행하는 메이크업 챌린지 할거야!", isPlayer = true });
-        _dialogueLines.Add(new DialogueLine { speakerName = "친구", dialogueText = "그거 재밌겠다! 도와줄게.", isPlayer = false });
-        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "고마워! 시작하자!", isPlayer = true });
+        _dialogueLines.Add(new DialogueLine { speakerName = "친구", dialogueText = "옆반 얘가 유튜브로 1억벌었다는데?", isPlayer = false });
+        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "진짜? 한번봐볼래", isPlayer = true });
+        _dialogueLines.Add(new DialogueLine { speakerName = "친구", dialogueText = "이거봐봐", isPlayer = false });
+        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "아니 이정도면 나도 할 수 있을것같은데?", isPlayer = true });
+        _dialogueLines.Add(new DialogueLine { speakerName = "친구", dialogueText = "정말? 쉽지않을텐데?", isPlayer = false });
+        _dialogueLines.Add(new DialogueLine { speakerName = "미소녀", dialogueText = "이제부터 내꿈은 유튜버야!", isPlayer = true });
     }
     
     private void Update()
@@ -65,15 +64,6 @@ public class SimpleDialogue : MonoBehaviour
         
         _dialogueText.text = line.dialogueText;
         
-        if (line.isPlayer)
-        {
-            _playerImage.color = Color.white; // 활성 상태
-            _otherImage.color = new Color(0.7f, 0.7f, 0.7f); // 비활성 상태
-        }
-        else
-        {
-            _playerImage.color = new Color(0.7f, 0.7f, 0.7f); // 비활성 상태
-            _otherImage.color = Color.white; // 활성 상태
-        }
+
     }
 }

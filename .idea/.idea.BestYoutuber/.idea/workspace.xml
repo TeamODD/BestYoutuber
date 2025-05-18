@@ -6,21 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="da7d57f1-6056-4b5a-867a-4c5db2af75e7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BestYoutuber/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.utmp/RelWithDebInfo/5c14q5u2/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/RelWithDebInfo/5c14q5u2/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/2.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/2.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/5c4ebea86ccea1ef.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/5c4ebea86ccea1ef.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/ChatGPT_Image_2025_5_11_11_27_176.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/ChatGPT_Image_2025_5_11_11_27_176.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/ODD18.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/ODD18.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/ODD23.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/ODD23.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/Sprite-00016.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/Sprite-00016.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/asdf3efwds.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/asdf3efwds.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/d4e518b22ec12da55.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/d4e518b22ec12da55.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/gg27.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/gg27.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/image.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/image.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/image1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/image1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/image3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/image3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fanarts/image4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fanarts/image4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Font/OnGulip SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Font/OnGulip SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SimpleDialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SimpleDialogue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +156,7 @@
       <workItem from="1747414975380" duration="246000" />
       <workItem from="1747419112908" duration="1910000" />
       <workItem from="1747464091190" duration="429000" />
+      <workItem from="1747467531801" duration="2309000" />
     </task>
     <servers />
   </component>
